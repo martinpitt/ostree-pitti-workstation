@@ -9,7 +9,7 @@
 
     "automatic_version_prefix": "25",
 
-    "initramfs-args": ["--no-hostonly", "--add", "iscsi"],
+    "initramfs-args": ["--no-hostonly"],
 
     "install-langs": ["en_US"],
 
