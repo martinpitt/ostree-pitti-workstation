@@ -7,7 +7,7 @@
 
     "documentation": true,
 
-    "automatic_version_prefix": "23",
+    "automatic_version_prefix": "25",
 
     "initramfs-args": ["--no-hostonly", "--add", "iscsi"],
 
