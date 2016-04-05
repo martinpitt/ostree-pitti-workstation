@@ -1,5 +1,5 @@
 {
-    "ref": "fedora-atomic-workstation/rawhide/x86_64/foo-host",
+    "ref": "fedora-atomic-workstation/rawhide/x86_64/default",
 
     "repos": ["fedora-rawhide"],
 
