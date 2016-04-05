@@ -150,7 +150,7 @@
 		 "lsof", "tcpdump",
 		 "policycoreutils-python",
 		 "policycoreutils-python-utils",
-		 "audit"]
+		 "audit"],
 
     "default_target": "multi-user.target"
 }
