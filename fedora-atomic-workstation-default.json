@@ -11,10 +11,6 @@
 
     "initramfs-args": ["--no-hostonly"],
 
-    "install-langs": ["en_US"],
-
-    "postprocess-script": "treecompose-post.sh",
-
     "etc-group-members": ["wheel"],
 
     "ignore-removed-users": ["root"],
