@@ -152,5 +152,5 @@
 		 "policycoreutils-python-utils",
 		 "audit"],
 
-    "default_target": "multi-user.target"
+    "default_target": "graphical.target"
 }
