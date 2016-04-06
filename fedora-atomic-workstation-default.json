@@ -134,7 +134,6 @@
 		 "which",
 		 "nfs-utils",
 		 "curl",
-		 "iptables-services",
 		 "NetworkManager",
 		 "hostname", "initscripts", "iproute", "iputils", "less",
 		 "sos",
