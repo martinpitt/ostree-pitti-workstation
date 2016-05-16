@@ -76,7 +76,6 @@
 		"bind-license",
 		"bind-utils",
 		"binutils",
-		"blivet-data",
 		"bluez-cups",
 		"boost-iostreams",
 		"boost-random",
