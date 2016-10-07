@@ -18,6 +18,8 @@
     "check-passwd": { "type": "file", "filename": "passwd" },
     "check-groups": { "type": "file", "filename": "group" },
 
+    "postprocess-script": "post.sh",
+
     "packages": [
 		"aajohan-comfortaa-fonts",
 		"abrt",
