@@ -101,8 +101,6 @@
 		"curl",
 		"cyrus-sasl",
 		"cyrus-sasl-gssapi",
-		"cyrus-sasl-md5",
-		"cyrus-sasl-plain",
 		"dconf",
 		"device-mapper-multipath",
 		"device-mapper-multipath-libs",
