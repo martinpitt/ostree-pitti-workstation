@@ -54,7 +54,6 @@
 		"atomic",
 		"attr",
 		"audit",
-		"augeas-libs",
 		"authconfig",
 		"avahi",
 		"b43-fwcutter",
