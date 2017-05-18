@@ -353,7 +353,6 @@
 		"rootfiles",
 		"rpm",
 		"rpm-ostree",
-		"rpm-plugin-systemd-inhibit",
 		"rp-pppoe",
 		"rsync",
 		"rygel",
