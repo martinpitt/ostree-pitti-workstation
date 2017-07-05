@@ -25,7 +25,7 @@ Installing
 
 Important!  Don't choose auto-partitioning in the below installer ISO.  You
 need to change `/home` to be `/var/home`.  A bit more information in
-this [known issue](https://github.com/rhinstaller/anaconda/issues/800).
+this [known issue](https://bugzilla.redhat.com/show_bug.cgi?id=1382873).
 
 There are ISOs available for [Fedora 26](https://kojipkgs.fedoraproject.org/compose//branched/)
 and [rawhide](https://kojipkgs.fedoraproject.org/compose//rawhide/).
