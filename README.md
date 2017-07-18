@@ -20,14 +20,17 @@ This project is actively maintained and is ready for use
 by sophisticated and interested users, but not ready
 for widespread promotion.
 
-Installing
+Installing (do not use partitioning defaults!)
 ----------
 
-Important!  Don't choose auto-partitioning in the below installer ISO.  You
-need to change `/home` to be `/var/home`.  A bit more information in
-this [known issue](https://bugzilla.redhat.com/show_bug.cgi?id=1382873).
+Important!  *Don't* choose auto-partitioning in the below installer ISO; you
+currently can't use a separate `/home` partition, and Anaconda defaults to that.
+This will be fixed in Fedora 27; see
+this [known issue](https://bugzilla.redhat.com/show_bug.cgi?id=1382873) as
+well as [this anaconda PR](https://github.com/rhinstaller/anaconda/pull/1124).
 
 There are ISOs available for [Fedora 26](https://kojipkgs.fedoraproject.org/compose//branched/)
+[direct link](https://kojipkgs.fedoraproject.org/compose//branched/Fedora-26-20170707.n.0/compose/Workstation/x86_64/iso/Fedora-Workstation-ostree-x86_64-26-20170707.n.0.iso)
 and [rawhide](https://kojipkgs.fedoraproject.org/compose//rawhide/).
 
 Important issues:
