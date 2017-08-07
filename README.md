@@ -20,6 +20,12 @@ This project is actively maintained and is ready for use
 by sophisticated and interested users, but not ready
 for widespread promotion.
 
+Updates not currently generated for Fedora 26
+--------------------------------------------------------
+
+If you choose Fedora 26, note that Fedora is not currently
+shipping updates.  For that, see [atomic-ws](https://pagure.io/atomic-ws).
+
 Installing (do not use partitioning defaults!)
 ----------
 
