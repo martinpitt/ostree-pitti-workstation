@@ -1,0 +1,7 @@
+[fedora-27-updates]
+name=Fedora 27 $basearch Updates
+#baseurl=http://download.fedoraproject.org/pub/fedora/linux//updates/27/$basearch/os/
+mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=updates-released-f27&arch=$basearch
+enabled=0
+gpgcheck=0
+metadata_expire=1d
