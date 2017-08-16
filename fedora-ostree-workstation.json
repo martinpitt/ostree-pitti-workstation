@@ -48,6 +48,7 @@
 		"bind-utils",
 		"bluez-cups",
 		"bridge-utils",
+		"btrfs-progs",
 		"bzip2",
 		"caribou",
 		"caribou-gtk2-module",
