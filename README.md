@@ -97,7 +97,11 @@ To initialize this root, you'll need to copy over your `/etc/fstab`, `/etc/local
 for i in /etc/fstab /etc/default/grub /etc/locale.conf /etc/ostree/remotes.d/fedora-ws-rawhide.conf ; do cp $i /ostree/deploy/fedora/deploy/$checksum.0/$i; done
 ```
 If you have a separate `/home` mount point, you'll need to change
-that `fstab` copy to refer to `/var/home`.
+that `fstab` copy to refer to `/var/home`. If you *don't* have a separate /home mount
+point, then you need to make sure that a symlink will be created:
+```
+echo 'L /var/home - - - - ../sysroot/home' > /ostree/deploy/fedora/deploy/$checksum.0/$i/etc/tmpfiles.d/00rpm-ostree.conf
+```
 
 You'll also need to copy your user entry from `/etc/passwd`, `/etc/group`,
 and `/etc/shadow` into the new `/etc/`, and add yourself to the wheel group
