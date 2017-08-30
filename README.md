@@ -87,9 +87,9 @@ Since this file is not used on a EFI system, this won't break the operation of y
 cp /boot/efi/EFI/fedora/grub.cfg /boot/efi/EFI/fedora/grub.cfg.bak
 ```
 
-Deploy; we use `enforcing=0` to avoid SELinux issues for now.
+Deploy; we use `enforcing=0` to avoid SELinux issues for now, and --karg=rghb=0 to avoid a hang with Plymouth.
 ```
-ostree admin deploy --os=fedora --karg-proc-cmdline --karg=enforcing=0 fedora-ws-rawhide:fedora/rawhide/x86_64/workstation
+ostree admin deploy --os=fedora --karg-proc-cmdline --karg=enforcing=0 --karg=rhgb=0 fedora-ws-rawhide:fedora/rawhide/x86_64/workstation
 ```
 
 To initialize this root, you'll need to copy over your `/etc/fstab`, `/etc/locale.conf`, `/etc/default/grub` at least, along with the ostree remote that we added:
