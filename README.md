@@ -61,14 +61,14 @@ Next, we add `/ostree/repo` to the filesystem:
 ostree admin init-fs /
 ```
 
-Add a remote which points to the CentOS CI content:
+Add a remote which points to the Fedora Rawhide content:
 ```
-ostree remote add --set=gpg-verify=false fedora-ws-centosci https://ci.centos.org/artifacts/sig-atomic/rdgo/fedora-workstation/ostree/repo/
+ostree remote add --set=gpg-verify=false fedora-ws-rawhide https://kojipkgs.fedoraproject.org/compose/ostree/rawhide/
 ```
 
 Pull down the content (you can interrupt and restart this):
 ```
-ostree --repo=/ostree/repo pull fedora-ws-centosci:fedora/24/x86_64/desktop/continuous
+ostree --repo=/ostree/repo pull fedora-ws-rawhide:fedora/rawhide/x86_64/workstation
 ```
 
 Initialize an "os" for this, which acts as a state root.
@@ -89,12 +89,12 @@ cp /boot/efi/EFI/fedora/grub.cfg /boot/efi/EFI/fedora/grub.cfg.bak
 
 Deploy; we use `enforcing=0` to avoid SELinux issues for now.
 ```
-ostree admin deploy --os=fedora --karg-proc-cmdline --karg=enforcing=0 fedora-ws-centosci:fedora/24/x86_64/desktop/continuous
+ostree admin deploy --os=fedora --karg-proc-cmdline --karg=enforcing=0 fedora-ws-rawhide:fedora/rawhide/x86_64/workstation
 ```
 
 To initialize this root, you'll need to copy over your `/etc/fstab`, `/etc/default/grub` at least, along with the ostree remote that we added:
 ```
-for i in /etc/fstab /etc/default/grub /etc/ostree/remotes.d/fedora-ws-centosci.conf ; do cp $i /ostree/deploy/fedora/deploy/$checksum.0/$i; done
+for i in /etc/fstab /etc/default/grub /etc/ostree/remotes.d/fedora-ws-rawhide.conf ; do cp $i /ostree/deploy/fedora/deploy/$checksum.0/$i; done
 ```
 If you have a separate `/home` mount point, you'll need to change
 that `fstab` copy to refer to `/var/home`.
