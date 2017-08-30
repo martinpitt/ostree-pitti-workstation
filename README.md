@@ -92,9 +92,9 @@ Deploy; we use `enforcing=0` to avoid SELinux issues for now.
 ostree admin deploy --os=fedora --karg-proc-cmdline --karg=enforcing=0 fedora-ws-rawhide:fedora/rawhide/x86_64/workstation
 ```
 
-To initialize this root, you'll need to copy over your `/etc/fstab`, `/etc/default/grub` at least, along with the ostree remote that we added:
+To initialize this root, you'll need to copy over your `/etc/fstab`, `/etc/locale.conf`, `/etc/default/grub` at least, along with the ostree remote that we added:
 ```
-for i in /etc/fstab /etc/default/grub /etc/ostree/remotes.d/fedora-ws-rawhide.conf ; do cp $i /ostree/deploy/fedora/deploy/$checksum.0/$i; done
+for i in /etc/fstab /etc/default/grub /etc/locale.conf /etc/ostree/remotes.d/fedora-ws-rawhide.conf ; do cp $i /ostree/deploy/fedora/deploy/$checksum.0/$i; done
 ```
 If you have a separate `/home` mount point, you'll need to change
 that `fstab` copy to refer to `/var/home`.
