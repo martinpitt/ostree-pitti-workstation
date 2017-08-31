@@ -104,7 +104,7 @@
 		"ghostscript",
 		"ghostscript-x11",
 		"glibc",
-		"glibc-langpack-en",
+		"glibc-all-langpacks",
 		"glib-networking",
 		"gnome-backgrounds",
 		"gnome-bluetooth",
