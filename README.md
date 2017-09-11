@@ -35,8 +35,8 @@ This will be fixed in Fedora 27; see
 this [known issue](https://bugzilla.redhat.com/show_bug.cgi?id=1382873) as
 well as [this anaconda PR](https://github.com/rhinstaller/anaconda/pull/1124).
 
-There are ISOs available for [Fedora 26](https://kojipkgs.fedoraproject.org/compose//branched/)
-[direct link](https://kojipkgs.fedoraproject.org/compose//branched/Fedora-26-20170707.n.0/compose/Workstation/x86_64/iso/Fedora-Workstation-ostree-x86_64-26-20170707.n.0.iso)
+There are ISOs available for [Fedora 26](https://kojipkgs.fedoraproject.org/compose/26/)
+[direct link](https://kojipkgs.fedoraproject.org/compose//26/latest-Fedora-26/compose/Workstation/x86_64/iso/Fedora-Workstation-ostree-x86_64-26-1.5.iso)
 and [rawhide](https://kojipkgs.fedoraproject.org/compose//rawhide/).
 
 Important issues:
@@ -87,7 +87,7 @@ Since this file is not used on a EFI system, this won't break the operation of y
 cp /boot/efi/EFI/fedora/grub.cfg /boot/efi/EFI/fedora/grub.cfg.bak
 ```
 
-Deploy; we use `enforcing=0` to avoid SELinux issues for now, and --karg=rghb=0 to avoid a hang with Plymouth.
+Deploy; we use `enforcing=0` to avoid SELinux issues for now, and --karg=rghb=0 to avoid a hang with Plymouth (these aren't needed if deploying Fedora 26 currently).
 ```
 ostree admin deploy --os=fedora --karg-proc-cmdline --karg=enforcing=0 --karg=rhgb=0 fedora-ws-rawhide:fedora/rawhide/x86_64/workstation
 ```
@@ -100,7 +100,7 @@ If you have a separate `/home` mount point, you'll need to change
 that `fstab` copy to refer to `/var/home`. If you *don't* have a separate /home mount
 point, then you need to make sure that a symlink will be created:
 ```
-echo 'L /var/home - - - - ../sysroot/home' > /ostree/deploy/fedora/deploy/$checksum.0/$i/etc/tmpfiles.d/00rpm-ostree.conf
+echo 'L /var/home - - - - ../sysroot/home' > /ostree/deploy/fedora/deploy/$checksum.0/etc/tmpfiles.d/00rpm-ostree.conf
 ```
 
 You'll also need to copy your user entry from `/etc/passwd`, `/etc/group`,
