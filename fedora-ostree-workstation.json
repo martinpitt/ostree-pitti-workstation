@@ -1,7 +1,7 @@
 {
-    "ref": "fedora/27/x86_64/workstation",
+    "ref": "fedora/rawhide/x86_64/workstation",
 
-    "repos": ["fedora-27", "fedora-27-updates"],
+    "repos": ["fedora-rawhide"],
 
     "selinux": true,
 
