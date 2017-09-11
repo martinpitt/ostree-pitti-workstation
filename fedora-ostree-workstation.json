@@ -7,7 +7,7 @@
 
     "documentation": true,
 
-    "automatic_version_prefix": "27",
+    "automatic_version_prefix": "28",
 
     "initramfs-args": ["--no-hostonly"],
 
