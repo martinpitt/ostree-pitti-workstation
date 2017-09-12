@@ -236,6 +236,7 @@
 		"libvirt-daemon-driver-secret",
 		"libvirt-daemon-driver-storage",
 		"libvirt-daemon-kvm",
+		"libvirt-client",
 		"libvirt-gconfig",
 		"libvirt-glib",
 		"libvirt-gobject",
