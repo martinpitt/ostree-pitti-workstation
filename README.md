@@ -20,6 +20,8 @@ This project is actively maintained and is ready for use
 by sophisticated and interested users, but not ready
 for widespread promotion.
 
+See some [https://lists.fedoraproject.org/archives/list/desktop@lists.fedoraproject.org/thread/J6BJS7Z4NKNOQUZWGYXZZIEKYMWBBSUY/](discussion about the first release).
+
 Installing
 ------------
 
