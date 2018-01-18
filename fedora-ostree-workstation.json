@@ -9,7 +9,7 @@
 
     "automatic_version_prefix": "28",
 
-    "initramfs-args": ["--no-hostonly"],
+    "boot_location": "new",
 
     "etc-group-members": ["wheel"],
 
