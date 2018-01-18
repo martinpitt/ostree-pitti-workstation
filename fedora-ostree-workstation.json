@@ -100,8 +100,6 @@
 		"fros-gnome",
 		"gdm",
 		"gedit",
-		"ghostscript",
-		"ghostscript-x11",
 		"glibc",
 		"glibc-all-langpacks",
 		"glib-networking",
