@@ -8,6 +8,7 @@
     "documentation": true,
 
     "automatic_version_prefix": "28",
+    "mutate-os-release": "28",
 
     "boot_location": "new",
 
