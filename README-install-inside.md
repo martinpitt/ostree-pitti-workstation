@@ -14,14 +14,18 @@ Next, we add `/ostree/repo` to the filesystem:
 ostree admin init-fs /
 ```
 
-Add a remote which points to the Fedora Rawhide content:
+Add a remote which points to the Fedora 27 content:
 ```
-ostree remote add --set=gpg-verify=false fedora-ws-rawhide https://kojipkgs.fedoraproject.org/compose/ostree/rawhide/
+ostree remote add --set=gpgkeypath=/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-27-primary fedora-ws-27 https://dl.fedoraproject.org/ostree/27/
 ```
+
+If you do not have the Fedora 27 GPG primary key, you can get it from
+https://getfedora.org/keys/. Alternatively, if you really need to, you can turn
+off GPG verification using the `--no-gpg-verify` option.
 
 Pull down the content (you can interrupt and restart this):
 ```
-ostree --repo=/ostree/repo pull fedora-ws-rawhide:fedora/rawhide/x86_64/workstation
+ostree --repo=/ostree/repo pull fedora-ws-27:fedora/27/x86_64/workstation
 ```
 
 Initialize an "os" for this, which acts as a state root.
