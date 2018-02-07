@@ -25,7 +25,7 @@ See some [https://lists.fedoraproject.org/archives/list/desktop@lists.fedoraproj
 Installing
 ------------
 
-There are ISOs available for [Fedora 27](https://dl.fedoraproject.org/pub/fedora/linux/releases/27/WorkstationOstree/x86_64/iso/).
+There are ISOs available for [Fedora 27](https://download.fedoraproject.org/pub/fedora/linux/releases/27/WorkstationOstree/x86_64/iso/).
 
 Alternatively, see a guide for [installing inside an existing system](https://pagure.io/workstation-ostree-config/blob/master/f/README-install-inside.md).
 
