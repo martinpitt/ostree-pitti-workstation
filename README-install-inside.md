@@ -46,13 +46,17 @@ cp /boot/efi/EFI/fedora/grub.cfg /boot/efi/EFI/fedora/grub.cfg.bak
 
 Deploy; we use `enforcing=0` to avoid SELinux issues for now, and --karg=rghb=0 to avoid a hang with Plymouth (these aren't needed if deploying Fedora 26 currently).
 ```
-ostree admin deploy --os=fedora --karg-proc-cmdline --karg=enforcing=0 --karg=rhgb=0 fedora-ws-rawhide:fedora/rawhide/x86_64/workstation
+ostree admin deploy --os=fedora --karg-proc-cmdline fedora-ws-27:fedora/27/x86_64/workstation
 ```
 
 To initialize this root, you'll need to copy over your `/etc/fstab`, `/etc/locale.conf`, `/etc/default/grub` at least, along with the ostree remote that we added:
 ```
-for i in /etc/fstab /etc/default/grub /etc/locale.conf /etc/ostree/remotes.d/fedora-ws-rawhide.conf ; do cp $i /ostree/deploy/fedora/deploy/$checksum.0/$i; done
+for i in /etc/fstab /etc/default/grub /etc/locale.conf /etc/ostree/remotes.d/fedora-ws-27.conf ; do cp $i /ostree/deploy/fedora/deploy/$checksum.0/$i; done
 ```
+
+where `$checksum` is whatever the checksum of the deployment is; there should only be a
+single directory there if this is your first deployment.
+
 If you have a separate `/home` mount point, you'll need to change
 that `fstab` copy to refer to `/var/home`. If you *don't* have a separate /home mount
 point, then you need to make sure that a symlink will be created:
