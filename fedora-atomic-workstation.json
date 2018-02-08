@@ -1,0 +1,15 @@
+{
+    "ref": "fedora/rawhide/x86_64/workstation",
+
+    "include": "fedora-workstation-base.json",
+
+    "automatic_version_prefix": "28",
+    "mutate-os-release": "28",
+
+    "packages": [
+        "atomic",
+        "rpm-ostree",
+        "skopeo",
+        "docker"
+    ]
+}
