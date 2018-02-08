@@ -9,6 +9,11 @@ first make sure we have the ostree packages:
 yum -y install ostree ostree-grub2
 ```
 
+Before proceeding further, make sure that you have enough space in your root filesystem.
+The recommended minimum is 10GB (the F27 repo we are going to pull takes ~7GB on disk).
+Note that ostree will refuse to continue if you go below 3% of free space, so there's
+no risk of actually running out of space.
+
 Next, we add `/ostree/repo` to the filesystem:
 ```
 ostree admin init-fs /
