@@ -8,6 +8,8 @@
 
     "packages": [
         "atomic",
+        "buildah",
+        "git-core",
         "rpm-ostree",
         "skopeo",
         "docker"
