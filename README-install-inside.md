@@ -81,3 +81,12 @@ system, you'll need to copy that version over:
 ```
 cp /boot/loader/grub.cfg /boot/grub2/grub.cfg
 ```
+
+Note that you will have to repeat this every time a new tree is created, so it
+may be more convenient to just create a symlink:
+
+```
+cd /boot/grub2
+rm grub.cfg
+ln -s ../loader/grub.cfg .
+```
