@@ -1,6 +1,5 @@
 {
     "ref": "fedora/rawhide/x86_64/workstation-base",
-    "repos": ["fedora-rawhide"],
 
     "selinux": true,
     "documentation": true,

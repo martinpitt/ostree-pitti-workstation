@@ -1,5 +1,6 @@
 {
     "ref": "fedora/rawhide/x86_64/workstation",
+    "repos": ["fedora-rawhide"],
 
     "include": "fedora-workstation-base.json",
 
