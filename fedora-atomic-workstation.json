@@ -8,6 +8,7 @@
     "mutate-os-release": "28",
 
     "packages": [
+        "flatpak",
         "atomic",
         "buildah",
         "git-core",
