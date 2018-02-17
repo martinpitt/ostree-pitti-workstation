@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 # Usage: ./comps-sync.py /path/to/comps-f28.xml.in
-# Currently just *removes* packages from the manifest
-# which are not mentioned in comps.
+#
+# Can both remove packages from the manifest
+# which are not mentioned in comps, and add packages from
+# comps.
 
-import os, sys, subprocess, argparse, shlex, json
+import os, sys, subprocess, argparse, shlex, json, yaml
 import libcomps
 
 def fatal(msg):
@@ -19,6 +21,11 @@ args = parser.parse_args()
 base_pkgs_path = 'fedora-workstation-base-pkgs.json'
 with open(base_pkgs_path) as f:
     manifest = json.load(f)
+
+with open('comps-sync-blacklist.yml') as f:
+    doc = yaml.load(f)
+    comps_blacklist = doc['blacklist']
+    comps_blacklist_groups = doc['blacklist_groups']
 
 manifest_packages = set(manifest['packages'])
 
@@ -44,10 +51,15 @@ ws_environ = comps.environments['workstation-product-environment']
 ws_pkgs = {}
 for gid in ws_environ.group_ids:
     group = comps.groups_match(id=gid.name)[0]
+    if gid.name in comps_blacklist_groups:
+        continue
+    blacklist = comps_blacklist.get(gid.name, set())
     for pkg in group.packages:
         pkgname = pkg.name
         if pkg.type not in (libcomps.PACKAGE_TYPE_DEFAULT,
                             libcomps.PACKAGE_TYPE_MANDATORY):
+            continue
+        if pkgname in blacklist:
             continue
         pkgdata = ws_pkgs.get(pkgname)
         if pkgdata is None:
@@ -72,6 +84,7 @@ ws_added = {}
 for (pkg,data) in ws_pkgs.items():
     if pkg not in manifest_packages:
         ws_added[pkg] = data
+        manifest_packages.add(pkg)
 
 def format_pkgtype(n):
     if n == libcomps.PACKAGE_TYPE_DEFAULT:

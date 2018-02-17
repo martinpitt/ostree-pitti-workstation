@@ -1,0 +1,75 @@
+# This file has a list of packages to skip from comps that we don't want.
+
+# Entirely skip all packages in libreoffice
+blacklist_groups:
+  - libreoffice
+
+blacklist:
+  core:
+    # We use rpm-ostree for the host
+    - dnf
+    - dnf-yum
+    - dnf-plugins-core
+    # Not sure why this is there at all
+    - dracut-config-rescue
+    # Eh...you can install this in a priv container
+    - parted
+    # https://bugzilla.redhat.com/show_bug.cgi?id=1452348
+    - grubby
+    # Why?
+    - ncurses
+    # Needs to be arch specific
+    - ppc64-utils
+  base-x:
+    # These are for arm...need to handle arch-specific bits
+    - xorg-x11-drv-armsoc
+    - xorg-x11-drv-omap
+  gnome-desktop:
+    # We use rpm-ostree for the host
+    - PackageKit-command-not-found
+    - PackageKit-gtk3-module
+    # Apps
+    - evince
+    - evince-djvu
+    - evince-nautilus
+    - file-roller-nautilus
+    - gnome-calendar
+    - gnome-documents
+    - gnome-photos
+  workstation-product:
+    # We use rpm-ostree for the host
+    - dnf
+    - dnf-plugins-core
+    - deltarpm
+    # Really not worth listing explicitly
+    - filesystem
+    # Why?
+    - ncurses
+    - mailcap
+    # Really?
+    - tcp_wrappers
+    # This probably doesn't need to be default
+    - ppp
+    # We removed cronie a while ago, should nuke these too
+    - crontabs
+    - at
+    # Requires libreoffice
+    - unoconv
+    # Will change to git-core
+    - git
+    # Apps
+    - rhythmbox
+    # Random tools: container
+    - net-tools
+    - nmap-ncat
+    # filesystem tools, agian priv container
+    - dosfstools
+    - ntfs-3g
+  networkmanager-submodules:
+    # Let's use the builtin one by default
+    - dhcp-client
+  printing:
+    # We don't use PackageKit
+    - cups-pk-helper
+    # For now...
+    - ghostscript
