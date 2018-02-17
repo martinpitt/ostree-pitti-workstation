@@ -12,6 +12,7 @@
         "buildah",
         "git-core",
         "rpm-ostree",
+        "podman",
         "skopeo",
         "docker"
     ]
