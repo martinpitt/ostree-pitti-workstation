@@ -418,8 +418,8 @@
     "comment-for-packages": "Keep this in sync with fedora-atomic-host.json from fedora-atomic",
     "packages-aarch64": ["grub2-efi", "ostree-grub2", "efibootmgr", "shim"],
     "packages-armhfp": ["extlinux-bootloader"],
-    "packages-ppc64": ["grub2", "ostree-grub2", "atomic-devmode"],
-    "packages-ppc64le": ["grub2", "ostree-grub2", "atomic-devmode"],
+    "packages-ppc64": ["grub2", "ostree-grub2"],
+    "packages-ppc64le": ["grub2", "ostree-grub2"],
     "packages-x86_64": ["grub2", "grub2-efi-x64", "ostree-grub2",
                          "efibootmgr", "shim", "microcode_ctl"]
 }
