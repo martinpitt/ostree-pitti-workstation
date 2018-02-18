@@ -4,8 +4,8 @@
 
     "include": "fedora-workstation-base.json",
 
-    "automatic_version_prefix": "28",
-    "mutate-os-release": "28",
+    "automatic_version_prefix": "29",
+    "mutate-os-release": "29",
 
     "packages": [
         "flatpak",
