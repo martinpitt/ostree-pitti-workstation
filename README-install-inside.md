@@ -49,7 +49,7 @@ Since this file is not used on a EFI system, this won't break the operation of y
 cp /boot/efi/EFI/fedora/grub.cfg /boot/efi/EFI/fedora/grub.cfg.bak
 ```
 
-Deploy; we use `enforcing=0` to avoid SELinux issues for now, and --karg=rghb=0 to avoid a hang with Plymouth (these aren't needed if deploying Fedora 26 currently).
+Deploy; we use `enforcing=0` to avoid SELinux issues for now, and --karg=rhgb=0 to avoid a hang with Plymouth (these aren't needed if deploying Fedora 26 currently).
 ```
 ostree admin deploy --os=fedora --karg-proc-cmdline fedora-ws-27:fedora/27/x86_64/workstation
 ```
