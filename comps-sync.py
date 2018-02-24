@@ -25,6 +25,7 @@ with open(base_pkgs_path) as f:
 with open('comps-sync-blacklist.yml') as f:
     doc = yaml.load(f)
     comps_blacklist = doc['blacklist']
+    comps_whitelist = doc['whitelist']
     comps_blacklist_groups = doc['blacklist_groups']
 
 manifest_packages = set(manifest['packages'])
@@ -38,16 +39,12 @@ workstation_product_packages = set()
 # just the workstation environment.
 comps = libcomps.Comps()
 comps.fromxml_f(args.src)
-for group in comps.groups:
-    for pkg in group.packages:
-        comps_packages.add(pkg.name)
-for pkg in manifest_packages:
-    if pkg not in comps_packages:
-        comps_unknown.add(pkg)
 
 # Parse the workstation-product environment, gathering
 # default or mandatory packages.
-ws_environ = comps.environments['workstation-product-environment']
+ws_env_name = 'workstation-product-environment'
+ws_ostree_name = 'workstation-ostree-support'
+ws_environ = comps.environments[ws_env_name]
 ws_pkgs = {}
 for gid in ws_environ.group_ids:
     group = comps.groups_match(id=gid.name)[0]
@@ -69,12 +66,22 @@ for gid in ws_environ.group_ids:
             ws_pkgs[pkgname] = pkgdata = (pkg.type, pkgdata[1])
         pkgdata[1].add(gid.name)
 
+ws_ostree_pkgs = set()
+for pkg in comps.groups_match(id=ws_ostree_name)[0].packages:
+    ws_ostree_pkgs.add(pkg.name)
+
+for pkg in manifest_packages:
+    if (pkg not in comps_whitelist and
+        pkg not in ws_pkgs and
+        pkg not in ws_ostree_pkgs):
+        comps_unknown.add(pkg)
+
 # Look for packages in the manifest but not in comps at all
 n_manifest_new = len(comps_unknown)
 if n_manifest_new == 0:
     print("All manifest packages are already listed in comps.")
 else:
-    print("{} packages not in comps:".format(n_manifest_new))
+    print("{} packages not in {}:".format(n_manifest_new, ws_env_name))
     for pkg in sorted(comps_unknown):
         print('  ' + pkg)
         manifest_packages.remove(pkg)

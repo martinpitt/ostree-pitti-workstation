@@ -1,4 +1,11 @@
-# This file has a list of packages to skip from comps that we don't want.
+# This file has a list of packages to skip from comps that we don't want, plus
+# a few whitelisted things.
+
+# For some reason today these are just in livecd-tools...
+whitelist:
+  - kernel
+  - kernel-modules
+  - kernel-modules-extra
 
 # Entirely skip all packages in libreoffice
 blacklist_groups:
@@ -53,12 +60,19 @@ blacklist:
     # We removed cronie a while ago, should nuke these too
     - crontabs
     - at
+    # This drags in a huge dependency set of dnf bits
+    - abrt-cli
+    - abrt-desktop
+    - abrt-java-connector
     # Requires libreoffice
     - unoconv
     # Will change to git-core
     - git
     # Apps
     - rhythmbox
+    - evolution
+    - evolution-ews
+    - evolution-help
     # Random tools: container
     - net-tools
     - nmap-ncat
