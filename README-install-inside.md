@@ -49,7 +49,9 @@ Since this file is not used on a EFI system, this won't break the operation of y
 cp /boot/efi/EFI/fedora/grub.cfg /boot/efi/EFI/fedora/grub.cfg.bak
 ```
 
-Deploy; we use `enforcing=0` to avoid SELinux issues for now, and --karg=rhgb=0 to avoid a hang with Plymouth (these aren't needed if deploying Fedora 26 currently).
+And now, we can deploy the commit we just pulled down. The `--karg-proc-cmdline` switch will
+ensure that the current kernel arguments you used for the current boot will also apply to
+the OSTree boot.
 ```
 ostree admin deploy --os=fedora --karg-proc-cmdline fedora-ws-27:fedora/27/x86_64/workstation
 ```
