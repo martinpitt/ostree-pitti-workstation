@@ -6,6 +6,7 @@
     "documentation": true,
     "boot_location": "new",
     "etc-group-members": ["wheel"],
+    "tmp-is-dir": true,
 
     "postprocess-script": "post.sh",
 
