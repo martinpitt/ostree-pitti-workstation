@@ -59,7 +59,6 @@
         "dhcp-client",
         "dnsmasq",
         "docker",
-        "docker-cockpit",
         "dos2unix",
         "e2fsprogs",
         "eog",
