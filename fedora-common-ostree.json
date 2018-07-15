@@ -1,6 +1,20 @@
 {
-    "ref": "fedora/rawhide/x86_64/workstation-base",
-    "include": "fedora-workstation-base-pkgs.json",
+    "ref": "fedora/rawhide/x86_64/ostree-base",
+    "repos": [],
+
+    "include": "fedora-common-ostree-pkgs.json",
+
+    "packages": [
+        "atomic",
+        "buildah",
+        "docker",
+        "flatpak",
+        "git-core",
+        "podman",
+        "rpm-ostree",
+        "skopeo",
+        "xdg-desktop-portal"
+    ],
 
     "selinux": true,
     "documentation": true,

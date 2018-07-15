@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Usage: ./comps-sync.py /path/to/comps-f28.xml.in
+# Usage: ./comps-sync.py /path/to/comps-f29.xml.in
 #
 # Can both remove packages from the manifest
 # which are not mentioned in comps, and add packages from
@@ -18,15 +18,18 @@ parser.add_argument("src", help="Source path")
 
 args = parser.parse_args()
 
-base_pkgs_path = 'fedora-workstation-base-pkgs.json'
+print("Syncing packages common to all ostree based desktop versions:")
+
+base_pkgs_path = 'fedora-common-ostree-pkgs.json'
 with open(base_pkgs_path) as f:
     manifest = json.load(f)
 
 with open('comps-sync-blacklist.yml') as f:
-    doc = yaml.load(f)
+    doc = yaml.safe_load(f)
     comps_blacklist = doc['blacklist']
     comps_whitelist = doc['whitelist']
     comps_blacklist_groups = doc['blacklist_groups']
+    comps_desktop_blacklist = doc['desktop_blacklist']
 
 manifest_packages = set(manifest['packages'])
 
@@ -116,3 +119,73 @@ if (n_manifest_new > 0 or n_comps_new > 0) and args.save:
         json.dump(manifest, f, indent=4, sort_keys=True)
         f.write('\n')
         print("Wrote {}".format(base_pkgs_path))
+
+
+# Generate treefiles for all desktops
+for desktop in [ 'gnome-desktop' ]:
+    print()
+    print("Syncing packages for {} specific version:".format(desktop))
+
+    base_pkgs_path = '{}-pkgs.json'.format(desktop)
+    with open(base_pkgs_path) as f:
+        manifest = json.load(f)
+
+    manifest_packages = set(manifest['packages'])
+    ws_ostree_name = desktop
+
+    comps_unknown = set()
+    comps_packages = set()
+    workstation_product_packages = set()
+
+    # Parse the desktop group
+    ws_pkgs = set()
+    for pkg in comps.groups_match(id=desktop)[0].packages:
+        pkgname = pkg.name
+        blacklist = comps_desktop_blacklist.get(ws_ostree_name, set())
+        if pkgname in blacklist:
+            continue
+        ws_pkgs.add(pkg.name)
+
+    for pkg in manifest_packages:
+        if pkg not in ws_pkgs:
+            comps_unknown.add(pkg)
+
+    # Look for packages in the manifest but not in comps at all
+    n_manifest_new = len(comps_unknown)
+    if n_manifest_new == 0:
+        print("All manifest packages are already listed in comps.")
+    else:
+        print("{} packages not in {}:".format(n_manifest_new, ws_ostree_name))
+        for pkg in sorted(comps_unknown):
+            print('  ' + pkg)
+            manifest_packages.remove(pkg)
+
+    # Look for packages in workstation but not in the manifest
+    ws_added = set()
+    for pkg in ws_pkgs:
+        if pkg not in manifest_packages:
+            ws_added.add(pkg)
+            manifest_packages.add(pkg)
+
+    def format_pkgtype(n):
+        if n == libcomps.PACKAGE_TYPE_DEFAULT:
+            return 'default'
+        elif n == libcomps.PACKAGE_TYPE_MANDATORY:
+            return 'mandatory'
+        else:
+            assert False
+
+    n_comps_new = len(ws_added)
+    if n_comps_new == 0:
+        print("All comps packages are already listed in manifest.")
+    else:
+        print("{} packages not in manifest:".format(n_comps_new))
+        for pkg in sorted(ws_added):
+            print('  {}'.format(pkg))
+
+    if (n_manifest_new > 0 or n_comps_new > 0) and args.save:
+        manifest['packages'] = sorted(manifest_packages)
+        with open(base_pkgs_path, 'w') as f:
+            json.dump(manifest, f, indent=4, sort_keys=True)
+            f.write('\n')
+            print("Wrote {}".format(base_pkgs_path))

@@ -10,7 +10,10 @@ whitelist:
 # Entirely skip all packages in libreoffice
 blacklist_groups:
   - libreoffice
+  - gnome-desktop
+  - container-management
 
+# Common blacklist for all ostree desktop versions
 blacklist:
   core:
     # We use rpm-ostree for the host
@@ -28,24 +31,12 @@ blacklist:
     # Needs to be arch specific
     - powerpc-utils
     - lsvpd
+    # KDE specific?
+    - sssd-kcm
   base-x:
     # These are for arm...need to handle arch-specific bits
     - xorg-x11-drv-armsoc
     - xorg-x11-drv-omap
-  gnome-desktop:
-    # https://github.com/pbrezina/authselect/issues/48
-    - fprintd-pam
-    # We use rpm-ostree for the host
-    - PackageKit-command-not-found
-    - PackageKit-gtk3-module
-    # Apps
-    - evince
-    - evince-djvu
-    - evince-nautilus
-    - file-roller-nautilus
-    - gnome-calendar
-    - gnome-documents
-    - gnome-photos
   workstation-product:
     # We use rpm-ostree for the host
     - dnf
@@ -88,9 +79,15 @@ blacklist:
     - net-tools
     - nmap-ncat
     # filesystem tools, again priv container
-    - symlinks
     - dosfstools
     - ntfs-3g
+    # Misc
+    - dos2unix
+    # Gnome specific
+    - desktop-backgrounds-gnome
+    - gnome-shell-extension-background-logo
+    - pinentry-gnome3
+    - qgnomeplatform
   networkmanager-submodules:
     # Let's use the builtin one by default
     - dhcp-client
@@ -99,3 +96,42 @@ blacklist:
     - cups-pk-helper
     # For now...
     - ghostscript
+
+# Desktop environment specific blacklists
+desktop_blacklist:
+  gnome-desktop:
+    # https://github.com/pbrezina/authselect/issues/48
+    - fprintd-pam
+    # We use rpm-ostree for the host
+    - PackageKit-command-not-found
+    - PackageKit-gtk3-module
+    # Non-critical apps -> Flatpak
+    - baobab
+    - cheese
+    - eog
+    - evince
+    - evince-djvu
+    - evince-nautilus
+    - file-roller
+    - file-roller-nautilus
+    - gedit
+    - gnome-calculator
+    - gnome-calendar
+    - gnome-clocks
+    - gnome-contacts
+    - gnome-documents
+    - gnome-font-viewer
+    - gnome-logs
+    - gnome-maps
+    - gnome-photos
+    - gnome-screenshot
+    - gnome-weather
+    - nautilus
+    - nautilus-sendto
+    - orca
+    - sane-backends-drivers-scanners
+    - simple-scan
+    - sushi
+    - totem
+    - totem-nautilus
+    - yelp
