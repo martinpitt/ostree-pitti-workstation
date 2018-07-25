@@ -26,12 +26,15 @@ blacklist:
     # Why?
     - ncurses
     # Needs to be arch specific
-    - ppc64-utils
+    - powerpc-utils
+    - lsvpd
   base-x:
     # These are for arm...need to handle arch-specific bits
     - xorg-x11-drv-armsoc
     - xorg-x11-drv-omap
   gnome-desktop:
+    # https://github.com/pbrezina/authselect/issues/48
+    - fprintd-pam
     # We use rpm-ostree for the host
     - PackageKit-command-not-found
     - PackageKit-gtk3-module
