@@ -1,0 +1,12 @@
+{
+    "ref": "fedora/rawhide/x86_64/fedora-xfce",
+    "repos": ["fedora-rawhide"],
+    "automatic_version_prefix": "29",
+    "mutate-os-release": "29",
+
+    "include": "xfce-desktop-pkgs.json",
+
+    "packages": [
+        "xdg-desktop-portal-gtk"
+    ]
+}

@@ -190,3 +190,21 @@ desktop_blacklist:
     - plasma-nm-vpnc
     - plasma-workspace-geolocation
     - qt-at-spi
+  xfce-desktop:
+    # Incompatible with ostree for various reasons
+    - abrt-desktop
+    # Non-critical apps -> Flatpak
+    - Thunar
+    - alsa-utils
+    - dnfdragora-updater
+    - fros-recordmydesktop
+    - thunar-archive-plugin
+    - thunar-media-tags-plugin
+    - thunar-volman
+    - tumbler
+    - vim-enhanced
+    # Misc
+    - openssh-askpass
+    - firewall-config
+    # ?
+    - rodent-icon-theme
