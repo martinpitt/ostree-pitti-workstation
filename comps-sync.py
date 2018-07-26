@@ -122,7 +122,7 @@ if (n_manifest_new > 0 or n_comps_new > 0) and args.save:
 
 
 # Generate treefiles for all desktops
-for desktop in [ 'gnome-desktop' ]:
+for desktop in [ 'gnome-desktop', 'kde-desktop' ]:
     print()
     print("Syncing packages for {} specific version:".format(desktop))
 

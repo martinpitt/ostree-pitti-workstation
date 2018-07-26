@@ -1,0 +1,16 @@
+{
+    "ref": "fedora/rawhide/x86_64/kinoite",
+    "repos": ["fedora-rawhide"],
+    "automatic_version_prefix": "29",
+    "mutate-os-release": "29",
+
+    "include": "kde-desktop-pkgs.json",
+
+    "packages": [
+        "kwayland-integration",
+        "kwin-wayland",
+        "plasma-workspace-wayland",
+        "xdg-desktop-portal-kde",
+        "xorg-x11-server-Xwayland"
+    ]
+}

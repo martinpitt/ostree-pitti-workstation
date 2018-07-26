@@ -135,3 +135,58 @@ desktop_blacklist:
     - totem
     - totem-nautilus
     - yelp
+  kde-desktop:
+    # Incompatible with ostree for various reasons
+    - abrt-desktop
+    - cups-pk-helper
+    - plasma-pk-updates
+    # Non-critical apps -> Flatpak
+    - akregator
+    - cagibi
+    - dnfdragora
+    - dolphin
+    - gnome-keyring-pam
+    - gwenview
+    - kaddressbook
+    - kamera
+    - kcalc
+    - kcharselect
+    - kcolorchooser
+    - kde-partitionmanager
+    - kdnssd
+    - kf5-kipi-plugins
+    - kfind
+    - kget
+    - kgpg
+    - kmail
+    - kmouth
+    - knode
+    - konqueror
+    - kontact
+    - korganizer
+    - kruler
+    - ksshaskpass
+    - kwrite
+    - libreoffice-kde
+    - spectacle
+    # Misc
+    - adwaita-gtk2-theme
+    - colord-kde
+    - firewall-config
+    - kcm_systemd
+    - kdegraphics-thumbnailers
+    - keditbookmarks
+    - khelpcenter
+    - kmag
+    - kmenuedit
+    - kwebkitpart
+    - pinentry-qt
+    - plasma-desktop-doc
+    - plasma-nm-l2tp
+    - plasma-nm-openconnect
+    - plasma-nm-openswan
+    - plasma-nm-openvpn
+    - plasma-nm-pptp
+    - plasma-nm-vpnc
+    - plasma-workspace-geolocation
+    - qt-at-spi
