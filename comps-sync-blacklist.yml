@@ -76,10 +76,19 @@ blacklist:
     - evolution
     - evolution-ews
     - evolution-help
+    # This is ancient now, and IMO has been superceded by cgroups
+    # Also it breaks with --unified-core.
+    - psacct
     # Random tools: container
+    - rdist
+    - jwhois
+    - tcpdump
+    - telnet
+    - traceroute
     - net-tools
     - nmap-ncat
-    # filesystem tools, agian priv container
+    # filesystem tools, again priv container
+    - symlinks
     - dosfstools
     - ntfs-3g
   networkmanager-submodules:
