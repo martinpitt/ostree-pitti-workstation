@@ -1,5 +1,5 @@
 {
-    "ref": "fedora/rawhide/x86_64/kinoite",
+    "ref": "fedora/rawhide/${basearch}/kinoite",
     "repos": ["fedora-rawhide"],
     "automatic_version_prefix": "29",
     "mutate-os-release": "29",

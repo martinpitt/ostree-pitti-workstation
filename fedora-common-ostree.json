@@ -1,5 +1,5 @@
 {
-    "ref": "fedora/rawhide/x86_64/ostree-base",
+    "ref": "fedora/rawhide/${basearch}/ostree-base",
     "repos": [],
 
     "include": "fedora-common-ostree-pkgs.json",
