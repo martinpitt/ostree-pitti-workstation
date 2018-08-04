@@ -9,6 +9,7 @@
         "buildah",
         "docker",
         "flatpak",
+        "flatpak-builder",
         "git-core",
         "podman",
         "rpm-ostree",

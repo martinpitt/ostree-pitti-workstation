@@ -79,6 +79,7 @@ blacklist:
     - net-tools
     - nmap-ncat
     # filesystem tools, again priv container
+    - symlinks
     - dosfstools
     - ntfs-3g
     # Misc
@@ -126,14 +127,20 @@ desktop_blacklist:
     - gnome-photos
     - gnome-screenshot
     - gnome-weather
+    - jwhois
     - nautilus
     - nautilus-sendto
     - orca
+    - rdist
     - sane-backends-drivers-scanners
+    - symlinks
     - simple-scan
     - sushi
+    - tcpdump
+    - telnet
     - totem
     - totem-nautilus
+    - traceroute
     - yelp
   kde-desktop:
     # Incompatible with ostree for various reasons
