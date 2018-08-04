@@ -1,0 +1,16 @@
+include: gnome-desktop-pkgs.json
+ref: fedora/rawhide/${basearch}/silverblue
+rojig:
+  name: fedora-silverblue
+  summary: "Fedora Silverblue base image"
+  license: MIT
+packages:
+  - desktop-backgrounds-gnome
+  - gnome-shell-extension-background-logo
+  - pinentry-gnome3
+  # Does it really still make sense to ship Qt by default if we
+  # expect people to run apps in containers?
+  - qgnomeplatform
+
+repos:
+  - fedora-rawhide
