@@ -116,6 +116,7 @@ desktop_blacklist:
     - file-roller
     - file-roller-nautilus
     - gedit
+    - gnome-boxes
     - gnome-calculator
     - gnome-calendar
     - gnome-clocks
