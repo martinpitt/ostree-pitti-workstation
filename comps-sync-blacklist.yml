@@ -145,11 +145,11 @@ desktop_blacklist:
     # Incompatible with ostree for various reasons
     - abrt-desktop
     - cups-pk-helper
+    - dnfdragora
     - plasma-pk-updates
     # Non-critical apps -> Flatpak
     - akregator
     - cagibi
-    - dnfdragora
     - dolphin
     - gnome-keyring-pam
     - gwenview
@@ -199,18 +199,18 @@ desktop_blacklist:
   xfce-desktop:
     # Incompatible with ostree for various reasons
     - abrt-desktop
+    - dnfdragora-updater
     # Non-critical apps -> Flatpak
     - Thunar
-    - alsa-utils
-    - dnfdragora-updater
     - fros-recordmydesktop
     - thunar-archive-plugin
     - thunar-media-tags-plugin
     - thunar-volman
     - tumbler
-    - vim-enhanced
     # Misc
-    - openssh-askpass
+    - alsa-utils
     - firewall-config
+    - openssh-askpass
+    - vim-enhanced
     # ?
     - rodent-icon-theme
