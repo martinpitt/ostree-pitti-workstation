@@ -160,20 +160,12 @@ for desktop in [ 'gnome-desktop', 'kde-desktop', 'xfce-desktop' ]:
             print('  ' + pkg)
             manifest_packages.remove(pkg)
 
-    # Look for packages in workstation but not in the manifest
+    # Look for packages in comps but not in the manifest
     ws_added = set()
     for pkg in ws_pkgs:
         if pkg not in manifest_packages:
             ws_added.add(pkg)
             manifest_packages.add(pkg)
-
-    def format_pkgtype(n):
-        if n == libcomps.PACKAGE_TYPE_DEFAULT:
-            return 'default'
-        elif n == libcomps.PACKAGE_TYPE_MANDATORY:
-            return 'mandatory'
-        else:
-            assert False
 
     n_comps_new = len(ws_added)
     if n_comps_new == 0:
