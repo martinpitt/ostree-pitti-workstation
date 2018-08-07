@@ -31,8 +31,6 @@ blacklist:
     # Needs to be arch specific
     - powerpc-utils
     - lsvpd
-    # KDE specific?
-    - sssd-kcm
   base-x:
     # These are for arm...need to handle arch-specific bits
     - xorg-x11-drv-armsoc

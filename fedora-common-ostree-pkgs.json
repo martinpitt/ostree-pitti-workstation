@@ -195,6 +195,7 @@
         "spice-vdagent",
         "sssd",
         "sssd-common",
+        "sssd-kcm",
         "stix-fonts",
         "sudo",
         "system-config-printer-udev",
