@@ -7,7 +7,6 @@
         "desktop-backgrounds-gnome",
         "gnome-shell-extension-background-logo",
         "pinentry-gnome3",
-        "qgnomeplatform",
-        "xdg-desktop-portal-gtk"
+        "qgnomeplatform"
     ]
 }
