@@ -56,7 +56,5 @@
         "xfwm4-theme-nodoka",
         "xfwm4-themes",
         "xscreensaver-base"
-    ],
-    "ref": "fedora/rawhide/x86_64/xfce-desktop",
-    "repos": []
+    ]
 }

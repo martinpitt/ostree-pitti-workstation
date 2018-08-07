@@ -41,7 +41,5 @@
         "sddm-breeze",
         "sddm-kcm",
         "xorg-x11-drv-libinput"
-    ],
-    "ref": "fedora/rawhide/x86_64/kde-desktop",
-    "repos": []
+    ]
 }

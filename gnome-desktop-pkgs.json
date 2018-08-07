@@ -58,7 +58,5 @@
         "xdg-desktop-portal",
         "xdg-desktop-portal-gtk",
         "xdg-user-dirs-gtk"
-    ],
-    "ref": "fedora/rawhide/x86_64/gnome-desktop",
-    "repos": []
+    ]
 }
