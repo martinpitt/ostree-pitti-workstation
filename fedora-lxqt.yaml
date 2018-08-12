@@ -1,0 +1,12 @@
+include: lxqt-desktop-pkgs.json
+ref: fedora/rawhide/${basearch}/lxqt
+rojig:
+  name: fedora-lxqt
+  summary: "Fedora LXQT base image"
+  license: MIT
+packages:
+  - libqtxdg
+  - xdg-desktop-portal-kde
+
+repos:
+  - fedora-rawhide

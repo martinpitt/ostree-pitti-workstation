@@ -220,3 +220,11 @@ desktop_blacklist:
     - vim-enhanced
     # ?
     - rodent-icon-theme
+  lxqt-desktop:
+    # Incompatible with ostree for various reasons
+    - dnfdragora-updater
+    # Non-critical apps -> Flatpak
+    - ark
+    - falkon
+    - falkon-kwallet
+    - pcmanfm-qt
