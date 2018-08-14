@@ -45,6 +45,10 @@ blacklist:
     # Why?
     - ncurses
     - mailcap
+    # This seems like some weird legacy thing, it also
+    # drags in usermode, which should also be deprecated
+    # and blocks a /usr/sbin + /usr/bin unification.
+    - setuptool
     # Really?
     - tcp_wrappers
     # This probably doesn't need to be default
