@@ -1,6 +1,5 @@
 {
     "ref": "fedora/rawhide/${basearch}/ostree-base",
-    "repos": ["fedora-rawhide"],
 
     "automatic_version_prefix": "29",
     "mutate-os-release": "29",
