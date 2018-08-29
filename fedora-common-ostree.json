@@ -7,7 +7,6 @@
     "include": "fedora-common-ostree-pkgs.json",
 
     "packages": [
-        "atomic",
         "buildah",
         "flatpak",
         "flatpak-builder",
