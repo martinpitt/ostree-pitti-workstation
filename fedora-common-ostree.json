@@ -9,7 +9,6 @@
     "packages": [
         "atomic",
         "buildah",
-        "docker",
         "flatpak",
         "flatpak-builder",
         "git-core",
