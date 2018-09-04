@@ -11,6 +11,7 @@
         "flatpak",
         "flatpak-builder",
         "git-core",
+        "lvm2",
         "podman",
         "rpm-ostree",
         "skopeo",
