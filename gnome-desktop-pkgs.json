@@ -57,6 +57,7 @@
         "tracker-miners",
         "xdg-desktop-portal",
         "xdg-desktop-portal-gtk",
-        "xdg-user-dirs-gtk"
+        "xdg-user-dirs-gtk",
+        "yelp"
     ]
 }
