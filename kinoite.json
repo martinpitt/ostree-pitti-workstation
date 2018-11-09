@@ -1,5 +1,6 @@
 {
     "ref": "fedora/rawhide/${basearch}/kinoite",
+    "repos": ["fedora-rawhide"],
 
     "include": "kde-desktop-pkgs.json",
 
