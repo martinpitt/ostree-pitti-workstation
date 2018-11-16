@@ -11,6 +11,9 @@ packages:
   # Does it really still make sense to ship Qt by default if we
   # expect people to run apps in containers?
   - qgnomeplatform
+  # hfs filesystem tools for Apple hardware
+  # See https://github.com/projectatomic/rpm-ostree/issues/1380
+  - hfsplus-tools
 
 repos:
   - fedora-rawhide
