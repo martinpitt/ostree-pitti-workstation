@@ -159,6 +159,7 @@
         "plymouth",
         "plymouth-system-theme",
         "policycoreutils",
+        "policycoreutils-python-utils",
         "procps-ng",
         "pulseaudio",
         "pulseaudio-module-x11",
