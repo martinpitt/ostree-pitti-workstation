@@ -26,6 +26,8 @@ blacklist:
     - parted
     # https://bugzilla.redhat.com/show_bug.cgi?id=1452348
     - grubby
+    # Colin says we also don't need grubby-deprecated
+    - grubby-deprecated
     # Why?
     - ncurses
     # Needs to be arch specific
