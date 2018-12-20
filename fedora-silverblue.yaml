@@ -14,6 +14,12 @@ packages:
   # hfs filesystem tools for Apple hardware
   # See https://github.com/projectatomic/rpm-ostree/issues/1380
   - hfsplus-tools
+  # Bundle the minimal -devel packages needed to build a kernel.
+  # This is needed because we can't rely on layering to install these
+  # due to version conflicts with the base image.
+  - glibc-devel
+  - kernel-devel
+  - elfutils-libelf-devel
 
 repos:
   - fedora-rawhide
