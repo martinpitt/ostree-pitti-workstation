@@ -1,8 +1,8 @@
 {
     "ref": "fedora/rawhide/${basearch}/ostree-base",
 
-    "automatic_version_prefix": "30",
-    "mutate-os-release": "30",
+    "automatic_version_prefix": "31",
+    "mutate-os-release": "31",
 
     "include": "fedora-common-ostree-pkgs.json",
 
