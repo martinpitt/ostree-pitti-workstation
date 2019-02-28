@@ -3,6 +3,7 @@
     "packages": [
         "NetworkManager",
         "NetworkManager-bluetooth",
+        "NetworkManager-config-connectivity-fedora",
         "NetworkManager-wifi",
         "NetworkManager-wwan",
         "PackageKit-gstreamer-plugin",
@@ -57,6 +58,7 @@
         "foomatic-db-ppds",
         "fpaste",
         "fros-gnome",
+        "gamemode",
         "glibc",
         "glibc-all-langpacks",
         "glx-utils",
