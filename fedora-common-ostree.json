@@ -8,7 +8,6 @@
 
     "packages": [
         "buildah",
-        "fedora-toolbox",
         "flatpak",
         "flatpak-builder",
         "git-core",
@@ -16,6 +15,7 @@
         "podman",
         "rpm-ostree",
         "skopeo",
+        "toolbox",
         "xdg-desktop-portal"
     ],
 
