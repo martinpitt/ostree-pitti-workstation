@@ -163,6 +163,7 @@
         "policycoreutils",
         "policycoreutils-python-utils",
         "procps-ng",
+        "psmisc",
         "pulseaudio",
         "pulseaudio-module-x11",
         "pulseaudio-utils",
