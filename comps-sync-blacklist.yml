@@ -123,6 +123,7 @@ desktop_blacklist:
     - gnome-boxes
     - gnome-calculator
     - gnome-calendar
+    - gnome-characters
     - gnome-clocks
     - gnome-contacts
     - gnome-documents
