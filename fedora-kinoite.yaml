@@ -1,0 +1,15 @@
+include: kde-desktop-pkgs.json
+ref: fedora/rawhide/${basearch}/kinoite
+rojig:
+  name: fedora-kde
+  summary: "Fedora Kinoite (KDE) base image"
+  license: MIT
+packages:
+  - kwayland-integration
+  - kwin-wayland
+  - plasma-workspace-wayland
+  - xdg-desktop-portal-kde
+  - xorg-x11-server-Xwayland
+
+repos:
+  - fedora-rawhide
