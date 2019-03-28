@@ -20,6 +20,9 @@ packages:
   - glibc-devel
   - kernel-devel
   - elfutils-libelf-devel
+  # Contains default ostree remote config to be used on client's
+  # system for fetching ostree update
+  - fedora-repos-ostree
 
 repos:
   - fedora-rawhide
