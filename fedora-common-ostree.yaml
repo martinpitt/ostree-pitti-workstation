@@ -16,6 +16,18 @@ packages:
   - skopeo
   - toolbox
   - xdg-desktop-portal
+  # HFS filesystem tools for Apple hardware
+  # See https://github.com/projectatomic/rpm-ostree/issues/1380
+  - hfsplus-tools
+  # Bundle the minimal -devel packages needed to build a kernel.
+  # This is needed because we can't rely on layering to install these
+  # due to version conflicts with the base image.
+  - glibc-devel
+  - kernel-devel
+  - elfutils-libelf-devel
+  # Contains default ostree remote config to be used on client's
+  # system for fetching ostree update
+  - fedora-repos-ostree
 
 selinux: true
 documentation: true
