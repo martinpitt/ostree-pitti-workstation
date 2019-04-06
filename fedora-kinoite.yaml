@@ -5,11 +5,13 @@ rojig:
   summary: "Fedora Kinoite (KDE) base image"
   license: MIT
 packages:
+  # Wayland support
   - kwayland-integration
   - kwin-wayland
   - plasma-workspace-wayland
-  - xdg-desktop-portal-kde
   - xorg-x11-server-Xwayland
+  # Portals for Flatpak
+  - xdg-desktop-portal-kde
 
 repos:
   - fedora-rawhide

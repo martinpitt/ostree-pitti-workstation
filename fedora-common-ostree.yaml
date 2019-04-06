@@ -6,15 +6,17 @@ mutate-os-release: "31"
 include: fedora-common-ostree-pkgs.yaml
 
 packages:
-  - buildah
-  - flatpak
-  - flatpak-builder
   - git-core
   - lvm2
-  - podman
   - rpm-ostree
+  # Container management
+  - buildah
+  - podman
   - skopeo
   - toolbox
+  # Flatpak support
+  - flatpak
+  - flatpak-builder
   - xdg-desktop-portal
   # HFS filesystem tools for Apple hardware
   # See https://github.com/projectatomic/rpm-ostree/issues/1380

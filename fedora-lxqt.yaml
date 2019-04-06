@@ -2,7 +2,7 @@ include: lxqt-desktop-pkgs.yaml
 ref: fedora/rawhide/${basearch}/lxqt
 rojig:
   name: fedora-lxqt
-  summary: "Fedora LXQT base image"
+  summary: "Fedora LXQt base image"
   license: MIT
 packages:
   - libqtxdg
