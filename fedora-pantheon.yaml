@@ -1,0 +1,10 @@
+include: pantheon-desktop-pkgs.yaml
+ref: fedora/rawhide/${basearch}/pantheon
+rojig:
+  name: fedora-pantheon
+  summary: "Fedora Pantheon base image"
+  license: MIT
+packages:
+
+repos:
+  - fedora-rawhide
