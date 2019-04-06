@@ -1,4 +1,4 @@
-include: lxqt-desktop-pkgs.json
+include: lxqt-desktop-pkgs.yaml
 ref: fedora/rawhide/${basearch}/lxqt
 rojig:
   name: fedora-lxqt
@@ -6,6 +6,7 @@ rojig:
   license: MIT
 packages:
   - libqtxdg
+  # Portals for Flatpak
   - xdg-desktop-portal-kde
 
 repos:

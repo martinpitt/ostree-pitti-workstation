@@ -1,0 +1,58 @@
+ref: fedora/rawhide/${basearch}/ostree-base
+
+automatic_version_prefix: "31"
+mutate-os-release: "31"
+
+include: fedora-common-ostree-pkgs.yaml
+
+packages:
+  - buildah
+  - flatpak
+  - flatpak-builder
+  - git-core
+  - lvm2
+  - podman
+  - rpm-ostree
+  - skopeo
+  - toolbox
+  - xdg-desktop-portal
+
+selinux: true
+documentation: true
+boot_location: new
+etc-group-members:
+  - wheel
+tmp-is-dir: true
+
+postprocess-script: post.sh
+
+ignore-removed-users:
+  - root
+ignore-removed-groups:
+  - root
+check-passwd: { type: file, filename: passwd }
+check-groups: { type: file, filename: group }
+
+default_target: graphical.target
+
+# Keep this in sync with fedora-atomic-host.json from fedora-atomic
+packages-aarch64:
+  - grub2-efi
+  - ostree-grub2
+  - efibootmgr
+  - shim
+packages-armhfp:
+  - extlinux-bootloader
+packages-ppc64:
+  - grub2
+  - ostree-grub2
+packages-ppc64le:
+  - grub2
+  - ostree-grub2
+packages-x86_64:
+  - grub2
+  - grub2-efi-x64
+  - ostree-grub2
+  - efibootmgr
+  - shim
+  - microcode_ctl

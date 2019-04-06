@@ -1,10 +1,11 @@
-include: xfce-desktop-pkgs.json
+include: xfce-desktop-pkgs.yaml
 ref: fedora/rawhide/${basearch}/xfce
 rojig:
   name: fedora-xfce
   summary: "Fedora XFCE base image"
   license: MIT
 packages:
-    - xdg-desktop-portal-gtk
+  # Portals for Flatpak
+  - xdg-desktop-portal-gtk
 repos:
   - fedora-rawhide
