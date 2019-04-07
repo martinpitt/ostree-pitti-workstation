@@ -36,7 +36,7 @@ parser.add_argument("src", help="Source path")
 
 args = parser.parse_args()
 
-print("Syncing packages common to all ostree based desktop versions:")
+print("Syncing packages common to all desktops:")
 
 base_pkgs_path = 'fedora-common-ostree-pkgs.yaml'
 with open(base_pkgs_path) as f:
@@ -100,11 +100,11 @@ for pkg in manifest_packages:
 # Look for packages in the manifest but not in comps at all
 n_manifest_new = len(comps_unknown)
 if n_manifest_new == 0:
-    print("All manifest packages are already listed in comps.")
+    print("  - All manifest packages are already listed in comps.")
 else:
-    print("{} packages not in {}:".format(n_manifest_new, ws_env_name))
+    print("  - {} packages not in {}:".format(n_manifest_new, ws_env_name))
     for pkg in sorted(comps_unknown):
-        print('  ' + pkg)
+        print('    {}'.format(pkg))
         manifest_packages.remove(pkg)
 
 # Look for packages in workstation but not in the manifest
@@ -116,12 +116,12 @@ for (pkg,data) in ws_pkgs.items():
 
 n_comps_new = len(ws_added)
 if n_comps_new == 0:
-    print("All comps packages are already listed in manifest.")
+    print("  - All comps packages are already listed in manifest.")
 else:
-    print("{} packages not in manifest:".format(n_comps_new))
+    print("  - {} packages not in manifest:".format(n_comps_new))
     for pkg in sorted(ws_added):
         (req, groups) = ws_added[pkg]
-        print('  {} ({}, groups: {})'.format(pkg, format_pkgtype(req), ', '.join(groups)))
+        print('    {} ({}, groups: {})'.format(pkg, format_pkgtype(req), ', '.join(groups)))
 
 if (n_manifest_new > 0 or n_comps_new > 0) and args.save:
     write_manifest(base_pkgs_path, manifest_packages)
@@ -129,7 +129,7 @@ if (n_manifest_new > 0 or n_comps_new > 0) and args.save:
 # Generate treefiles for all desktops
 for desktop in [ 'gnome-desktop', 'kde-desktop', 'xfce-desktop', 'lxqt-desktop' ]:
     print()
-    print("Syncing packages for {} specific version:".format(desktop))
+    print("Syncing packages for {}:".format(desktop))
 
     manifest_path = '{}-pkgs.yaml'.format(desktop)
     with open(manifest_path) as f:
@@ -158,11 +158,11 @@ for desktop in [ 'gnome-desktop', 'kde-desktop', 'xfce-desktop', 'lxqt-desktop' 
     # Look for packages in the manifest but not in comps at all
     n_manifest_new = len(comps_unknown)
     if n_manifest_new == 0:
-        print("All manifest packages are already listed in comps.")
+        print("  - All manifest packages are already listed in comps.")
     else:
-        print("{} packages not in {}:".format(n_manifest_new, ws_ostree_name))
+        print("  - {} packages not in {} comps group:".format(n_manifest_new, ws_ostree_name))
         for pkg in sorted(comps_unknown):
-            print('  ' + pkg)
+            print('    {}'.format(pkg))
             manifest_packages.remove(pkg)
 
     # Look for packages in comps but not in the manifest
@@ -174,11 +174,11 @@ for desktop in [ 'gnome-desktop', 'kde-desktop', 'xfce-desktop', 'lxqt-desktop' 
 
     n_comps_new = len(ws_added)
     if n_comps_new == 0:
-        print("All comps packages are already listed in manifest.")
+        print("  - All comps packages are already listed in manifest.")
     else:
-        print("{} packages not in manifest:".format(n_comps_new))
+        print("  - {} packages not in {} manifest:".format(n_comps_new, ws_ostree_name))
         for pkg in sorted(ws_added):
-            print('  {}'.format(pkg))
+            print('    {}'.format(pkg))
 
     if (n_manifest_new > 0 or n_comps_new > 0) and args.save:
         write_manifest(manifest_path, manifest_packages, include="fedora-common-ostree.yaml")
