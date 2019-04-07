@@ -12,6 +12,24 @@ def fatal(msg):
     print >>sys.stderr, msg
     sys.exit(1)
 
+def format_pkgtype(n):
+    if n == libcomps.PACKAGE_TYPE_DEFAULT:
+        return 'default'
+    elif n == libcomps.PACKAGE_TYPE_MANDATORY:
+        return 'mandatory'
+    else:
+        assert False
+
+def write_manifest(fpath, pkgs, include=None):
+    with open(fpath, 'w') as f:
+        f.write("# DO NOT EDIT! This content is generated from comps-sync.py\n")
+        if include is not None:
+            f.write("include: {}\n".format(include))
+        f.write("packages:\n")
+        for pkg in sorted(pkgs):
+            f.write("  - {}\n".format(pkg))
+        print("Wrote {}".format(fpath))
+
 parser = argparse.ArgumentParser()
 parser.add_argument("--save", help="Write changes", action='store_true')
 parser.add_argument("src", help="Source path")
@@ -20,9 +38,9 @@ args = parser.parse_args()
 
 print("Syncing packages common to all ostree based desktop versions:")
 
-base_pkgs_path = 'fedora-common-ostree-pkgs.json'
+base_pkgs_path = 'fedora-common-ostree-pkgs.yaml'
 with open(base_pkgs_path) as f:
-    manifest = json.load(f)
+    manifest = yaml.safe_load(f)
 
 with open('comps-sync-blacklist.yml') as f:
     doc = yaml.safe_load(f)
@@ -96,14 +114,6 @@ for (pkg,data) in ws_pkgs.items():
         ws_added[pkg] = data
         manifest_packages.add(pkg)
 
-def format_pkgtype(n):
-    if n == libcomps.PACKAGE_TYPE_DEFAULT:
-        return 'default'
-    elif n == libcomps.PACKAGE_TYPE_MANDATORY:
-        return 'mandatory'
-    else:
-        assert False
-
 n_comps_new = len(ws_added)
 if n_comps_new == 0:
     print("All comps packages are already listed in manifest.")
@@ -114,21 +124,16 @@ else:
         print('  {} ({}, groups: {})'.format(pkg, format_pkgtype(req), ', '.join(groups)))
 
 if (n_manifest_new > 0 or n_comps_new > 0) and args.save:
-    manifest['packages'] = sorted(manifest_packages)
-    with open(base_pkgs_path, 'w') as f:
-        json.dump(manifest, f, indent=4, sort_keys=True)
-        f.write('\n')
-        print("Wrote {}".format(base_pkgs_path))
-
+    write_manifest(base_pkgs_path, manifest_packages)
 
 # Generate treefiles for all desktops
 for desktop in [ 'gnome-desktop', 'kde-desktop', 'xfce-desktop', 'lxqt-desktop' ]:
     print()
     print("Syncing packages for {} specific version:".format(desktop))
 
-    base_pkgs_path = '{}-pkgs.json'.format(desktop)
-    with open(base_pkgs_path) as f:
-        manifest = json.load(f)
+    manifest_path = '{}-pkgs.yaml'.format(desktop)
+    with open(manifest_path) as f:
+        manifest = yaml.safe_load(f)
 
     manifest_packages = set(manifest['packages'])
     ws_ostree_name = desktop
@@ -176,8 +181,4 @@ for desktop in [ 'gnome-desktop', 'kde-desktop', 'xfce-desktop', 'lxqt-desktop' 
             print('  {}'.format(pkg))
 
     if (n_manifest_new > 0 or n_comps_new > 0) and args.save:
-        manifest['packages'] = sorted(manifest_packages)
-        with open(base_pkgs_path, 'w') as f:
-            json.dump(manifest, f, indent=4, sort_keys=True)
-            f.write('\n')
-            print("Wrote {}".format(base_pkgs_path))
+        write_manifest(manifest_path, manifest_packages, include="fedora-common-ostree.yaml")
