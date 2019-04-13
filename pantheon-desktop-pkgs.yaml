@@ -1,7 +1,6 @@
 # DO NOT EDIT! This content is generated from comps-sync.py
 include: fedora-common-ostree.yaml
 packages:
-  - appcenter
   - cerbere
   - contractor
   - elementary-calculator
@@ -24,11 +23,6 @@ packages:
   - elementary-wallpapers
   - gala
   - gnome-session
-  - gsignond
-  - gsignond-plugin-lastfm
-  - gsignond-plugin-mail
-  - gsignond-plugin-oauth
-  - gsignond-plugin-sasl
   - pantheon-agent-geoclue2
   - pantheon-agent-polkit
   - pantheon-session-settings
