@@ -5,7 +5,6 @@ packages:
   - NetworkManager-config-connectivity-fedora
   - NetworkManager-wifi
   - NetworkManager-wwan
-  - PackageKit-gstreamer-plugin
   - aajohan-comfortaa-fonts
   - abattis-cantarell-fonts
   - acl

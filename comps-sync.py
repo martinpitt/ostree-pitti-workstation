@@ -5,7 +5,7 @@
 # which are not mentioned in comps, and add packages from
 # comps.
 
-import os, sys, subprocess, argparse, shlex, json, yaml
+import os, sys, subprocess, argparse, shlex, json, yaml, re
 import libcomps
 
 def fatal(msg):
@@ -49,6 +49,13 @@ with open('comps-sync-blacklist.yml') as f:
     comps_whitelist = doc['whitelist']
     comps_blacklist_groups = doc['blacklist_groups']
     comps_desktop_blacklist = doc['desktop_blacklist']
+    comps_blacklist_all = [re.compile(x) for x in doc['blacklist_all_regexp']]
+
+def is_blacklisted(pkgname):
+    for br in comps_blacklist_all:
+        if br.match(pkgname):
+            return True
+    return False
 
 # Parse comps, and build up a set of all packages so we
 # can find packages not listed in comps *at all*, beyond
@@ -72,7 +79,7 @@ for gid in ws_environ.group_ids:
         if pkg.type not in (libcomps.PACKAGE_TYPE_DEFAULT,
                             libcomps.PACKAGE_TYPE_MANDATORY):
             continue
-        if pkgname in blacklist:
+        if pkgname in blacklist or is_blacklisted(pkgname):
             continue
         pkgdata = ws_pkgs.get(pkgname)
         if pkgdata is None:
@@ -84,7 +91,8 @@ for gid in ws_environ.group_ids:
 
 ws_ostree_pkgs = set()
 for pkg in comps.groups_match(id=ws_ostree_name)[0].packages:
-    ws_ostree_pkgs.add(pkg.name)
+    if not is_blacklisted(pkg.name):
+        ws_ostree_pkgs.add(pkg.name)
 
 comps_unknown = set()
 for pkg in manifest_packages:
@@ -137,7 +145,7 @@ for desktop in [ 'gnome-desktop', 'kde-desktop', 'xfce-desktop', 'lxqt-desktop',
     for pkg in comps.groups_match(id=desktop)[0].packages:
         pkgname = pkg.name
         blacklist = comps_desktop_blacklist.get(desktop, set())
-        if pkgname in blacklist:
+        if pkgname in blacklist or is_blacklisted(pkgname):
             continue
         comps_group_pkgs.add(pkg.name)
 

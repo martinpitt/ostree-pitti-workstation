@@ -13,6 +13,10 @@ blacklist_groups:
   - gnome-desktop
   - container-management
 
+# PackageKit is spread across various groups
+blacklist_all_regexp:
+  - "PackageKit.*"
+
 # Common blacklist for all ostree desktop versions
 blacklist:
   core:
@@ -107,9 +111,6 @@ desktop_blacklist:
   gnome-desktop:
     # https://github.com/pbrezina/authselect/issues/48
     - fprintd-pam
-    # We use rpm-ostree for the host
-    - PackageKit-command-not-found
-    - PackageKit-gtk3-module
     # Non-critical apps -> Flatpak
     - baobab
     - cheese
