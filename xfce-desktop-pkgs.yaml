@@ -12,6 +12,7 @@ packages:
   - NetworkManager-sstp-gnome
   - NetworkManager-strongswan-gnome
   - NetworkManager-vpnc-gnome
+  - Thunar
   - adwaita-gtk2-theme
   - adwaita-icon-theme
   - albatross-gtk2-theme
@@ -37,6 +38,9 @@ packages:
   - lightdm-gtk
   - network-manager-applet
   - nm-connection-editor
+  - thunar-archive-plugin
+  - thunar-media-tags-plugin
+  - thunar-volman
   - xdg-user-dirs-gtk
   - xfce4-about
   - xfce4-appfinder

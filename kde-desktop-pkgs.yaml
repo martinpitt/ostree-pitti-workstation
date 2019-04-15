@@ -4,6 +4,7 @@ packages:
   - NetworkManager-config-connectivity-fedora
   - bluedevil
   - breeze-icon-theme
+  - dolphin
   - glibc-all-langpacks
   - initial-setup-gui
   - kde-gtk-config

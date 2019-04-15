@@ -4,6 +4,8 @@ packages:
   - breeze-cursor-theme
   - breeze-gtk
   - breeze-icon-theme
+  - falkon
+  - falkon-kwallet
   - fedora-icon-theme
   - firewall-config
   - initial-setup-gui
@@ -25,6 +27,7 @@ packages:
   - notification-daemon
   - obconf
   - openbox
+  - pcmanfm-qt
   - perl-File-MimeInfo
   - qterminal
   - sddm
