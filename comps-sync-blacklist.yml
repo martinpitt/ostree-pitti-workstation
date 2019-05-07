@@ -37,6 +37,16 @@ blacklist:
     # Needs to be arch specific
     - powerpc-utils
     - lsvpd
+    # Blacklist x86_64 specific packages, they will be added back by fedora-common-ostree.yaml
+    - hyperv-daemons
+    - mcelog
+    - microcode_ctl
+    - open-vm-tools-desktop
+    - virtualbox-guest-additions
+    - xorg-x11-drv-intel
+    - xorg-x11-drv-openchrome
+    - xorg-x11-drv-vesa
+    - xorg-x11-drv-vmware
   base-x:
     # These are for arm...need to handle arch-specific bits
     - xorg-x11-drv-armsoc

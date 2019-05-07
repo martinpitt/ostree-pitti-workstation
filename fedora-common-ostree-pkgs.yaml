@@ -75,7 +75,6 @@ packages:
   - hostname
   - hplip
   - hunspell
-  - hyperv-daemons
   - ibus-gtk2
   - ibus-gtk3
   - ibus-hangul
@@ -133,11 +132,9 @@ packages:
   - lsof
   - man-db
   - man-pages
-  - mcelog
   - mdadm
   - mesa-dri-drivers
   - mesa-vulkan-drivers
-  - microcode_ctl
   - mlocate
   - mpage
   - mtr
@@ -145,7 +142,6 @@ packages:
   - nss-altfiles
   - nss-mdns
   - ntfsprogs
-  - open-vm-tools-desktop
   - openssh-clients
   - openssh-server
   - paktype-naskh-basic-fonts
@@ -210,7 +206,6 @@ packages:
   - util-linux
   - vconfig
   - vim-minimal
-  - virtualbox-guest-additions
   - wget
   - which
   - wireless-tools
@@ -218,13 +213,9 @@ packages:
   - xorg-x11-drv-ati
   - xorg-x11-drv-evdev
   - xorg-x11-drv-fbdev
-  - xorg-x11-drv-intel
   - xorg-x11-drv-libinput
   - xorg-x11-drv-nouveau
-  - xorg-x11-drv-openchrome
   - xorg-x11-drv-qxl
-  - xorg-x11-drv-vesa
-  - xorg-x11-drv-vmware
   - xorg-x11-drv-wacom
   - xorg-x11-server-Xorg
   - xorg-x11-utils
