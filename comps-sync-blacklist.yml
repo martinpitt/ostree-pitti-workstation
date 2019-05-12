@@ -34,23 +34,23 @@ blacklist:
     - grubby-deprecated
     # Why?
     - ncurses
-    # Needs to be arch specific
+    # Architecture specific packages
     - powerpc-utils
     - lsvpd
-    # Blacklist x86_64 specific packages, they will be added back by fedora-common-ostree.yaml
-    - hyperv-daemons
-    - mcelog
-    - microcode_ctl
-    - open-vm-tools-desktop
-    - virtualbox-guest-additions
+  base-x:
+    # x86 specific packages. Added back by fedora-common-ostree.yaml
     - xorg-x11-drv-intel
     - xorg-x11-drv-openchrome
     - xorg-x11-drv-vesa
     - xorg-x11-drv-vmware
-  base-x:
-    # These are for arm...need to handle arch-specific bits
+    # ARM specific packages
     - xorg-x11-drv-armsoc
     - xorg-x11-drv-omap
+  guest-desktop-agents:
+    # x86 specific packages. Added back by fedora-common-ostree.yaml
+    - hyperv-daemons
+    - open-vm-tools-desktop
+    - virtualbox-guest-additions
   workstation-product:
     # We use rpm-ostree for the host
     - dnf
@@ -107,6 +107,9 @@ blacklist:
     - gnome-shell-extension-background-logo
     - pinentry-gnome3
     - qgnomeplatform
+    # x86 specific packages. Added back by fedora-common-ostree.yaml
+    - mcelog
+    - microcode_ctl
   networkmanager-submodules:
     # Let's use the builtin one by default
     - dhcp-client
