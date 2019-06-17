@@ -3,8 +3,6 @@ ref: fedora/37/${basearch}/ostree-base
 automatic_version_prefix: "37"
 mutate-os-release: "37"
 
-include: fedora-common-ostree-pkgs.yaml
-
 packages:
   - git-core
   - rpm-ostree
