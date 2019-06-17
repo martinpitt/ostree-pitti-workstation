@@ -7,8 +7,6 @@ mutate-os-release: "39"
 container-cmd:
   - /usr/bin/bash
 
-include: fedora-common-ostree-pkgs.yaml
-
 # See https://github.com/coreos/bootupd
 # TODO: Disabled until we use use unified-core or native container flow
 # for the main build
