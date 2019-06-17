@@ -4,3 +4,10 @@ mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=updates-released-f36&
 enabled=1
 gpgcheck=1
 metadata_expire=1d
+
+[fedora-36-updates-testing]
+name=Fedora 36 $basearch Updates
+mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=updates-testing-f36&arch=$basearch
+enabled=1
+gpgcheck=1
+metadata_expire=1d
