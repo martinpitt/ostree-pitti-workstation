@@ -3,8 +3,6 @@ ref: fedora/34/${basearch}/ostree-base
 automatic_version_prefix: "34"
 mutate-os-release: "34"
 
-include: fedora-common-ostree-pkgs.yaml
-
 packages:
   - fedora-release-silverblue
   - git-core

@@ -1,3 +1,30 @@
+Martin Pitt's desktop
+=====================
+
+This is an [rpm-ostree](https://coreos.github.io/rpm-ostree/) based minimal
+[Fedora](https://getfedora.org/) developer desktop with the [sway window manager](https://swaywm.org/) and [podman](https://podman.io/)/[toolbox](https://docs.fedoraproject.org/en-US/fedora-silverblue/toolbox/) for doing development and running less common graphical applications.
+
+It gets [automatically built](.github/workflows/build.yml) every week and [published to my server](https://piware.de/ostree/pitti-workstation/).
+
+To use it from an existing OSTree based system like [Fedora CoreOS](https://getfedora.org/coreos) or [Fedora Silverblue](https://docs.fedoraproject.org/en-US/fedora-silverblue/), add my server URL as new remote and rebase your tree to it:
+
+```sh
+sudo ostree remote add --no-gpg-verify piware https://piware.de/ostree/pitti-workstation/
+sudo rpm-ostree rebase piware:pitti-desktop
+```
+
+After that, you can install weekly updates with
+
+```
+sudo rpm-ostree upgrade
+```
+
+If anything goes wrong, you can go back to the previous version with `sudo rpm-ostree rollback`.
+
+
+Original README for [workstation-ostree-config](https://pagure.io/workstation-ostree-config)
+=============================================
+
 For some background, see:
 
  - https://fedoraproject.org/wiki/Workstation/AtomicWorkstation

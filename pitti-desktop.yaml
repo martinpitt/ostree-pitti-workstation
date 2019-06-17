@@ -1,0 +1,142 @@
+include: fedora-common-ostree.yaml
+
+ref: pitti-desktop
+rojig:
+  name: pitti-desktop
+  summary: "Pitti Desktop"
+  license: MIT
+
+repos:
+  - fedora-34
+  - fedora-34-updates
+  - fedora-34-updates-testing
+  - rpmfusion-free
+  - rpmfusion-free-updates
+
+packages:
+# hardware/drivers
+  - kernel
+  - kernel-modules-extra
+  - iwl6000g2a-firmware
+  - iwl7260-firmware
+  - alsa-sof-firmware
+  - NetworkManager-wifi
+  - NetworkManager-openvpn-gnome
+  - sane-backends
+  - sane-backends-drivers-scanners
+  - powertop
+  - iwd
+  - udisks2-lvm2
+  - opensc
+# basic system
+  - acl
+  - attr
+  - basesystem
+  - cryptsetup
+  - dnsmasq
+  - fedora-workstation-backgrounds
+  - filesystem
+  - glibc-langpack-de
+  - glibc-langpack-en
+  - hostname
+  - iproute
+  - kbd
+  - nss-altfiles
+  - pciutils
+  - sudo
+  - usbutils
+# shell tools and development
+  - bc
+  - gnupg2
+  - fpaste
+  - lsof
+  - man-db
+  - mtr
+  - tree
+  - bzip2
+  - zip
+  - unzip
+  - vim-enhanced
+  - ranger
+  - bash-completion
+  - fish
+  - qemu-system-x86-core
+  - qemu-ui-sdl
+  - qemu-img
+  - openvpn
+  - mutt
+  - nmap-ncat
+  - isync
+  - weechat
+  - duplicity
+  - openssh-server
+  - systemd-container
+  - git
+  - patchutils
+  - make
+  - strace
+  - wget
+  - w3m
+  - cockpit-system
+  - cockpit-ws
+  - syncthing
+  - krb5-workstation
+
+# desktop plumbing/apps
+  - dejavu-sans-fonts
+  - dejavu-serif-fonts
+  - dejavu-sans-mono-fonts
+  - fontawesome-fonts
+  - google-noto-emoji-color-fonts
+
+  - gvfs-mtp
+  - pulseaudio-utils
+  - alsa-plugins-pulseaudio
+  - gstreamer1-plugins-good
+  - gstreamer1-plugins-ugly
+  - gstreamer1-libav
+  # for wf-recorder
+  - libavdevice
+
+  - pavucontrol
+  - pcmanfm
+  - simple-scan
+  - nm-connection-editor
+  - eog
+  - evince
+  - rhythmbox
+  - gnome-keyring
+  - pinentry-gnome3
+  - lxpolkit
+  - lxterminal
+  - gnome-disk-utility
+  - gtimelog
+
+# sway/wayland desktop
+  - sway
+  - swayidle
+  - swaylock
+  - kanshi
+  - mako
+  - waybar
+  - slurp
+  - grim
+  - xorg-x11-server-Xwayland
+  - firefox-wayland
+  - wofi
+  - brightnessctl
+  - wl-clipboard
+
+exclude-packages:
+  # recommended by sway
+  - alacritty
+  - brltty
+  - glibc-all-langpacks
+  - xdg-desktop-portal-wlr
+  # recommended by gtimelog
+  - yelp
+
+add-files:
+  - ["2015-RH-IT-Root-CA.pem", "/etc/pki/ca-trust/source/anchors/2015-RH-IT-Root-CA.pem"]
+
+postprocess-script: pitti-post.sh
