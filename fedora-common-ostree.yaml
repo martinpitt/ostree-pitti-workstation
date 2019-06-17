@@ -3,8 +3,6 @@ ref: fedora/38/${basearch}/ostree-base
 automatic_version_prefix: "38"
 mutate-os-release: "38"
 
-include: fedora-common-ostree-pkgs.yaml
-
 # See https://github.com/coreos/bootupd
 # TODO: Disabled until we use use unified-core or native container flow
 # for the main build
