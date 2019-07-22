@@ -51,7 +51,6 @@ packages:
   - xfce4-pulseaudio-plugin
   - xfce4-screenshooter-plugin
   - xfce4-session
-  - xfce4-session-engines
   - xfce4-settings
   - xfce4-taskmanager
   - xfce4-terminal

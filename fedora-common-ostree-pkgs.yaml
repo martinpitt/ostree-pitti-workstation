@@ -223,3 +223,4 @@ packages:
   - xorg-x11-xinit
   - zd1211-firmware
   - zip
+  - zram

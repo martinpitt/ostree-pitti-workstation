@@ -55,6 +55,7 @@ packages:
   - mousetweaks
   - nautilus
   - nautilus-sendto
+  - orca
   - polkit
   - rygel
   - tracker
