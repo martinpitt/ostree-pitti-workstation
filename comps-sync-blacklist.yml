@@ -170,7 +170,6 @@ desktop_blacklist:
     # Non-critical apps -> Flatpak
     - akregator
     - cagibi
-    - gnome-keyring-pam
     - gwenview
     - kaddressbook
     - kamera

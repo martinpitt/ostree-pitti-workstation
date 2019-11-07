@@ -6,6 +6,7 @@ packages:
   - breeze-icon-theme
   - dolphin
   - glibc-all-langpacks
+  - gnome-keyring-pam
   - initial-setup-gui
   - kde-gtk-config
   - kde-print-manager
