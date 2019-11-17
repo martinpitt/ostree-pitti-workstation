@@ -53,8 +53,6 @@ packages:
   - kernel-modules-extra
   # Do not include "full" Git as it brings in Perl
   - git-core
-  # Explicitely add Git docs
-  - git-core-doc
   # Required until we've completed the move to systemd-sysusers
   # See: https://github.com/fedora-silverblue/issue-tracker/issues/362
   - nss-altfiles
@@ -62,9 +60,6 @@ packages:
   - buildah
   - podman
   - skopeo
-  # Keep slirp4netns for rootless containers until it's fully deprecated in podman
-  # See: https://github.com/fedora-silverblue/issue-tracker/issues/547
-  - slirp4netns
   # Keep fuse-overlayfs for compatibilty and rootless containers use cases
   # See: https://github.com/coreos/fedora-coreos-tracker/issues/1749
   - fuse-overlayfs
@@ -75,33 +70,9 @@ packages:
   # Flatpak support
   - flatpak
   - xdg-desktop-portal
-  # Contains default ostree remote config to be used on client's
-  # system for fetching ostree update
-  - fedora-repos-ostree
-  # the archive repo for more reliable package layering
-  # https://github.com/coreos/fedora-coreos-tracker/issues/400
-  - fedora-repos-archive
-  # Always include at least full English language support by default
-  # https://gitlab.com/fedora/ostree/sig/-/issues/14
-  - langpacks-en
-  # Kept for backward compatibility for AppImages
-  # See: https://gitlab.com/fedora/ostree/sig/-/issues/50
-  - fuse
-  - fuse-libs
   # Selected packages from the anaconda-tools group. See: https://gitlab.com/fedora/ostree/sig/-/issues/5
   - dosfstools
-  - lvm2
   - nvme-cli
-  - xfsprogs
-  # HFS filesystem tools for Apple hardware
-  # See https://github.com/projectatomic/rpm-ostree/issues/1380
-  - hfsplus-tools
-  # More printer drivers. See: https://gitlab.com/fedora/ostree/sig/-/issues/63
-  - c2esp
-  - dymo-cups-drivers
-  - printer-driver-brlaser
-  - ptouch-driver
-  - splix
 
 selinux: true
 documentation: true
