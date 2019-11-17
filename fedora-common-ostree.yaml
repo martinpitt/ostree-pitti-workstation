@@ -8,31 +8,12 @@ include: fedora-common-ostree-pkgs.yaml
 packages:
   - fedora-release-silverblue
   - git-core
-  - lvm2
   - rpm-ostree
   # Container management
   - buildah
   - podman
   - skopeo
   - toolbox
-  # Flatpak support
-  - flatpak
-  - xdg-desktop-portal
-  # HFS filesystem tools for Apple hardware
-  # See https://github.com/projectatomic/rpm-ostree/issues/1380
-  - hfsplus-tools
-  # Bundle the minimal -devel packages needed to build a kernel.
-  # This is needed because we can't rely on layering to install these
-  # due to version conflicts with the base image.
-  - glibc-devel
-  - kernel-devel
-  - elfutils-libelf-devel
-  # Contains default ostree remote config to be used on client's
-  # system for fetching ostree update
-  - fedora-repos-ostree
-  # the archive repo for more reliable package layering
-  # https://github.com/coreos/fedora-coreos-tracker/issues/400
-  - fedora-repos-archive
 
 selinux: true
 documentation: true
@@ -79,13 +60,6 @@ packages-x86_64:
   - microcode_ctl
   - mcelog
   - thermald
-  - hyperv-daemons
-  - open-vm-tools-desktop
-  - virtualbox-guest-additions
-  - xorg-x11-drv-intel
-  - xorg-x11-drv-openchrome
-  - xorg-x11-drv-vesa
-  - xorg-x11-drv-vmware
 
 # Make sure the following are not pulled in when Recommended by other packages
 exclude-packages:
