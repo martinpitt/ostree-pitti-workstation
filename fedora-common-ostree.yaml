@@ -15,9 +15,6 @@ include: fedora-common-ostree-pkgs.yaml
 packages:
   # Do not include "full" Git as it brings in Perl
   - git-core
-  # Explicitely add Git docs
-  - git-core-doc
-  - lvm2
   - rpm-ostree
   # Required for compatibility with old bootloaders until we have bootupd
   # See https://github.com/fedora-silverblue/issue-tracker/issues/120
@@ -32,15 +29,6 @@ packages:
   # Flatpak support
   - flatpak
   - xdg-desktop-portal
-  # HFS filesystem tools for Apple hardware
-  # See https://github.com/projectatomic/rpm-ostree/issues/1380
-  - hfsplus-tools
-  # Contains default ostree remote config to be used on client's
-  # system for fetching ostree update
-  - fedora-repos-ostree
-  # the archive repo for more reliable package layering
-  # https://github.com/coreos/fedora-coreos-tracker/issues/400
-  - fedora-repos-archive
 
 selinux: true
 documentation: true
