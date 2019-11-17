@@ -16,12 +16,12 @@ packages:
   - skopeo
   - toolbox
   # Flatpak support
-  - flatpak
-  - flatpak-builder
-  - xdg-desktop-portal
+  #- flatpak
+  #- flatpak-builder
+  #- xdg-desktop-portal
   # HFS filesystem tools for Apple hardware
   # See https://github.com/projectatomic/rpm-ostree/issues/1380
-  - hfsplus-tools
+  #- hfsplus-tools
   # Bundle the minimal -devel packages needed to build a kernel.
   # This is needed because we can't rely on layering to install these
   # due to version conflicts with the base image.
