@@ -145,7 +145,7 @@ packages:
   - openssh-clients
   - openssh-server
   - paktype-naskh-basic-fonts
-  - pam_krb5
+  - pam_afs_session
   - paps
   - paratype-pt-sans-fonts
   - passwd
