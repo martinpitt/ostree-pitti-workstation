@@ -227,8 +227,6 @@ desktop_blacklist:
     - firewall-config
     - openssh-askpass
     - vim-enhanced
-    # ?
-    - rodent-icon-theme
   lxqt-desktop:
     # Incompatible with ostree for various reasons
     - dnfdragora-updater
