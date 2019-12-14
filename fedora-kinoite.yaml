@@ -12,6 +12,8 @@ packages:
   - xorg-x11-server-Xwayland
   # Portals for Flatpak
   - xdg-desktop-portal-kde
+  # Provide an archive manager by default
+  - ark
 
 repos:
   - fedora-rawhide
