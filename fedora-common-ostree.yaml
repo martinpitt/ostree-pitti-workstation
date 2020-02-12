@@ -79,3 +79,7 @@ packages-x86_64:
   - xorg-x11-drv-openchrome
   - xorg-x11-drv-vesa
   - xorg-x11-drv-vmware
+
+# Make sure the following are not pulled in when Recommended by other packages
+exclude-packages:
+  - PackageKit
