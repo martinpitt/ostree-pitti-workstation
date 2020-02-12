@@ -22,8 +22,8 @@ blacklist:
   core:
     # We use rpm-ostree for the host
     - dnf
-    - dnf-yum
     - dnf-plugins-core
+    - yum
     # Not sure why this is there at all
     - dracut-config-rescue
     # Eh...you can install this in a priv container
