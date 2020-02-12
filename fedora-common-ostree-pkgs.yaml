@@ -43,10 +43,11 @@ packages:
   - dhcp-client
   - dnsmasq
   - e2fsprogs
+  - earlyoom
   - ethtool
   - fedora-bookmarks
+  - fedora-chromium-config
   - fedora-release-workstation
-  - fedora-user-agent-chrome
   - fedora-workstation-backgrounds
   - file
   - filesystem
@@ -60,14 +61,11 @@ packages:
   - glibc
   - glibc-all-langpacks
   - glx-utils
-  - gnu-free-mono-fonts
-  - gnu-free-sans-fonts
-  - gnu-free-serif-fonts
   - gnupg2
   - google-noto-emoji-color-fonts
   - google-noto-sans-cjk-ttc-fonts
-  - google-noto-sans-sinhala-fonts
-  - google-noto-serif-cjk-ttc-fonts
+  - google-noto-sans-gurmukhi-fonts
+  - google-noto-sans-sinhala-vf-fonts
   - gstreamer1-plugins-bad-free
   - gstreamer1-plugins-good
   - gutenprint
@@ -123,7 +121,6 @@ packages:
   - lohit-bengali-fonts
   - lohit-devanagari-fonts
   - lohit-gujarati-fonts
-  - lohit-gurmukhi-fonts
   - lohit-kannada-fonts
   - lohit-odia-fonts
   - lohit-tamil-fonts
@@ -138,6 +135,7 @@ packages:
   - mlocate
   - mpage
   - mtr
+  - nano
   - nfs-utils
   - nss-altfiles
   - nss-mdns
@@ -210,6 +208,7 @@ packages:
   - which
   - wireless-tools
   - words
+  - xorg-x11-drv-armada
   - xorg-x11-drv-ati
   - xorg-x11-drv-evdev
   - xorg-x11-drv-fbdev
