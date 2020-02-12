@@ -208,7 +208,6 @@ packages:
   - which
   - wireless-tools
   - words
-  - xorg-x11-drv-armada
   - xorg-x11-drv-ati
   - xorg-x11-drv-evdev
   - xorg-x11-drv-fbdev

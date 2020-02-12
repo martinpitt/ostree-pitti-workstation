@@ -44,6 +44,7 @@ blacklist:
     - xorg-x11-drv-vesa
     - xorg-x11-drv-vmware
     # ARM specific packages
+    - xorg-x11-drv-armada
     - xorg-x11-drv-armsoc
     - xorg-x11-drv-omap
   guest-desktop-agents:

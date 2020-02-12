@@ -57,6 +57,7 @@ packages-aarch64:
   - shim
 packages-armhfp:
   - extlinux-bootloader
+  - xorg-x11-drv-armada
 packages-ppc64:
   - grub2
   - ostree-grub2
