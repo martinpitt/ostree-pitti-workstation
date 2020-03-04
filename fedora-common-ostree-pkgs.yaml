@@ -47,7 +47,6 @@ packages:
   - ethtool
   - fedora-bookmarks
   - fedora-chromium-config
-  - fedora-release-workstation
   - fedora-workstation-backgrounds
   - file
   - filesystem

@@ -57,6 +57,8 @@ blacklist:
     - dnf
     - dnf-plugins-core
     - deltarpm
+    # We use fedora-release-silverblue instead
+    - fedora-release-workstation
     # Really not worth listing explicitly
     - filesystem
     # Why?

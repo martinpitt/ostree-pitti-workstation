@@ -6,6 +6,7 @@ mutate-os-release: "33"
 include: fedora-common-ostree-pkgs.yaml
 
 packages:
+  - fedora-release-silverblue
   - git-core
   - lvm2
   - rpm-ostree
