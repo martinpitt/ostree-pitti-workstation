@@ -72,7 +72,6 @@ packages:
   - hostname
   - hplip
   - hunspell
-  - ibus-gtk2
   - ibus-gtk3
   - ibus-hangul
   - ibus-kkc
@@ -174,7 +173,6 @@ packages:
   - rpm
   - rsync
   - samba-client
-  - scl-utils
   - selinux-policy-targeted
   - setup
   - shadow-utils
