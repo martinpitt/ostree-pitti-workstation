@@ -11,6 +11,7 @@ packages:
   - adwaita-qt4
   - adwaita-qt5
   - alsa-plugins-pulseaudio
+  - alsa-sof-firmware
   - alsa-ucm
   - alsa-utils
   - atmel-firmware
