@@ -139,6 +139,7 @@ packages:
   - nss-altfiles
   - nss-mdns
   - ntfsprogs
+  - opensc
   - openssh-clients
   - openssh-server
   - paktype-naskh-basic-fonts
