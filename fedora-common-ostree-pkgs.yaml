@@ -139,12 +139,12 @@ packages:
   - nss-altfiles
   - nss-mdns
   - ntfsprogs
-  - opensc
   - openssh-clients
   - openssh-server
   - paktype-naskh-basic-fonts
   - pam_afs_session
   - paps
+  - paratype-pt-sans-fonts
   - passwd
   - passwdqc
   - pciutils
@@ -155,7 +155,6 @@ packages:
   - policycoreutils-python-utils
   - procps-ng
   - psmisc
-  - pt-sans-fonts
   - pulseaudio
   - pulseaudio-module-x11
   - pulseaudio-utils
