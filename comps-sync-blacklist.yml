@@ -226,6 +226,13 @@ desktop_blacklist:
     - firewall-config
     - openssh-askpass
     - vim-enhanced
+    # Remove uncommon NetworkManager plugins
+    - NetworkManager-fortisslvpn-gnome
+    - NetworkManager-iodine-gnome
+    - NetworkManager-l2tp-gnome
+    - NetworkManager-libreswan-gnome
+    - NetworkManager-sstp-gnome
+    - NetworkManager-strongswan-gnome
   lxqt-desktop:
     # Incompatible with ostree for various reasons
     - dnfdragora-updater
