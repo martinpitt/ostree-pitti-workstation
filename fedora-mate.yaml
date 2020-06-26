@@ -1,0 +1,16 @@
+include: mate-desktop-pkgs.yaml
+ref: fedora/rawhide/${basearch}/mate
+rojig:
+  name: fedora-mate
+  summary: "Fedora Mate base image"
+  license: MIT
+
+packages:
+  # Portals for Flatpak
+  - xdg-desktop-portal-gtk
+
+exclude-packages:
+  - python3-unbound
+
+repos:
+  - fedora-rawhide

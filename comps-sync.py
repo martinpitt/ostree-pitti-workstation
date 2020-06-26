@@ -131,7 +131,8 @@ if (n_manifest_new > 0 or n_comps_new > 0) and args.save:
     write_manifest(base_pkgs_path, manifest_packages)
 
 # Generate treefiles for all desktops
-for desktop in [ 'gnome-desktop', 'kde-desktop', 'xfce-desktop', 'lxqt-desktop', 'deepin-desktop', 'pantheon-desktop']:
+for desktop in [ 'gnome-desktop', 'kde-desktop', 'xfce-desktop',
+        'lxqt-desktop', 'deepin-desktop', 'pantheon-desktop', 'mate-desktop']:
     print()
     print("Syncing packages for {}:".format(desktop))
 

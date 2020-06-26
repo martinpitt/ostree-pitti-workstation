@@ -230,3 +230,36 @@ desktop_blacklist:
   deepin-desktop:
     # Incompatible with ostree for various reasons
     - dnfdragora-updater
+  mate-desktop:
+    # Incompatible with ostree for various reasons
+    - abrt-desktop
+    - abrt-java-connector
+    - dnfdragora-updater
+    # Non-critical apps -> Flatpak
+    - blivet-gui
+    - filezilla
+    - gnome-disk-utility
+    - gnome-logs
+    - gnote
+    - gparted
+    - hexchat
+    - p7zip
+    - p7zip-plugins
+    - simple-scan
+    - thunderbird
+    - transmission-gtk
+    - vim-enhanced
+    - xfburn
+    - yelp
+    # Non critical NetworkManager plugins
+    - NetworkManager-bluetooth
+    - NetworkManager-iodine-gnome
+    - NetworkManager-l2tp-gnome
+    - NetworkManager-libreswan-gnome
+    - NetworkManager-ovs
+    - NetworkManager-sstp-gnome
+    - NetworkManager-strongswan-gnome
+    - NetworkManager-team
+    - NetworkManager-wifi
+    # Use Silverblue release package for now
+    - fedora-release-matecompiz
