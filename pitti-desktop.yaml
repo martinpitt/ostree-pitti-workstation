@@ -72,8 +72,6 @@ packages:
   - w3m
   - cockpit-system
   - cockpit-ws
-  - dpkg-dev
-  - python3-debian
   - syncthing
   - krb5-workstation
 
