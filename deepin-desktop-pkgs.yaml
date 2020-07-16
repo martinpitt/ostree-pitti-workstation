@@ -7,9 +7,9 @@ packages:
   - deepin-desktop
   - deepin-editor
   - deepin-file-manager
+  - deepin-icon-theme
   - deepin-image-viewer
   - deepin-picker
   - deepin-screenshot
   - deepin-system-monitor
-  - fedora-icon-theme
   - firewall-config

@@ -43,7 +43,6 @@ packages:
   - switchboard-plug-sound
   - wingpanel
   - wingpanel-applications-menu
-  - wingpanel-indicator-ayatana
   - wingpanel-indicator-bluetooth
   - wingpanel-indicator-datetime
   - wingpanel-indicator-keyboard

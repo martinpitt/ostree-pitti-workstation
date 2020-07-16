@@ -48,6 +48,7 @@ packages:
   - ethtool
   - fedora-bookmarks
   - fedora-chromium-config
+  - fedora-repos-modular
   - fedora-workstation-backgrounds
   - file
   - filesystem
@@ -139,12 +140,12 @@ packages:
   - nss-altfiles
   - nss-mdns
   - ntfsprogs
+  - opensc
   - openssh-clients
   - openssh-server
   - paktype-naskh-basic-fonts
   - pam_afs_session
   - paps
-  - paratype-pt-sans-fonts
   - passwd
   - passwdqc
   - pciutils
@@ -155,6 +156,7 @@ packages:
   - policycoreutils-python-utils
   - procps-ng
   - psmisc
+  - pt-sans-fonts
   - pulseaudio
   - pulseaudio-module-x11
   - pulseaudio-utils
@@ -219,4 +221,4 @@ packages:
   - xorg-x11-xinit
   - zd1211-firmware
   - zip
-  - zram
+  - zram-generator-defaults

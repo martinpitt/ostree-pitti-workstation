@@ -6,8 +6,6 @@ packages:
   - breeze-gtk
   - breeze-icon-theme
   - falkon
-  - falkon-kwallet
-  - fedora-icon-theme
   - firewall-config
   - initial-setup-gui
   - lxqt-about
