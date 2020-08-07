@@ -25,7 +25,6 @@ packages:
   - bc
   - bind-utils
   - bluez-cups
-  - bridge-utils
   - btrfs-progs
   - bzip2
   - chrony
@@ -136,6 +135,7 @@ packages:
   - mpage
   - mtr
   - nano
+  - nano-default-editor
   - nfs-utils
   - nss-altfiles
   - nss-mdns
@@ -172,7 +172,6 @@ packages:
   - realmd
   - rng-tools
   - rootfiles
-  - rp-pppoe
   - rpm
   - rsync
   - samba-client
@@ -202,12 +201,11 @@ packages:
   - usb_modeswitch
   - usbutils
   - util-linux
-  - vconfig
   - vim-minimal
   - wget
   - which
-  - wireless-tools
   - words
+  - xorg-x11-drv-amdgpu
   - xorg-x11-drv-ati
   - xorg-x11-drv-evdev
   - xorg-x11-drv-fbdev

@@ -5,6 +5,7 @@ packages:
   - bluedevil
   - breeze-icon-theme
   - dolphin
+  - earlyoom
   - glibc-all-langpacks
   - gnome-keyring-pam
   - initial-setup-gui
