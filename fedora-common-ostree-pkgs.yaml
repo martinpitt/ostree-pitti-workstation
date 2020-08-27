@@ -108,11 +108,13 @@ packages:
   - kbd
   - kernel
   - kernel-modules-extra
-  - khmeros-base-fonts
+  - khmer-os-system-fonts
   - less
   - liberation-mono-fonts
   - liberation-sans-fonts
   - liberation-serif-fonts
+  - libertas-sd8686-firmware
+  - libertas-sd8787-firmware
   - libertas-usb8388-firmware
   - linux-firmware
   - logrotate
@@ -195,9 +197,11 @@ packages:
   - systemd-udev
   - tar
   - thai-scalable-waree-fonts
+  - thermald
   - time
   - tree
   - unzip
+  - uresourced
   - usb_modeswitch
   - usbutils
   - util-linux
