@@ -85,12 +85,10 @@ packages:
   - gvfs-mtp
   - pulseaudio-utils
   - alsa-plugins-pulseaudio
-  - gstreamer1-plugin-mpg123
   - gstreamer1-plugins-good
   - gstreamer1-plugins-ugly
   - gstreamer1-libav
 
-  - parole
   - pavucontrol
   - pcmanfm
   - simple-scan
