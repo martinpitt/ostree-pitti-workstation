@@ -197,7 +197,6 @@ packages:
   - systemd-udev
   - tar
   - thai-scalable-waree-fonts
-  - thermald
   - time
   - tree
   - unzip

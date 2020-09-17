@@ -73,6 +73,7 @@ packages-x86_64:
   - shim
   - microcode_ctl
   - mcelog
+  - thermald
   - hyperv-daemons
   - open-vm-tools-desktop
   - virtualbox-guest-additions
