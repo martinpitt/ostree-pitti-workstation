@@ -88,6 +88,8 @@ packages:
   - gstreamer1-plugins-good
   - gstreamer1-plugins-ugly
   - gstreamer1-libav
+  # for wf-recorder
+  - libavdevice
 
   - pavucontrol
   - pcmanfm
