@@ -54,7 +54,6 @@ packages:
   - mesa-libEGL
   - mousetweaks
   - nautilus
-  - nautilus-sendto
   - orca
   - polkit
   - rygel
