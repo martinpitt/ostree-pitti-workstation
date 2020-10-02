@@ -55,6 +55,7 @@ packages:
   - vim-enhanced
   - ranger
   - bash-completion
+  - fish
   - qemu-kvm
   - qemu-img
   - openvpn
