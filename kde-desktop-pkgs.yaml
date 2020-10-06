@@ -36,6 +36,7 @@ packages:
   - plasma-pa
   - plasma-user-manager
   - plasma-workspace
+  - plasma-workspace-xorg
   - polkit-kde
   - qt5-qtbase-gui
   - qt5-qtdeclarative

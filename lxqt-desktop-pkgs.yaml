@@ -1,7 +1,6 @@
 # DO NOT EDIT! This content is generated from comps-sync.py
 include: fedora-common-ostree.yaml
 packages:
-  - ark
   - breeze-cursor-theme
   - breeze-gtk
   - breeze-icon-theme
@@ -9,6 +8,7 @@ packages:
   - firewall-config
   - initial-setup-gui
   - lxqt-about
+  - lxqt-archiver
   - lxqt-config
   - lxqt-globalkeys
   - lxqt-notificationd

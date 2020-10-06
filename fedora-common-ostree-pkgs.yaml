@@ -8,7 +8,6 @@ packages:
   - aajohan-comfortaa-fonts
   - abattis-cantarell-fonts
   - acl
-  - adwaita-qt4
   - adwaita-qt5
   - alsa-plugins-pulseaudio
   - alsa-sof-firmware
@@ -172,7 +171,6 @@ packages:
   - qt5-qtxmlpatterns
   - quota
   - realmd
-  - rng-tools
   - rootfiles
   - rpm
   - rsync
