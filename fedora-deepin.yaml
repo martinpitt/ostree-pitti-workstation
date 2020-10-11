@@ -5,6 +5,8 @@ rojig:
   summary: "Fedora Deepin base image"
   license: MIT
 packages:
+  # GUI to manage updates & Flatpaks
+  - gnome-software
 
 repos:
   - fedora-rawhide
