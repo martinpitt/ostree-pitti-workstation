@@ -48,7 +48,6 @@ packages:
   - gvfs-smb
   - libcanberra-gtk2
   - libcanberra-gtk3
-  - libproxy-mozjs
   - librsvg2
   - libsane-hpaio
   - mesa-libEGL
