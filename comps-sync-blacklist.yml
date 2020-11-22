@@ -197,24 +197,14 @@ desktop_blacklist:
     # Misc
     - adwaita-gtk2-theme
     - colord-kde
-    - firewall-config
-    - kcm_systemd
-    - kdegraphics-thumbnailers
     - keditbookmarks
-    - khelpcenter
-    - kmag
-    - kmenuedit
     - kwebkitpart
-    - pinentry-qt
-    - plasma-desktop-doc
     - plasma-nm-l2tp
     - plasma-nm-openconnect
     - plasma-nm-openswan
     - plasma-nm-openvpn
     - plasma-nm-pptp
     - plasma-nm-vpnc
-    - plasma-workspace-geolocation
-    - qt-at-spi
   xfce-desktop:
     # Incompatible with ostree for various reasons
     - abrt-desktop

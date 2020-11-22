@@ -6,19 +6,25 @@ packages:
   - breeze-icon-theme
   - dolphin
   - earlyoom
+  - firewall-config
   - glibc-all-langpacks
   - gnome-keyring-pam
   - initial-setup-gui
+  - kcm_systemd
   - kde-gtk-config
   - kde-print-manager
   - kde-settings-pulseaudio
+  - kdegraphics-thumbnailers
   - kdeplasma-addons
   - kdialog
   - kf5-akonadi-server
   - kf5-akonadi-server-mysql
   - kf5-baloo-file
+  - khelpcenter
   - khotkeys
   - kinfocenter
+  - kmag
+  - kmenuedit
   - kmousetool
   - konsole5
   - kscreen
@@ -28,16 +34,20 @@ packages:
   - kwin
   - pam-kwallet
   - phonon-qt5-backend-gstreamer
+  - pinentry-qt
   - plasma-breeze
   - plasma-desktop
+  - plasma-desktop-doc
   - plasma-discover
   - plasma-drkonqi
   - plasma-nm
   - plasma-pa
   - plasma-user-manager
   - plasma-workspace
+  - plasma-workspace-geolocation
   - plasma-workspace-xorg
   - polkit-kde
+  - qt-at-spi
   - qt5-qtbase-gui
   - qt5-qtdeclarative
   - sddm
