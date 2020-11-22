@@ -42,7 +42,6 @@ packages:
   - plasma-drkonqi
   - plasma-nm
   - plasma-pa
-  - plasma-user-manager
   - plasma-workspace
   - plasma-workspace-geolocation
   - plasma-workspace-xorg
