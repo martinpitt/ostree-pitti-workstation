@@ -11,6 +11,9 @@ packages:
   # Does it really still make sense to ship Qt by default if we
   # expect people to run apps in containers?
   - qgnomeplatform
+  # Include evince-thumbnailer otherwise PDF thumbnails won't work in Nautilus
+  # https://github.com/fedora-silverblue/issue-tracker/issues/98
+  - evince-thumbnailer
 
 repos:
   - fedora-rawhide
