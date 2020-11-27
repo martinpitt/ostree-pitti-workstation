@@ -37,7 +37,7 @@ packages:
 
 selinux: true
 documentation: true
-boot_location: new
+boot-location: modules
 etc-group-members:
   - wheel
 tmp-is-dir: true
