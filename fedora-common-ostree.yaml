@@ -31,6 +31,9 @@ packages:
   # Contains default ostree remote config to be used on client's
   # system for fetching ostree update
   - fedora-repos-ostree
+  # the archive repo for more reliable package layering
+  # https://github.com/coreos/fedora-coreos-tracker/issues/400
+  - fedora-repos-archive
 
 selinux: true
 documentation: true
