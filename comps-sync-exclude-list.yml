@@ -1,24 +1,24 @@
 # This file has a list of packages to skip from comps that we don't want, plus
-# a few whitelisted things.
+# a few include listed things.
 
 # For some reason today these are just in livecd-tools...
-whitelist:
+include_list:
   - kernel
   - kernel-modules
   - kernel-modules-extra
 
 # Entirely skip all packages in libreoffice
-blacklist_groups:
+exclude_list_groups:
   - libreoffice
   - gnome-desktop
   - container-management
 
 # PackageKit is spread across various groups
-blacklist_all_regexp:
+exclude_list_all_regexp:
   - "PackageKit.*"
 
-# Common blacklist for all ostree desktop versions
-blacklist:
+# Common exclude list for all ostree desktop versions
+exclude_list:
   core:
     # We use rpm-ostree for the host
     - dnf
@@ -123,8 +123,8 @@ blacklist:
     # For now...
     - ghostscript
 
-# Desktop environment specific blacklists
-desktop_blacklist:
+# Desktop environment specific exclude lists
+desktop_exclude_list:
   gnome-desktop:
     # Non-critical apps -> Flatpak
     - baobab

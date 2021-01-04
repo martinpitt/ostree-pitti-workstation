@@ -43,16 +43,16 @@ with open(base_pkgs_path) as f:
     manifest = yaml.safe_load(f)
 manifest_packages = set(manifest['packages'])
 
-with open('comps-sync-blacklist.yml') as f:
+with open('comps-sync-exclude-list.yml') as f:
     doc = yaml.safe_load(f)
-    comps_blacklist = doc['blacklist']
-    comps_whitelist = doc['whitelist']
-    comps_blacklist_groups = doc['blacklist_groups']
-    comps_desktop_blacklist = doc['desktop_blacklist']
-    comps_blacklist_all = [re.compile(x) for x in doc['blacklist_all_regexp']]
+    comps_exclude_list = doc['exclude_list']
+    comps_include_list = doc['include_list']
+    comps_exclude_list_groups = doc['exclude_list_groups']
+    comps_desktop_exclude_list = doc['desktop_exclude_list']
+    comps_exclude_list_all = [re.compile(x) for x in doc['exclude_list_all_regexp']]
 
-def is_blacklisted(pkgname):
-    for br in comps_blacklist_all:
+def is_exclude_listed(pkgname):
+    for br in comps_exclude_list_all:
         if br.match(pkgname):
             return True
     return False
@@ -71,15 +71,15 @@ ws_environ = comps.environments[ws_env_name]
 ws_pkgs = {}
 for gid in ws_environ.group_ids:
     group = comps.groups_match(id=gid.name)[0]
-    if gid.name in comps_blacklist_groups:
+    if gid.name in comps_exclude_list_groups:
         continue
-    blacklist = comps_blacklist.get(gid.name, set())
+    exclude_list = comps_exclude_list.get(gid.name, set())
     for pkg in group.packages:
         pkgname = pkg.name
         if pkg.type not in (libcomps.PACKAGE_TYPE_DEFAULT,
                             libcomps.PACKAGE_TYPE_MANDATORY):
             continue
-        if pkgname in blacklist or is_blacklisted(pkgname):
+        if pkgname in exclude_list or is_exclude_listed(pkgname):
             continue
         pkgdata = ws_pkgs.get(pkgname)
         if pkgdata is None:
@@ -91,12 +91,12 @@ for gid in ws_environ.group_ids:
 
 ws_ostree_pkgs = set()
 for pkg in comps.groups_match(id=ws_ostree_name)[0].packages:
-    if not is_blacklisted(pkg.name):
+    if not is_exclude_listed(pkg.name):
         ws_ostree_pkgs.add(pkg.name)
 
 comps_unknown = set()
 for pkg in manifest_packages:
-    if (pkg not in comps_whitelist and
+    if (pkg not in comps_include_list and
         pkg not in ws_pkgs and
         pkg not in ws_ostree_pkgs):
         comps_unknown.add(pkg)
@@ -141,12 +141,12 @@ for desktop in [ 'gnome-desktop', 'kde-desktop', 'xfce-desktop',
         manifest = yaml.safe_load(f)
     manifest_packages = set(manifest['packages'])
 
-    # Filter packages in the comps desktop group using the blacklist
+    # Filter packages in the comps desktop group using the exclude_list
     comps_group_pkgs = set()
     for pkg in comps.groups_match(id=desktop)[0].packages:
         pkgname = pkg.name
-        blacklist = comps_desktop_blacklist.get(desktop, set())
-        if pkgname in blacklist or is_blacklisted(pkgname):
+        exclude_list = comps_desktop_exclude_list.get(desktop, set())
+        if pkgname in exclude_list or is_exclude_listed(pkgname):
             continue
         comps_group_pkgs.add(pkg.name)
 
