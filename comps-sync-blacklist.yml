@@ -126,8 +126,6 @@ blacklist:
 # Desktop environment specific blacklists
 desktop_blacklist:
   gnome-desktop:
-    # https://github.com/pbrezina/authselect/issues/48
-    - fprintd-pam
     # Non-critical apps -> Flatpak
     - baobab
     - cheese
