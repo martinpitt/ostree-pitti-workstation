@@ -16,6 +16,7 @@ packages:
   - avahi
   - chrome-gnome-shell
   - dconf
+  - fprintd-pam
   - gdm
   - glib-networking
   - gnome-backgrounds

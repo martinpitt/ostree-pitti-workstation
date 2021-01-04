@@ -9,7 +9,6 @@ packages:
   - Thunar
   - adwaita-gtk2-theme
   - adwaita-icon-theme
-  - arc-theme
   - blueberry
   - desktop-backgrounds-compat
   - gnome-keyring-pam
@@ -23,6 +22,7 @@ packages:
   - gvfs-mtp
   - initial-setup-gui
   - lightdm-gtk
+  - mint-y-theme
   - network-manager-applet
   - nm-connection-editor
   - thunar-archive-plugin
@@ -36,6 +36,7 @@ packages:
   - xfce4-places-plugin
   - xfce4-power-manager
   - xfce4-pulseaudio-plugin
+  - xfce4-screensaver
   - xfce4-screenshooter-plugin
   - xfce4-session
   - xfce4-settings
@@ -46,4 +47,3 @@ packages:
   - xfwm4
   - xfwm4-theme-nodoka
   - xfwm4-themes
-  - xscreensaver-base
