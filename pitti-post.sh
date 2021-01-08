@@ -13,9 +13,9 @@ cat <<EOF > /usr/lib/NetworkManager/conf.d/local.conf
 plugins=
 
 [device]
-wifi.backend=iwd
+#wifi.backend=iwd
 EOF
-ln -sfn ../iwd.service /usr/lib/systemd/system/multi-user.target.wants/iwd.service
+#ln -sfn ../iwd.service /usr/lib/systemd/system/multi-user.target.wants/iwd.service
 ln -sfn /run/NetworkManager/resolv.conf /etc/resolv.conf
 
 # set up PAM for systemd-homed (https://bugzilla.redhat.com/show_bug.cgi?id=1806949)

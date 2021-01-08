@@ -26,6 +26,7 @@ packages:
   - sane-backends-drivers-scanners
   - powertop
   - iwd
+  - wpa_supplicant
   - udisks2-lvm2
   - opensc
 # basic system
