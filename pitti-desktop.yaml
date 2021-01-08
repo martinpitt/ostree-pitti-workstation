@@ -26,6 +26,7 @@ packages:
   - sane-backends-drivers-scanners
   - powertop
   - iwd
+  - wpa_supplicant
   - opensc
 # basic system
   - acl
