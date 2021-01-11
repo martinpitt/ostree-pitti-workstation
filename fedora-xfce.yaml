@@ -5,6 +5,10 @@ rojig:
   summary: "Fedora XFCE base image"
   license: MIT
 packages:
+  - fedora-release-xfce
+  # Generic release sub packages for desktop variants and counting
+  - fedora-release-ostree-desktop
+  - fedora-release-ostree-counting
   # Portals for Flatpak
   - xdg-desktop-portal-gtk
 repos:

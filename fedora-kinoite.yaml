@@ -5,6 +5,7 @@ rojig:
   summary: "Fedora Kinoite (KDE) base image"
   license: MIT
 packages:
+  - fedora-release-kinoite
   # Wayland support
   - kwayland-integration
   - kwin-wayland

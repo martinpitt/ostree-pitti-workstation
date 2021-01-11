@@ -5,6 +5,7 @@ rojig:
   summary: "Fedora Silverblue base image"
   license: MIT
 packages:
+  - fedora-release-silverblue
   - desktop-backgrounds-gnome
   - gnome-shell-extension-background-logo
   - pinentry-gnome3

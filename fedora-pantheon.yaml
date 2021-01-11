@@ -5,6 +5,10 @@ rojig:
   summary: "Fedora Pantheon base image"
   license: MIT
 packages:
+  # Generic release packages for desktop variants and counting
+  - fedora-release
+  - fedora-release-ostree-desktop
+  - fedora-release-ostree-counting
 
 repos:
   - fedora-rawhide
