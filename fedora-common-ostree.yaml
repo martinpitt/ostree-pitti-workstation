@@ -88,3 +88,7 @@ packages-x86_64:
 # Make sure the following are not pulled in when Recommended by other packages
 exclude-packages:
   - PackageKit
+  # We can not include openh264. See https://fedoraproject.org/wiki/OpenH264
+  - gstreamer1-plugin-openh264
+  - mozilla-openh264
+  - openh264

@@ -14,8 +14,12 @@ exclude_list_groups:
   - container-management
 
 # PackageKit is spread across various groups
+# We can not include openh264. See https://fedoraproject.org/wiki/OpenH264
 exclude_list_all_regexp:
   - "PackageKit.*"
+  - "gstreamer1-plugin-openh264"
+  - "mozilla-openh264"
+  - "openh264"
 
 # Common exclude list for all ostree desktop versions
 exclude_list:
