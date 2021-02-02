@@ -9,7 +9,6 @@ packages:
   - abattis-cantarell-fonts
   - acl
   - adwaita-qt5
-  - alsa-plugins-pulseaudio
   - alsa-sof-firmware
   - alsa-ucm
   - alsa-utils
@@ -67,6 +66,7 @@ packages:
   - google-noto-sans-sinhala-vf-fonts
   - gstreamer1-plugins-bad-free
   - gstreamer1-plugins-good
+  - gstreamer1-plugins-ugly-free
   - gutenprint
   - gutenprint-cups
   - hostname
@@ -78,7 +78,6 @@ packages:
   - ibus-libpinyin
   - ibus-libzhuyin
   - ibus-m17n
-  - ibus-qt
   - ibus-typing-booster
   - iproute
   - iptables
@@ -151,6 +150,10 @@ packages:
   - passwdqc
   - pciutils
   - pinfo
+  - pipewire-alsa
+  - pipewire-gstreamer
+  - pipewire-pulseaudio
+  - pipewire-utils
   - plymouth
   - plymouth-system-theme
   - policycoreutils
@@ -158,13 +161,7 @@ packages:
   - procps-ng
   - psmisc
   - pt-sans-fonts
-  - pulseaudio
-  - pulseaudio-module-x11
-  - pulseaudio-utils
   - qemu-guest-agent
-  - qt
-  - qt-settings
-  - qt-x11
   - qt5-qtbase
   - qt5-qtbase-gui
   - qt5-qtdeclarative

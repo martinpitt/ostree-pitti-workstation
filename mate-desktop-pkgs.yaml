@@ -9,7 +9,6 @@ packages:
   - NetworkManager-ssh-gnome
   - NetworkManager-vpnc-gnome
   - NetworkManager-wwan
-  - alsa-plugins-pulseaudio
   - atril
   - atril-caja
   - atril-thumbnailer
@@ -83,6 +82,8 @@ packages:
   - orca
   - parole
   - pavucontrol
+  - pipewire-alsa
+  - pipewire-pulseaudio
   - pluma
   - seahorse
   - seahorse-caja
