@@ -169,6 +169,7 @@ desktop_exclude_list:
     # Non-critical apps -> Flatpak
     - akregator
     - cagibi
+    - elisa-player
     - gwenview
     - kaddressbook
     - kamera
@@ -191,6 +192,7 @@ desktop_exclude_list:
     - ksshaskpass
     - kwrite
     - libreoffice-kde
+    - okular
     - spectacle
     # Misc
     - adwaita-gtk2-theme
