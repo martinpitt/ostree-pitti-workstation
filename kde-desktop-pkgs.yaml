@@ -5,7 +5,6 @@ packages:
   - bluedevil
   - breeze-icon-theme
   - dolphin
-  - earlyoom
   - firewall-config
   - glibc-all-langpacks
   - gnome-keyring-pam
@@ -29,7 +28,6 @@ packages:
   - konsole5
   - kscreen
   - kscreenlocker
-  - ksysguard
   - kwalletmanager5
   - kwin
   - pam-kwallet
@@ -42,6 +40,7 @@ packages:
   - plasma-drkonqi
   - plasma-nm
   - plasma-pa
+  - plasma-systemmonitor
   - plasma-workspace
   - plasma-workspace-geolocation
   - plasma-workspace-xorg

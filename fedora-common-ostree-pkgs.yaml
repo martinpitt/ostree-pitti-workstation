@@ -28,6 +28,7 @@ packages:
   - chrony
   - cifs-utils
   - colord
+  - compsize
   - coreutils
   - cpio
   - cryptsetup
@@ -41,8 +42,8 @@ packages:
   - dhcp-client
   - dnsmasq
   - e2fsprogs
-  - earlyoom
   - ethtool
+  - exfatprogs
   - fedora-bookmarks
   - fedora-chromium-config
   - fedora-repos-modular
@@ -72,9 +73,9 @@ packages:
   - hostname
   - hplip
   - hunspell
+  - ibus-anthy
   - ibus-gtk3
   - ibus-hangul
-  - ibus-kkc
   - ibus-libpinyin
   - ibus-libzhuyin
   - ibus-m17n
@@ -189,6 +190,7 @@ packages:
   - sudo
   - system-config-printer-udev
   - systemd
+  - systemd-oomd-defaults
   - systemd-udev
   - tar
   - thai-scalable-waree-fonts

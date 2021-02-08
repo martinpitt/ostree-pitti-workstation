@@ -23,10 +23,10 @@ packages:
   - dconf-editor
   - engrampa
   - eom
-  - f33-backgrounds-base
-  - f33-backgrounds-extras-base
-  - f33-backgrounds-extras-mate
-  - f33-backgrounds-mate
+  - f34-backgrounds-base
+  - f34-backgrounds-extras-base
+  - f34-backgrounds-extras-mate
+  - f34-backgrounds-mate
   - firefox
   - firewall-config
   - gnome-epub-thumbnailer

@@ -25,7 +25,6 @@ packages:
   - gnome-color-manager
   - gnome-control-center
   - gnome-disk-utility
-  - gnome-getting-started-docs
   - gnome-initial-setup
   - gnome-remote-desktop
   - gnome-session-wayland-session
