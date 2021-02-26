@@ -61,6 +61,7 @@ exclude_list:
     - dnf
     - dnf-plugins-core
     - deltarpm
+    - python3-dnf-plugin-system-upgrade
     # We use fedora-release-silverblue instead
     - fedora-release-workstation
     # Really not worth listing explicitly
