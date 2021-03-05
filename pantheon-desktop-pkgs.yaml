@@ -11,10 +11,12 @@ packages:
   - elementary-greeter
   - elementary-icon-theme
   - elementary-music
+  - elementary-notifications
   - elementary-photos
   - elementary-print
   - elementary-screenshot-tool
   - elementary-shortcut-overlay
+  - elementary-sideload
   - elementary-sound-theme
   - elementary-terminal
   - elementary-theme
@@ -36,7 +38,6 @@ packages:
   - switchboard-plug-mouse-touchpad
   - switchboard-plug-networking
   - switchboard-plug-notifications
-  - switchboard-plug-onlineaccounts
   - switchboard-plug-pantheon-shell
   - switchboard-plug-printers
   - switchboard-plug-sharing

@@ -41,6 +41,7 @@ packages:
   - plasma-nm
   - plasma-pa
   - plasma-systemmonitor
+  - plasma-thunderbolt
   - plasma-workspace
   - plasma-workspace-geolocation
   - plasma-workspace-xorg

@@ -155,7 +155,6 @@ packages:
   - pipewire-gstreamer
   - pipewire-pulseaudio
   - pipewire-utils
-  - plymouth
   - plymouth-system-theme
   - policycoreutils
   - policycoreutils-python-utils
