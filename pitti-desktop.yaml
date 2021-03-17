@@ -18,12 +18,15 @@ packages:
   - kernel
   - kernel-modules-extra
   - iwl6000g2a-firmware
+  - iwl7260-firmware
+  - alsa-sof-firmware
   - NetworkManager-wifi
   - NetworkManager-openvpn-gnome
   - sane-backends
   - sane-backends-drivers-scanners
   - powertop
   - iwd
+  - wpa_supplicant
   - udisks2-lvm2
   - opensc
 # basic system
@@ -34,6 +37,8 @@ packages:
   - dnsmasq
   - fedora-workstation-backgrounds
   - filesystem
+  - glibc-langpack-de
+  - glibc-langpack-en
   - hostname
   - iproute
   - kbd
@@ -56,12 +61,13 @@ packages:
   - ranger
   - bash-completion
   - fish
-  - qemu-kvm
+  - qemu-system-x86-core
+  - qemu-ui-sdl
   - qemu-img
   - openvpn
   - mutt
   - nmap-ncat
-  - offlineimap
+  - isync
   - weechat
   - duplicity
   - openssh-server
@@ -99,11 +105,11 @@ packages:
   - nm-connection-editor
   - eog
   - evince
-  - shotwell
   - rhythmbox
   - gnome-keyring
   - pinentry-gnome3
   - lxpolkit
+  - lxterminal
   - gnome-disk-utility
   - gtimelog
 
@@ -123,12 +129,17 @@ packages:
   - wl-clipboard
 
 exclude-packages:
+  # recommended by sway
+  - alacritty
+  - brltty
   - flatpak
   - flatpak-selinux
+  - glibc-all-langpacks
   - xdg-desktop-portal-wlr
+  # recommended by gtimelog
+  - yelp
 
 add-files:
-  - ["local-rpms/redhat-internal-cert-install-0.1-7.el7.csb.noarch.rpm", "/usr/lib/local-rpms/redhat-internal-cert-install.rpm"]
-  - ["local-rpms/redhat-internal-NetworkManager-openvpn-profiles-0.1-29.el7.csb.noarch.rpm", "/usr/lib/local-rpms/redhat-internal-NetworkManager-openvpn-profiles.rpm"]
+  - ["2015-RH-IT-Root-CA.pem", "/etc/pki/ca-trust/source/anchors/2015-RH-IT-Root-CA.pem"]
 
 postprocess-script: pitti-post.sh
