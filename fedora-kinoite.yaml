@@ -15,5 +15,10 @@ packages:
   # Provide an archive manager by default
   - ark
 
+# Make sure the following are not pulled in when Recommended by other packages
+exclude-packages:
+  - plasma-discover-offline-updates
+  - plasma-discover-packagekit
+
 repos:
   - fedora-rawhide
