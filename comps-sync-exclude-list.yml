@@ -41,6 +41,7 @@ exclude_list:
     # Architecture specific packages
     - powerpc-utils
     - lsvpd
+    - s390utils-base
   base-x:
     # x86 specific packages. Added back by fedora-common-ostree.yaml
     - xorg-x11-drv-intel
