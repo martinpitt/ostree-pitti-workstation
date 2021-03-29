@@ -17,7 +17,6 @@ packages:
   - toolbox
   # Flatpak support
   - flatpak
-  - flatpak-builder
   - xdg-desktop-portal
   # HFS filesystem tools for Apple hardware
   # See https://github.com/projectatomic/rpm-ostree/issues/1380
