@@ -37,6 +37,7 @@ packages:
   - plasma-desktop
   - plasma-desktop-doc
   - plasma-discover
+  - plasma-discover-notifier
   - plasma-drkonqi
   - plasma-nm
   - plasma-pa
