@@ -9,7 +9,6 @@ packages:
   - glibc-all-langpacks
   - gnome-keyring-pam
   - initial-setup-gui
-  - kcm_systemd
   - kde-gtk-config
   - kde-print-manager
   - kde-settings-pulseaudio

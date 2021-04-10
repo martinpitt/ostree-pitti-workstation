@@ -94,3 +94,5 @@ packages:
   - system-config-printer-applet
   - usermode-gtk
   - xdg-user-dirs-gtk
+  - xmodmap
+  - xrdb
