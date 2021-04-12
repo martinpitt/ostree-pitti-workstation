@@ -108,7 +108,6 @@ exclude_list:
     # filesystem tools, again priv container
     - symlinks
     - dosfstools
-    - ntfs-3g
     # Misc
     - dos2unix
     # Gnome specific

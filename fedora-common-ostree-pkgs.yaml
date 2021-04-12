@@ -140,6 +140,7 @@ packages:
   - nfs-utils
   - nss-altfiles
   - nss-mdns
+  - ntfs-3g
   - ntfsprogs
   - opensc
   - openssh-clients
