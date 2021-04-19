@@ -115,6 +115,7 @@ packages:
   - libertas-sd8686-firmware
   - libertas-sd8787-firmware
   - libertas-usb8388-firmware
+  - libglvnd-gles
   - linux-firmware
   - logrotate
   - lohit-assamese-fonts
@@ -156,6 +157,7 @@ packages:
   - pipewire-gstreamer
   - pipewire-pulseaudio
   - pipewire-utils
+  - plymouth
   - plymouth-system-theme
   - policycoreutils
   - policycoreutils-python-utils
@@ -214,7 +216,6 @@ packages:
   - xorg-x11-drv-qxl
   - xorg-x11-drv-wacom
   - xorg-x11-server-Xorg
-  - xorg-x11-utils
   - xorg-x11-xauth
   - xorg-x11-xinit
   - zd1211-firmware
