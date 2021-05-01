@@ -12,6 +12,9 @@ packages:
   - podman
   - skopeo
   - toolbox
+  # Flatpak support
+  - flatpak
+  - xdg-desktop-portal
 
 selinux: true
 documentation: true
