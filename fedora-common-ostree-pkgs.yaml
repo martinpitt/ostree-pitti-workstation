@@ -52,8 +52,6 @@ packages:
   - filesystem
   - firefox
   - firewalld
-  - foomatic
-  - foomatic-db-ppds
   - fpaste
   - fros-gnome
   - gamemode
