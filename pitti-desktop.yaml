@@ -44,6 +44,8 @@ packages:
   - kbd
   - nss-altfiles
   - pciutils
+  # don't care, but rpm-ostree build fails otherwise
+  - selinux-policy-targeted
   - sudo
   - usbutils
 # shell tools and development
