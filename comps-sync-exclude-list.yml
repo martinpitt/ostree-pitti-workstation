@@ -94,6 +94,7 @@ exclude_list:
     - evolution
     - evolution-ews
     - evolution-help
+    - mediawriter
     # This is ancient now, and IMO has been superceded by cgroups
     # Also it breaks with --unified-core.
     - psacct
