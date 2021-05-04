@@ -16,7 +16,8 @@ plugins=
 #wifi.backend=iwd
 EOF
 #ln -sfn ../iwd.service /usr/lib/systemd/system/multi-user.target.wants/iwd.service
-ln -sfn /run/NetworkManager/resolv.conf /etc/resolv.conf
+
+ln -sfn /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
 
 # set up PAM for systemd-homed (https://bugzilla.redhat.com/show_bug.cgi?id=1806949)
 patch /etc/pam.d/system-auth <<EOF
@@ -81,6 +82,7 @@ mkdir -p /usr/lib/systemd/system/getty.target.wants
 ln -s ../getty@.service /usr/lib/systemd/system/getty.target.wants/getty@tty1.service
 ln -s ../systemd-timesyncd.service /usr/lib/systemd/system/sysinit.target.wants/systemd-timesyncd.service
 ln -s ../systemd-homed.service /usr/lib/systemd/system/multi-user.target.wants/systemd-homed.service
+ln -s ../systemd-resolved.service /usr/lib/systemd/system/multi-user.target.wants/systemd-resolved.service
 ln -s ../cockpit.socket /usr/lib/systemd/system/sockets.target.wants/cockpit.socket
 ln -s ../sshd.socket /usr/lib/systemd/system/sockets.target.wants/sshd.socket
 
