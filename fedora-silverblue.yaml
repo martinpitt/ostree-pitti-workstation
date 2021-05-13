@@ -15,6 +15,9 @@ packages:
   # Include evince-thumbnailer otherwise PDF thumbnails won't work in Nautilus
   # https://github.com/fedora-silverblue/issue-tracker/issues/98
   - evince-thumbnailer
+  # Include evince-previewer otherwise print previews are broken in Evince
+  # https://github.com/fedora-silverblue/issue-tracker/issues/122
+  - evince-previewer
   # Include totem-video-thumbnailer for video thumbnailing in Nautilus
   # https://pagure.io/fedora-workstation/issue/168
   - totem-video-thumbnailer
