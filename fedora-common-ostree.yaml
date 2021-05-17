@@ -70,9 +70,9 @@ packages-ppc64le:
   - grub2
   - ostree-grub2
 packages-x86_64:
-  - grub2
   - grub2-efi-ia32
   - grub2-efi-x64
+  - grub2-pc
   - ostree-grub2
   - efibootmgr
   - shim-ia32
