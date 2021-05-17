@@ -71,10 +71,12 @@ packages-ppc64le:
   - ostree-grub2
 packages-x86_64:
   - grub2
+  - grub2-efi-ia32
   - grub2-efi-x64
   - ostree-grub2
   - efibootmgr
-  - shim
+  - shim-ia32
+  - shim-x64
   - microcode_ctl
   - mcelog
   - thermald
