@@ -39,6 +39,9 @@ packages:
   - plasma-discover-notifier
   - plasma-drkonqi
   - plasma-nm
+  - plasma-nm-openconnect
+  - plasma-nm-openvpn
+  - plasma-nm-vpnc
   - plasma-pa
   - plasma-systemmonitor
   - plasma-thunderbolt
@@ -52,4 +55,5 @@ packages:
   - sddm
   - sddm-breeze
   - sddm-kcm
+  - spectacle
   - xorg-x11-drv-libinput
