@@ -37,6 +37,7 @@ packages:
   - plasma-desktop-doc
   - plasma-discover
   - plasma-discover-notifier
+  - plasma-disks
   - plasma-drkonqi
   - plasma-nm
   - plasma-nm-openconnect
@@ -45,6 +46,7 @@ packages:
   - plasma-pa
   - plasma-systemmonitor
   - plasma-thunderbolt
+  - plasma-vault
   - plasma-workspace
   - plasma-workspace-geolocation
   - plasma-workspace-xorg
