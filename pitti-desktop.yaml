@@ -115,6 +115,7 @@ packages:
   - lxterminal
   - gnome-disk-utility
   - gtimelog
+  - rofimoji
 
 # sway/wayland desktop
   - sway
