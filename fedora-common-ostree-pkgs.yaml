@@ -5,7 +5,6 @@ packages:
   - NetworkManager-config-connectivity-fedora
   - NetworkManager-wifi
   - NetworkManager-wwan
-  - aajohan-comfortaa-fonts
   - abattis-cantarell-fonts
   - acl
   - adwaita-qt5
@@ -101,7 +100,6 @@ packages:
   - iwl6050-firmware
   - iwl7260-firmware
   - jomolhari-fonts
-  - julietaula-montserrat-fonts
   - kbd
   - kernel
   - kernel-modules-extra
