@@ -35,6 +35,7 @@ packages:
   - cups-filters
   - curl
   - cyrus-sasl-plain
+  - default-editor
   - dejavu-sans-fonts
   - dejavu-sans-mono-fonts
   - dejavu-serif-fonts
@@ -78,7 +79,7 @@ packages:
   - ibus-m17n
   - ibus-typing-booster
   - iproute
-  - iptables
+  - iptables-nft
   - iptstate
   - iputils
   - ipw2100-firmware
@@ -132,8 +133,6 @@ packages:
   - mlocate
   - mpage
   - mtr
-  - nano
-  - nano-default-editor
   - nfs-utils
   - nss-altfiles
   - nss-mdns
