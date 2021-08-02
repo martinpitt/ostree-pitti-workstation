@@ -158,7 +158,6 @@ packages:
   - policycoreutils-python-utils
   - procps-ng
   - psmisc
-  - pt-sans-fonts
   - qemu-guest-agent
   - qt5-qtbase
   - qt5-qtbase-gui
