@@ -40,9 +40,6 @@ etc-group-members:
   - wheel
 tmp-is-dir: true
 
-# We can drop this when it's the rpm-ostree default
-rpmdb: sqlite
-
 postprocess-script: post.sh
 
 ignore-removed-users:
