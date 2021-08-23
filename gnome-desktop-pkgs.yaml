@@ -23,6 +23,7 @@ packages:
   - gnome-bluetooth
   - gnome-classic-session
   - gnome-color-manager
+  - gnome-connections
   - gnome-control-center
   - gnome-disk-utility
   - gnome-initial-setup
