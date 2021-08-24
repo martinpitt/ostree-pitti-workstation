@@ -5,10 +5,9 @@ rojig:
   summary: "Fedora base image for alternative DE"
   license: MIT
 packages:
-  # Generic release packages for desktop variants and counting
+  # Generic release package for desktop variants
   - fedora-release
   - fedora-release-ostree-desktop
-  - fedora-release-ostree-counting
   # XWayland support
   - xorg-x11-server-Xwayland
   # Portals for Flatpak

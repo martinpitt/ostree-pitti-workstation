@@ -5,10 +5,9 @@ rojig:
   summary: "Fedora Deepin base image"
   license: MIT
 packages:
-  # Generic release packages for desktop variants and counting
+  # Generic release package for desktop variants
   - fedora-release
   - fedora-release-ostree-desktop
-  - fedora-release-ostree-counting
   # GUI to manage updates & Flatpaks
   - gnome-software
 

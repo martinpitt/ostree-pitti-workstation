@@ -6,9 +6,8 @@ rojig:
   license: MIT
 packages:
   - fedora-release-xfce
-  # Generic release sub packages for desktop variants and counting
+  # Generic release sub package for desktop variants
   - fedora-release-ostree-desktop
-  - fedora-release-ostree-counting
   # Portals for Flatpak
   - xdg-desktop-portal-gtk
 repos:
