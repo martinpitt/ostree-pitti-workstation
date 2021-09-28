@@ -262,5 +262,5 @@ desktop_exclude_list:
     - NetworkManager-strongswan-gnome
     - NetworkManager-team
     - NetworkManager-wifi
-    # Use Silverblue release package for now
-    - fedora-release-matecompiz
+    # Already in the common set
+    - wireplumber

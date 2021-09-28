@@ -5,7 +5,6 @@ rojig:
   summary: "Fedora Mate base image"
   license: MIT
 packages:
-  - fedora-release-matecompiz
   # Generic release sub package for desktop variants
   - fedora-release-ostree-desktop
   # Portals for Flatpak
