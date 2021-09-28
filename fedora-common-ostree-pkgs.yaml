@@ -201,6 +201,7 @@ packages:
   - vim-minimal
   - wget
   - which
+  - wireplumber
   - words
   - wpa_supplicant
   - xorg-x11-drv-amdgpu
