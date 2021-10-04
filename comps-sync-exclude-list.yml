@@ -147,6 +147,7 @@ desktop_exclude_list:
     - gnome-calendar
     - gnome-characters
     - gnome-clocks
+    - gnome-connections
     - gnome-contacts
     - gnome-documents
     - gnome-font-viewer
