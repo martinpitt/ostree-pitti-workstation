@@ -100,6 +100,7 @@ packages:
   - iwl6000g2b-firmware
   - iwl6050-firmware
   - iwl7260-firmware
+  - iwlax2xx-firmware
   - jomolhari-fonts
   - kbd
   - kernel

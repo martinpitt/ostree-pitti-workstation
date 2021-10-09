@@ -59,6 +59,7 @@ packages:
   - tracker
   - tracker-miners
   - xdg-desktop-portal
+  - xdg-desktop-portal-gnome
   - xdg-desktop-portal-gtk
   - xdg-user-dirs-gtk
   - yelp
