@@ -59,4 +59,5 @@ packages:
   - sddm-breeze
   - sddm-kcm
   - spectacle
+  - xdg-desktop-portal-gnome
   - xorg-x11-drv-libinput
