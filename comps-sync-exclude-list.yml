@@ -172,6 +172,7 @@ desktop_exclude_list:
     - abrt-desktop
     - cups-pk-helper
     - dnfdragora
+    - plasma-pk-updates
     # Non-critical apps -> Flatpak
     - akregator
     - cagibi

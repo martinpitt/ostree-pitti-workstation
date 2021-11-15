@@ -20,6 +20,7 @@ packages:
 exclude-packages:
   - plasma-discover-offline-updates
   - plasma-discover-packagekit
+  - plasma-pk-updates
 
 repos:
   - fedora-rawhide
