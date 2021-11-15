@@ -182,7 +182,6 @@ desktop_exclude_list:
     - kcalc
     - kcharselect
     - kcolorchooser
-    - kde-partitionmanager
     - kdnssd
     - kf5-kipi-plugins
     - kfind

@@ -10,6 +10,7 @@ packages:
   - gnome-keyring-pam
   - initial-setup-gui
   - kde-gtk-config
+  - kde-partitionmanager
   - kde-print-manager
   - kde-settings-pulseaudio
   - kdegraphics-thumbnailers
