@@ -1,73 +1,81 @@
+# Manifests for rpm-ostree based Fedora variants
+
+This is the configuration needed to create
+[rpm-ostree](https://coreos.github.io/rpm-ostree/) based variants of Fedora.
+Each variant is described in a YAML
+[treefile](https://coreos.github.io/rpm-ostree/treefile/) which is then used by
+rpm-ostree to compose an ostree commit with the package requested.
+
+In the Fedora infrastructure, this happens via
+[pungi](https://pagure.io/pungi-fedora) with
+[Lorax](https://github.com/weldr/lorax)
+([templates](https://pagure.io/fedora-lorax-templates)).
+
+## Fedora Silverblue
+
+- Website: https://silverblue.fedoraproject.org/ ([sources](https://github.com/fedora-silverblue/silverblue-site))
+- Documentation: https://docs.fedoraproject.org/en-US/fedora-silverblue/ ([sources](https://github.com/fedora-silverblue/silverblue-docs))
+- Issue tracker: https://github.com/fedora-silverblue/issue-tracker/issues
+
+## Fedora Kinoite
+
+- Website: https://kinoite.fedoraproject.org/ ([sources](https://pagure.io/fedora-kde/kinoite-site))
+- Documentation: https://docs.fedoraproject.org/en-US/fedora-kinoite/ ([sources](https://pagure.io/fedora-kde/kinoite-docs))
+- Issue tracker: https://pagure.io/fedora-kde/SIG/issues
+
+## Building
+
+Instructions to perform a local build of Silverblue:
+
+```
+# Clone the config
+git clone https://pagure.io/workstation-ostree-config && cd workstation-ostree-config
+
+# Prepare repo & cache
+mkdir -p repo cache && ostree --repo=repo init --mode=archive
+
+# Build (compose) the variant of your choice
+sudo rpm-ostree compose tree --repo=repo --cachedir=cache fedora-silverblue.yaml
+
+# Update summary file
+ostree summary --repo=repo --update
+```
+
+## Testing
+
+Instructions to test the resulting build:
+
+- First, serve the ostree repo using an HTTP server.
+- Then, on an already installed Silverblue system:
+
+```
+# Add an ostree remote
+sudo ostree remote add testremote http://<IP_ADDRESS>/repo
+
+# Pin the currently deployed (and probably working) version
+sudo ostree admin pin 0
+
+# List refs from variant remote
+sudo ostree remote refs testremote
+
+# Switch to your variant
+sudo rpm-ostree rebase testremote:fedora/35/x86_64/silverblue
+```
+
+## Historical references
+
+Building and testing instructions:
+
+- https://dustymabe.com/2017/10/05/setting-up-an-atomic-host-build-server/
+- https://dustymabe.com/2017/08/08/how-do-we-create-ostree-repos-and-artifacts-in-fedora/
+- https://www.projectatomic.io/blog/2017/12/compose-custom-ostree/
+- https://www.projectatomic.io/docs/compose-your-own-tree/
+
 For some background, see:
 
- - https://fedoraproject.org/wiki/Workstation/AtomicWorkstation
- - https://fedoraproject.org/wiki/Changes/WorkstationOstree
- 
-(Note also this repo obsoletes https://pagure.io/atomic-ws)
+- <https://fedoraproject.org/wiki/Workstation/AtomicWorkstation>
+- <https://fedoraproject.org/wiki/Changes/WorkstationOstree>
+- <https://fedoraproject.org/wiki/Changes/Silverblue>
+- <https://fedoraproject.org/wiki/Changes/Fedora_Kinoite>
 
-High level design
------------------
-
-The goal of the system is to be a workstation, using
-rpm-ostree for the base OS, and a combination of
-Docker and Flatpak containers, as well as virtualization
-tools such as Vagrant.
-
-Status
-------
-
-This project is actively maintained and is ready for use
-by sophisticated and interested users, but not ready
-for widespread promotion.
-
-See some [https://lists.fedoraproject.org/archives/list/desktop@lists.fedoraproject.org/thread/J6BJS7Z4NKNOQUZWGYXZZIEKYMWBBSUY/](discussion about the first release).
-
-Installing
-------------
-
-See the Silverblue documentation at
-https://docs.fedoraproject.org/en-US/fedora-silverblue/installation-guide/.
-There's also a guide for installing inside an existing system:
-https://docs.fedoraproject.org/en-US/fedora-silverblue/installation-dual-boot/.
-
-Important issues:
------------------------
-
- - [flatpak system repo](https://github.com/flatpak/flatpak/issues/113#issuecomment-247022006)
-
-Using the system
---------------------
-
-One of the first things you should do use is use a container runtime of your
-choice to manage one or more "pet" containers.  This is where you will use
-`yum/dnf` to install utilities.
-
-With `docker` for example, you can use the `-v /srv:/srv` command line option so
-these containers can share content with your host (such as git repositories).
-Note that if you want to share content between multiple Docker containers and
-the host (e.g. your desktop session), you should execute (once):
-
-```
-sudo chcon -R -h -t container_file_t /var/srv
-```
-
-Next, let's try flatpak. Before you do: There's a known flatpak issue on
-AtomicWS - run [this workaround](https://github.com/flatpak/flatpak/issues/113#issuecomment-247022006),
-which you only need to do once. After that, [try flatpak](http://flatpak.org/apps.html).
-
-If you are a developer for server applications,
-try [oc cluster up](https://github.com/openshift/origin/blob/master/docs/cluster_up_down.md) to
-create a local OpenShift v3 cluster.
-
-Finally, try out `rpm-ostree install` to layer additional packages directly on
-the host. This is needed for "host extensions" - privileged software that
-doesn't make sense to live in a container. For example, `rpm-ostree install
-powerline` to use that software for the shell prompts of the host.  Another
-good example is `rpm-ostree install vagrant-libvirt` to use [Vagrant](https://www.vagrantup.com/)
-to manage VMs.
-
-Future work
------------
-
- - GNOME Software support for both rpm-ostree/flatpak and possibly docker
- - automated tests that run on this content
+Note also this repo obsoletes https://pagure.io/atomic-ws
