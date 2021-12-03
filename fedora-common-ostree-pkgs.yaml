@@ -82,8 +82,6 @@ packages:
   - iptables-nft
   - iptstate
   - iputils
-  - ipw2100-firmware
-  - ipw2200-firmware
   - iwl100-firmware
   - iwl1000-firmware
   - iwl105-firmware
