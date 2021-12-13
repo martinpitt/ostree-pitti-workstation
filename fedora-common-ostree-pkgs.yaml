@@ -61,7 +61,7 @@ packages:
   - gnupg2
   - google-noto-emoji-color-fonts
   - google-noto-sans-cjk-ttc-fonts
-  - google-noto-sans-gurmukhi-fonts
+  - google-noto-sans-gurmukhi-vf-fonts
   - google-noto-sans-sinhala-vf-fonts
   - gstreamer1-plugins-bad-free
   - gstreamer1-plugins-good
@@ -129,7 +129,6 @@ packages:
   - mdadm
   - mesa-dri-drivers
   - mesa-vulkan-drivers
-  - mlocate
   - mpage
   - mtr
   - nfs-utils
@@ -151,6 +150,7 @@ packages:
   - pipewire-gstreamer
   - pipewire-pulseaudio
   - pipewire-utils
+  - plocate
   - plymouth
   - plymouth-system-theme
   - policycoreutils
