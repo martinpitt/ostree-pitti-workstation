@@ -5,11 +5,6 @@
 
 set -xeuo pipefail
 
-# https://github.com/projectatomic/rpm-ostree/issues/1542#issuecomment-419684977
-for x in /etc/yum.repos.d/*modular.repo; do
-    sed -i -e 's,enabled=[01],enabled=0,' ${x}
-done
-
 # Work around https://bugzilla.redhat.com/show_bug.cgi?id=1265295
 # Also note the create-new-then-rename dance for rofiles-fuse compat
 if ! grep -q '^Storage=persistent' /etc/systemd/journald.conf; then
