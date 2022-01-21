@@ -6,11 +6,9 @@
 set -xeuo pipefail
 
 # Work around https://bugzilla.redhat.com/show_bug.cgi?id=1265295
-# Also note the create-new-then-rename dance for rofiles-fuse compat
-if ! grep -q '^Storage=persistent' /etc/systemd/journald.conf; then
-    (cat /etc/systemd/journald.conf && echo 'Storage=persistent') > /etc/systemd.journald.conf.new
-    mv /etc/systemd.journald.conf{.new,}
-fi
+# From https://github.com/coreos/fedora-coreos-config/blob/testing-devel/overlay.d/05core/usr/lib/systemd/journald.conf.d/10-coreos-persistent.conf
+install -dm0755 /usr/lib/systemd/journald.conf.d/
+echo -e "[Journal]\nStorage=persistent" > /usr/lib/systemd/journald.conf.d/10-persistent.conf
 
 # See: https://src.fedoraproject.org/rpms/glibc/pull-request/4
 # Basically that program handles deleting old shared library directories
