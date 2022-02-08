@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Usage: ./comps-sync.py /path/to/comps-f36.xml.in
+# Usage: ./comps-sync.py /path/to/comps-f37.xml.in
 #
 # Can both remove packages from the manifest
 # which are not mentioned in comps, and add packages from
