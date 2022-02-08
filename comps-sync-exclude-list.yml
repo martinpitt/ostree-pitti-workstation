@@ -141,7 +141,6 @@ desktop_exclude_list:
     - evince-nautilus
     - file-roller
     - file-roller-nautilus
-    - gedit
     - gnome-boxes
     - gnome-calculator
     - gnome-calendar
@@ -155,6 +154,7 @@ desktop_exclude_list:
     - gnome-maps
     - gnome-photos
     - gnome-screenshot
+    - gnome-text-editor
     - gnome-weather
     - jwhois
     - rdist
