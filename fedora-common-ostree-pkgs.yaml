@@ -5,7 +5,7 @@ packages:
   - NetworkManager-config-connectivity-fedora
   - NetworkManager-wifi
   - NetworkManager-wwan
-  - abattis-cantarell-fonts
+  - abattis-cantarell-vf-fonts
   - acl
   - adwaita-qt5
   - alsa-sof-firmware
@@ -60,9 +60,22 @@ packages:
   - glx-utils
   - gnupg2
   - google-noto-emoji-color-fonts
+  - google-noto-sans-arabic-vf-fonts
+  - google-noto-sans-armenian-vf-fonts
+  - google-noto-sans-canadian-aboriginal-vf-fonts
+  - google-noto-sans-cherokee-vf-fonts
   - google-noto-sans-cjk-ttc-fonts
+  - google-noto-sans-ethiopic-vf-fonts
+  - google-noto-sans-georgian-vf-fonts
   - google-noto-sans-gurmukhi-vf-fonts
+  - google-noto-sans-hebrew-vf-fonts
+  - google-noto-sans-lao-vf-fonts
+  - google-noto-sans-math-vf-fonts
+  - google-noto-sans-mono-vf-fonts
   - google-noto-sans-sinhala-vf-fonts
+  - google-noto-sans-thaana-vf-fonts
+  - google-noto-sans-vf-fonts
+  - google-noto-serif-vf-fonts
   - gstreamer1-plugins-bad-free
   - gstreamer1-plugins-good
   - gstreamer1-plugins-ugly-free
@@ -164,6 +177,7 @@ packages:
   - qt5-qtxmlpatterns
   - quota
   - realmd
+  - rit-meera-new-fonts
   - rootfiles
   - rpm
   - rsync
@@ -171,11 +185,9 @@ packages:
   - selinux-policy-targeted
   - setup
   - shadow-utils
-  - sil-abyssinica-fonts
   - sil-mingzat-fonts
   - sil-nuosu-fonts
   - sil-padauk-fonts
-  - smc-meera-fonts
   - sos
   - spice-vdagent
   - sssd
