@@ -1,0 +1,7 @@
+[fedora-36]
+name=Fedora 36 $basearch
+#baseurl=https://download.fedoraproject.org/pub/fedora/linux/development/36/$basearch/os/
+mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=fedora-36&arch=$basearch
+enabled=1
+gpgcheck=1
+metadata_expire=1d

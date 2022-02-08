@@ -1,7 +1,0 @@
-[fedora-rawhide]
-name=Fedora rawhide $basearch
-#baseurl=https://download.fedoraproject.org/pub/fedora/linux/development/rawhide/$basearch/os/
-mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=rawhide&arch=$basearch
-enabled=0
-gpgcheck=0
-metadata_expire=1d
