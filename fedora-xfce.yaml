@@ -12,3 +12,5 @@ packages:
   - xdg-desktop-portal-gtk
 repos:
   - fedora-rawhide
+  # - fedora-37
+  # - fedora-37-updates
