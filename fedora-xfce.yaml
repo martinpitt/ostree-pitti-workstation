@@ -12,3 +12,4 @@ packages:
   - xdg-desktop-portal-gtk
 repos:
   - fedora-36
+  - fedora-36-updates
