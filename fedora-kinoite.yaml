@@ -15,6 +15,12 @@ packages:
   - xdg-desktop-portal-kde
   # Provide an archive manager by default
   - ark
+  # Keep some basic apps installed until we have Flatpaks available
+  # See https://pagure.io/fedora-kde/SIG/issue/13
+  - gwenview
+  - kcalc
+  - kwrite
+  - okular
 
 # Make sure the following are not pulled in when Recommended by other packages
 exclude-packages:
