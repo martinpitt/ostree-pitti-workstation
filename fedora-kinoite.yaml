@@ -26,6 +26,8 @@ packages:
 exclude-packages:
   - plasma-discover-offline-updates
   - plasma-discover-packagekit
+  # Exclude currently broken support for rpm-ostree in Discover
+  - plasma-discover-rpm-ostree
   - plasma-pk-updates
 
 repos:
