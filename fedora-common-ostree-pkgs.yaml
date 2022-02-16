@@ -36,9 +36,7 @@ packages:
   - curl
   - cyrus-sasl-plain
   - default-editor
-  - dejavu-sans-fonts
   - dejavu-sans-mono-fonts
-  - dejavu-serif-fonts
   - dhcp-client
   - dnsmasq
   - e2fsprogs
