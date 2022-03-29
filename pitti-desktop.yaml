@@ -136,7 +136,6 @@ exclude-packages:
   - alacritty
   - brltty
   - glibc-all-langpacks
-  - xdg-desktop-portal-wlr
   # recommended by gtimelog
   - yelp
 
