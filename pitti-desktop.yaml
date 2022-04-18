@@ -110,7 +110,7 @@ packages:
   - rhythmbox
   - gnome-keyring
   - pinentry-gnome3
-  - lxpolkit
+  - mate-polkit
   - lxterminal
   - gnome-disk-utility
   - gtimelog
