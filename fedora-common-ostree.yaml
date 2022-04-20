@@ -14,6 +14,8 @@ packages:
   - podman
   - skopeo
   - toolbox
+  # Provides terminal tools like clear, reset, tput, and tset
+  - ncurses
   # Flatpak support
   - flatpak
   - xdg-desktop-portal
