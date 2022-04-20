@@ -23,10 +23,10 @@ packages:
   - dconf-editor
   - engrampa
   - eom
-  - f35-backgrounds-base
-  - f35-backgrounds-extras-base
-  - f35-backgrounds-extras-mate
-  - f35-backgrounds-mate
+  - f36-backgrounds-base
+  - f36-backgrounds-extras-base
+  - f36-backgrounds-extras-mate
+  - f36-backgrounds-mate
   - fedora-release-matecompiz
   - firefox
   - firewall-config

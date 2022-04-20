@@ -9,7 +9,7 @@ packages:
   - Thunar
   - adwaita-gtk2-theme
   - adwaita-icon-theme
-  - blueberry
+  - blueman
   - desktop-backgrounds-compat
   - gnome-keyring-pam
   - greybird-dark-theme

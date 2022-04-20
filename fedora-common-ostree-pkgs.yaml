@@ -36,7 +36,6 @@ packages:
   - curl
   - cyrus-sasl-plain
   - default-editor
-  - dejavu-sans-mono-fonts
   - dhcp-client
   - dnsmasq
   - e2fsprogs
@@ -52,13 +51,14 @@ packages:
   - firewalld
   - fpaste
   - fros-gnome
+  - fwupd
   - gamemode
   - glibc
   - glibc-all-langpacks
   - glx-utils
   - gnupg2
   - google-noto-emoji-color-fonts
-  - google-noto-sans-arabic-vf-fonts
+  - google-noto-naskh-arabic-vf-fonts
   - google-noto-sans-armenian-vf-fonts
   - google-noto-sans-canadian-aboriginal-vf-fonts
   - google-noto-sans-cherokee-vf-fonts
@@ -130,6 +130,7 @@ packages:
   - lohit-devanagari-fonts
   - lohit-gujarati-fonts
   - lohit-kannada-fonts
+  - lohit-marathi-fonts
   - lohit-odia-fonts
   - lohit-tamil-fonts
   - lohit-telugu-fonts
