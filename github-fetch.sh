@@ -10,7 +10,15 @@ CURL="curl -u token:$(cat ~/.config/github-token) --show-error --fail"
 RESPONSE=$($CURL --silent https://api.github.com/repos/martinpitt/ostree-pitti-workstation/actions/artifacts)
 ZIP=$(echo "$RESPONSE" | jq --raw-output '.artifacts | map(select(.name == "repository"))[0].archive_download_url')
 echo "INFO: Downloading $ZIP ..."
-$CURL -L -C - -o /tmp/repository.zip "$ZIP"
+success=
+for retry in $(seq 5); do
+    if $CURL -L -o /tmp/repository.zip "$ZIP"; then
+        success=1
+        break
+    fi
+    sleep 30
+done
+[ -n "$success" ] || exit 1
 rm -rf "$REPO"
 mkdir -p "$REPO"
 unzip -p /tmp/repository.zip | tar -xzC "$REPO"
