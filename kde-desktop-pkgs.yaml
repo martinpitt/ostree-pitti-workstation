@@ -6,6 +6,7 @@ packages:
   - breeze-icon-theme
   - dolphin
   - firewall-config
+  - fprintd-pam
   - glibc-all-langpacks
   - gnome-keyring-pam
   - initial-setup-gui
