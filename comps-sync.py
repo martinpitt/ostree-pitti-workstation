@@ -161,14 +161,23 @@ else:
 if (n_manifest_new > 0 or n_comps_new > 0) and args.save:
     write_manifest(base_pkgs_path, manifest_packages)
 
+# List of comps groups used for each desktop
+desktops_comps_groups = {
+    "gnome": ["gnome-desktop"],
+    "kde": ["kde-desktop"],
+    "xfce": ["xfce-desktop"],
+    "lxqt": ["lxqt-desktop"],
+    "deepin": ["deepin-desktop"],
+    "mate": ["mate-desktop"]
+}
+
 # Generate treefiles for all desktops
-for desktop in [ 'gnome-desktop', 'kde-desktop', 'xfce-desktop',
-        'lxqt-desktop', 'deepin-desktop', 'mate-desktop']:
+for desktop, groups in desktops_comps_groups.items():
     print()
     print("Syncing packages for {}:".format(desktop))
 
-    manifest_path = '{}-pkgs.yaml'.format(desktop)
-    with open(manifest_path) as f:
+    manifest_path = '{}-desktop-pkgs.yaml'.format(desktop)
+    with open(manifest_path, encoding='UTF-8') as f:
         manifest = yaml.safe_load(f)
     manifest_packages = {}
     manifest_packages['all'] = set(manifest['packages'])
@@ -182,15 +191,16 @@ for desktop in [ 'gnome-desktop', 'kde-desktop', 'xfce-desktop',
     comps_group_pkgs = {}
     for arch in ARCHES:
         filtered = comps.arch_filter([arch])
-        for pkg in filtered.groups_match(id=desktop)[0].packages:
-            pkgname = pkg.name
-            exclude_list = comps_desktop_exclude_list.get(desktop, set())
-            if pkgname in exclude_list or is_exclude_listed(pkgname):
-                continue
-            if pkgname in comps_group_pkgs:
-                comps_group_pkgs[pkgname].add(arch)
-            else:
-                comps_group_pkgs[pkgname] = set([arch])
+        for group in groups:
+            for pkg in filtered.groups_match(id=group)[0].packages:
+                pkgname = pkg.name
+                exclude_list = comps_desktop_exclude_list.get(group, set())
+                if pkgname in exclude_list or is_exclude_listed(pkgname):
+                    continue
+                if pkgname in comps_group_pkgs:
+                    comps_group_pkgs[pkgname].add(arch)
+                else:
+                    comps_group_pkgs[pkgname] = set([arch])
 
     comps_unknown = set()
     for arch in manifest_packages:
