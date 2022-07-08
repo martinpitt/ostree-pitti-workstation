@@ -1,0 +1,22 @@
+include:
+  - sway-desktop-pkgs.yaml
+ref: fedora/rawhide/${basearch}/sericea
+rojig:
+  name: fedora-sericea
+  summary: "Fedora Sericea (Sway) base image"
+  license: MIT
+packages:
+  - fedora-release-sericea
+  # explicitly list some defaults
+  - firefox
+exclude-packages:
+  # already excluded in comps-sync-exclude-list
+  - PackageKit-glib
+  - grubby
+  # nothing in the tree would use these
+  - tracker
+  - tracker-miners
+repos:
+  - fedora-rawhide
+  # - fedora-38
+  # - fedora-38-updates

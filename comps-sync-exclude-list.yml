@@ -245,3 +245,6 @@ desktop_exclude_list:
     - NetworkManager-wifi
     # Already in the common set
     - wireplumber
+  swaywm-extended:
+    # Non-critical apps -> Flatpak
+    - mpv

@@ -168,7 +168,8 @@ desktops_comps_groups = {
     "xfce": ["xfce-desktop"],
     "lxqt": ["lxqt-desktop"],
     "deepin": ["deepin-desktop"],
-    "mate": ["mate-desktop"]
+    "mate": ["mate-desktop"],
+    "sway": ["swaywm", "swaywm-extended"],
 }
 
 # Generate treefiles for all desktops
