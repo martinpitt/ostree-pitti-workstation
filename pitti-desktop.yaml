@@ -113,7 +113,6 @@ packages:
   - mate-polkit
   - lxterminal
   - gnome-disk-utility
-  - gtimelog
   - rofimoji
 
 # sway/wayland desktop
@@ -136,8 +135,6 @@ exclude-packages:
   - alacritty
   - brltty
   - glibc-all-langpacks
-  # recommended by gtimelog
-  - yelp
 
 add-files:
   - ["2015-RH-IT-Root-CA.pem", "/etc/pki/ca-trust/source/anchors/2015-RH-IT-Root-CA.pem"]
