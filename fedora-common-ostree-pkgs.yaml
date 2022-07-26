@@ -84,6 +84,7 @@ packages:
   - hunspell
   - ibus-anthy
   - ibus-gtk3
+  - ibus-gtk4
   - ibus-hangul
   - ibus-libpinyin
   - ibus-libzhuyin
@@ -170,6 +171,7 @@ packages:
   - procps-ng
   - psmisc
   - qemu-guest-agent
+  - qgnomeplatform-qt5
   - qt5-qtbase
   - qt5-qtbase-gui
   - qt5-qtdeclarative
@@ -189,6 +191,7 @@ packages:
   - sil-padauk-fonts
   - sos
   - spice-vdagent
+  - spice-webdavd
   - sssd
   - sssd-common
   - sssd-kcm
@@ -202,15 +205,18 @@ packages:
   - tar
   - thai-scalable-waree-fonts
   - time
+  - toolbox
   - tree
   - unzip
   - uresourced
   - usb_modeswitch
   - usbutils
   - util-linux
+  - vazirmatn-vf-fonts
   - vim-minimal
   - wget
   - which
+  - whois
   - wireplumber
   - words
   - wpa_supplicant
