@@ -1,5 +1,5 @@
 include: pantheon-desktop-pkgs.yaml
-ref: fedora/rawhide/${basearch}/pantheon
+ref: fedora/37/${basearch}/pantheon
 rojig:
   name: fedora-pantheon
   summary: "Fedora Pantheon base image"
@@ -10,6 +10,5 @@ packages:
   - fedora-release-ostree-desktop
 
 repos:
-  - fedora-rawhide
-  # - fedora-37
-  # - fedora-37-updates
+  - fedora-37
+  - fedora-37-updates

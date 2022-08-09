@@ -1,5 +1,5 @@
 include: xfce-desktop-pkgs.yaml
-ref: fedora/rawhide/${basearch}/vauxite
+ref: fedora/37/${basearch}/vauxite
 rojig:
   name: fedora-vauxite
   summary: "Fedora Vauxite (XFCE) base image"
@@ -18,6 +18,5 @@ packages:
   - ristretto
   - xarchiver
 repos:
-  - fedora-rawhide
-  # - fedora-37
-  # - fedora-37-updates
+  - fedora-37
+  - fedora-37-updates

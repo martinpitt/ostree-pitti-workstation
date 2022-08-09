@@ -1,5 +1,5 @@
 include: deepin-desktop-pkgs.yaml
-ref: fedora/rawhide/${basearch}/deepin
+ref: fedora/37/${basearch}/deepin
 rojig:
   name: fedora-deepin
   summary: "Fedora Deepin base image"
@@ -12,6 +12,6 @@ packages:
   - gnome-software
 
 repos:
-  - fedora-rawhide
-  # - fedora-37
-  # - fedora-37-updates
+  # - fedora-rawhide
+  - fedora-37
+  - fedora-37-updates
