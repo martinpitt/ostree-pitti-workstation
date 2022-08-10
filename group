@@ -15,7 +15,7 @@ man:x:15:
 dialout:x:18:
 floppy:x:19:
 games:x:20:
-tape:x:30:
+tape:x:33:
 video:x:39:
 ftp:x:50:
 lock:x:54:
@@ -42,7 +42,7 @@ kube:x:994:
 sshd:x:74:
 chrony:x:992:
 tcpdump:x:72:
-input:x:995:
+input:x:104:
 systemd-timesync:x:991:
 systemd-network:x:990:
 systemd-resolve:x:989:
