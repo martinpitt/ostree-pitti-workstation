@@ -12,6 +12,5 @@ packages:
   - gnome-software
 
 repos:
-  # - fedora-rawhide
   - fedora-37
   - fedora-37-updates
