@@ -9,6 +9,7 @@ packages:
   - git-core
   - lvm2
   - rpm-ostree
+  - bootupd
   # Container management
   - buildah
   - podman
