@@ -110,3 +110,4 @@ postprocess:
             ln -srf /usr/bin/true ${x}
         fi
     done
+postprocess-script: "postprocess.sh"
