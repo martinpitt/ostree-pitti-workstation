@@ -13,5 +13,5 @@ packages:
 
 repos:
   - fedora-rawhide
-  # - fedora-37
-  # - fedora-37-updates
+  # - fedora-38
+  # - fedora-38-updates
