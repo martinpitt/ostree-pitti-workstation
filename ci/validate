@@ -21,9 +21,10 @@ def validate_shell(rootfd, name):
 
 
 for root, dirs, files, rootfd in os.fwalk('.'):
-    # Skip .git
-    if '.git' in dirs:
-        dirs.remove('.git')
+    # Skip .git, repo, cache, tmp, logs, fedora-comps
+    for d in ['.git', 'repo', 'cache', 'tmp', 'logs', 'fedora-comps']:
+        if d in dirs:
+            dirs.remove(d)
     for name in files:
         if name.endswith(('.yaml', '.yml')):
             print("Validating:", name)
