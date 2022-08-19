@@ -9,7 +9,6 @@ packages:
   - git-core
   - lvm2
   - rpm-ostree
-  - bootupd
   # Container management
   - buildah
   - podman
@@ -50,8 +49,8 @@ check-groups:
 
 default_target: graphical.target
 
-# Keep this in sync with fedora-atomic-host.json from fedora-atomic
 packages-aarch64:
+  - bootupd
   - grub2-efi
   - ostree-grub2
   - efibootmgr
@@ -66,6 +65,7 @@ packages-ppc64le:
   - grub2
   - ostree-grub2
 packages-x86_64:
+  - bootupd
   - grub2-efi-ia32
   - grub2-efi-x64
   - grub2-pc
