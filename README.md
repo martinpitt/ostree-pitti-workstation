@@ -31,8 +31,9 @@ Instructions to perform a local build of Silverblue:
 # Clone the config
 git clone https://pagure.io/workstation-ostree-config && cd workstation-ostree-config
 
-# Prepare repo & cache
-mkdir -p repo cache && ostree --repo=repo init --mode=archive
+# Prepare directories
+mkdir -p repo cache
+ostree --repo=repo init --mode=archive
 
 # Build (compose) the variant of your choice
 sudo rpm-ostree compose tree --repo=repo --cachedir=cache fedora-silverblue.yaml
@@ -45,12 +46,17 @@ ostree summary --repo=repo --update
 
 Instructions to test the resulting build:
 
-- First, serve the ostree repo using an HTTP server.
+- First, serve the ostree repo using an HTTP server. You can use any static file server. For example using <https://github.com/TheWaWaR/simple-http-server>:
+
+  ```
+  simple-http-server --index --ip 192.168.122.1 --port 8000
+  ```
+
 - Then, on an already installed Silverblue system:
 
 ```
 # Add an ostree remote
-sudo ostree remote add testremote http://<IP_ADDRESS>/repo
+sudo ostree remote add testremote http://192.168.122.1:8000/repo --no-gpg-verify
 
 # Pin the currently deployed (and probably working) version
 sudo ostree admin pin 0
@@ -59,7 +65,9 @@ sudo ostree admin pin 0
 sudo ostree remote refs testremote
 
 # Switch to your variant
-sudo rpm-ostree rebase testremote:fedora/35/x86_64/silverblue
+sudo rpm-ostree rebase testremote:fedora/rawhide/x86_64/silverblue
+
+# Reboot and test!
 ```
 
 ## Historical references
