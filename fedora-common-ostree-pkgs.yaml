@@ -11,6 +11,7 @@ packages:
   - alsa-sof-firmware
   - alsa-ucm
   - alsa-utils
+  - amd-gpu-firmware
   - atmel-firmware
   - attr
   - audit
@@ -90,6 +91,7 @@ packages:
   - ibus-libzhuyin
   - ibus-m17n
   - ibus-typing-booster
+  - intel-gpu-firmware
   - iproute
   - iptables-nft
   - iptstate
@@ -149,6 +151,7 @@ packages:
   - nss-mdns
   - ntfs-3g
   - ntfsprogs
+  - nvidia-gpu-firmware
   - opensc
   - openssh-clients
   - openssh-server
