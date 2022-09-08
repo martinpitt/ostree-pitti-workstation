@@ -60,6 +60,7 @@ packages:
   - gnupg2
   - google-noto-emoji-color-fonts
   - google-noto-naskh-arabic-vf-fonts
+  - google-noto-sans-arabic-vf-fonts
   - google-noto-sans-armenian-vf-fonts
   - google-noto-sans-canadian-aboriginal-vf-fonts
   - google-noto-sans-cherokee-vf-fonts
@@ -122,8 +123,6 @@ packages:
   - liberation-mono-fonts
   - liberation-sans-fonts
   - liberation-serif-fonts
-  - libertas-sd8686-firmware
-  - libertas-sd8787-firmware
   - libertas-usb8388-firmware
   - libglvnd-gles
   - linux-firmware
