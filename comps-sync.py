@@ -132,7 +132,7 @@ if (n_manifest_new > 0 or n_comps_new > 0) and args.save:
 
 # Generate treefiles for all desktops
 for desktop in [ 'gnome-desktop', 'kde-desktop', 'xfce-desktop',
-        'lxqt-desktop', 'deepin-desktop', 'pantheon-desktop', 'mate-desktop']:
+        'lxqt-desktop', 'deepin-desktop', 'mate-desktop']:
     print()
     print("Syncing packages for {}:".format(desktop))
 
