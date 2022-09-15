@@ -15,8 +15,6 @@ packages:
   - xdg-desktop-portal-kde
   # Provide an archive manager by default
   - ark
-  # Manually add missing packages for missing input-methods
-  - imsettings-systemd
 
 # Make sure the following are not pulled in when Recommended by other packages
 exclude-packages:
