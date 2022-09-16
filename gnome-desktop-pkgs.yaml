@@ -14,13 +14,13 @@ packages:
   - at-spi2-atk
   - at-spi2-core
   - avahi
-  - chrome-gnome-shell
   - dconf
   - fprintd-pam
   - gdm
   - glib-networking
   - gnome-backgrounds
   - gnome-bluetooth
+  - gnome-browser-connector
   - gnome-classic-session
   - gnome-color-manager
   - gnome-control-center
