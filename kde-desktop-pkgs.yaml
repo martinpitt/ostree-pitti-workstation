@@ -51,6 +51,7 @@ packages:
   - plasma-vault
   - plasma-workspace
   - plasma-workspace-geolocation
+  - plasma-workspace-wallpapers
   - plasma-workspace-x11
   - polkit-kde
   - qt-at-spi
