@@ -23,6 +23,7 @@ packages:
   - khelpcenter
   - khotkeys
   - kinfocenter
+  - kio-gdrive
   - kmag
   - kmenuedit
   - kmousetool
