@@ -59,9 +59,7 @@ packages:
   - zip
   - unzip
   - vim-enhanced
-  - ranger
   - bash-completion
-  - fish
   - qemu-system-x86-core
   - qemu-ui-sdl
   - qemu-img
