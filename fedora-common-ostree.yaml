@@ -5,6 +5,11 @@ mutate-os-release: "38"
 
 include: fedora-common-ostree-pkgs.yaml
 
+# See https://github.com/coreos/bootupd
+arch-include:
+  x86_64: bootupd.yaml
+  aarch64: bootupd.yaml
+
 packages:
   - git-core
   - lvm2
@@ -50,7 +55,6 @@ check-groups:
 default_target: graphical.target
 
 packages-aarch64:
-  - bootupd
   - grub2-efi
   - ostree-grub2
   - efibootmgr
@@ -65,7 +69,6 @@ packages-ppc64le:
   - grub2
   - ostree-grub2
 packages-x86_64:
-  - bootupd
   - grub2-efi-ia32
   - grub2-efi-x64
   - grub2-pc
