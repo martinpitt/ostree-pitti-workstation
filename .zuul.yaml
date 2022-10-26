@@ -1,0 +1,9 @@
+ - project:
+     check:
+       jobs:
+         - validate
+
+ - job:
+     name: validate
+     description: Validate manifests and scripts syntax
+     run: ci/validate.yaml
