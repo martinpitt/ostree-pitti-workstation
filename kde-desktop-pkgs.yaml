@@ -23,7 +23,6 @@ packages:
   - khelpcenter
   - khotkeys
   - kinfocenter
-  - kio-gdrive
   - kmag
   - kmenuedit
   - kmousetool
@@ -65,3 +64,7 @@ packages:
   - systemd-oomd-defaults
   - xdg-desktop-portal-gnome
   - xorg-x11-drv-libinput
+packages-x86_64:
+  - kio-gdrive
+packages-aarch64:
+  - kio-gdrive

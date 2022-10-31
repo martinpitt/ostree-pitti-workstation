@@ -1,7 +1,6 @@
 # DO NOT EDIT! This content is generated from comps-sync.py
 include: fedora-common-ostree.yaml
 packages:
-  - chromium
   - deepin-calculator
   - deepin-calendar
   - deepin-desktop
@@ -13,3 +12,7 @@ packages:
   - deepin-screenshot
   - deepin-system-monitor
   - firewall-config
+packages-x86_64:
+  - chromium
+packages-aarch64:
+  - chromium

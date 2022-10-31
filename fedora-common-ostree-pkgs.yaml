@@ -8,7 +8,6 @@ packages:
   - abattis-cantarell-vf-fonts
   - acl
   - adwaita-qt5
-  - alsa-sof-firmware
   - alsa-ucm
   - alsa-utils
   - amd-gpu-firmware
@@ -236,3 +235,5 @@ packages:
   - zd1211-firmware
   - zip
   - zram-generator-defaults
+packages-x86_64:
+  - alsa-sof-firmware
