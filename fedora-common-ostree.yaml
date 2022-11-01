@@ -6,9 +6,11 @@ mutate-os-release: "38"
 include: fedora-common-ostree-pkgs.yaml
 
 # See https://github.com/coreos/bootupd
-arch-include:
-  x86_64: bootupd.yaml
-  aarch64: bootupd.yaml
+# TODO: Disabled until we use use unified-core or native container flow
+# for the main build
+# arch-include:
+#   x86_64: bootupd.yaml
+#   aarch64: bootupd.yaml
 
 packages:
   - git-core
