@@ -237,3 +237,20 @@ packages:
   - zram-generator-defaults
 packages-x86_64:
   - alsa-sof-firmware
+  - hyperv-daemons
+  - mcelog
+  - microcode_ctl
+  - open-vm-tools-desktop
+  - thermald
+  - virtualbox-guest-additions
+  - xorg-x11-drv-intel
+  - xorg-x11-drv-openchrome
+  - xorg-x11-drv-vesa
+  - xorg-x11-drv-vmware
+packages-aarch64:
+  - hyperv-daemons
+  - open-vm-tools-desktop
+  - xorg-x11-drv-armsoc
+packages-ppc64le:
+  - lsvpd
+  - powerpc-utils

@@ -38,25 +38,6 @@ exclude_list:
     - grubby-deprecated
     # Why?
     - ncurses
-    # Architecture specific packages
-    - powerpc-utils
-    - lsvpd
-    - s390utils-base
-  base-x:
-    # x86 specific packages. Added back by fedora-common-ostree.yaml
-    - xorg-x11-drv-intel
-    - xorg-x11-drv-openchrome
-    - xorg-x11-drv-vesa
-    - xorg-x11-drv-vmware
-    # ARM specific packages
-    - xorg-x11-drv-armada
-    - xorg-x11-drv-armsoc
-    - xorg-x11-drv-omap
-  guest-desktop-agents:
-    # x86 specific packages. Added back by fedora-common-ostree.yaml
-    - hyperv-daemons
-    - open-vm-tools-desktop
-    - virtualbox-guest-additions
   workstation-product:
     # We use rpm-ostree for the host
     - dnf
@@ -116,10 +97,6 @@ exclude_list:
     - gnome-shell-extension-background-logo
     - pinentry-gnome3
     - qgnomeplatform
-    # x86 specific packages. Added back by fedora-common-ostree.yaml
-    - mcelog
-    - microcode_ctl
-    - thermald
   networkmanager-submodules:
     # Let's use the builtin one by default
     - dhcp-client
