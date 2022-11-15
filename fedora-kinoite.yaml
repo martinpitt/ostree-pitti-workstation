@@ -21,6 +21,9 @@ packages:
   - kcalc
   - kwrite
   - okular
+  # Install some minor optional tools for KInfoCenter
+  - vulkan-tools
+  - xdpyinfo
 
 # Make sure the following are not pulled in when Recommended by other packages
 exclude-packages:
