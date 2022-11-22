@@ -12,7 +12,7 @@ packages:
   - atril
   - atril-caja
   - atril-thumbnailer
-  - blueberry
+  - blueman
   - caja
   - caja-actions
   - caja-image-converter
