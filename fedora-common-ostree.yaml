@@ -13,7 +13,10 @@ include: fedora-common-ostree-pkgs.yaml
 #   aarch64: bootupd.yaml
 
 packages:
+  # Do not include "full" Git as it brings in Perl
   - git-core
+  # Explicitely add Git docs
+  - git-core-doc
   - lvm2
   - rpm-ostree
   - ostree-grub2
