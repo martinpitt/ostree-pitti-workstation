@@ -9,7 +9,6 @@ packages:
   - fprintd-pam
   - glibc-all-langpacks
   - gnome-keyring-pam
-  - initial-setup-gui
   - kde-gtk-config
   - kde-partitionmanager
   - kde-print-manager

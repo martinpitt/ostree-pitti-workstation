@@ -184,6 +184,9 @@ desktop_exclude_list:
     - plasma-nm-l2tp
     - plasma-nm-openswan
     - plasma-nm-pptp
+    # Remove initial-setup from Kinoite
+    # See: https://fedoraproject.org/wiki/Changes/KDERemoveInitialSetup
+    - initial-setup-gui
   xfce-desktop:
     # Incompatible with ostree for various reasons
     - abrt-desktop
