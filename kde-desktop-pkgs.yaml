@@ -9,6 +9,7 @@ packages:
   - fprintd-pam
   - glibc-all-langpacks
   - gnome-keyring-pam
+  - kde-connect
   - kde-gtk-config
   - kde-partitionmanager
   - kde-print-manager
@@ -61,7 +62,6 @@ packages:
   - sddm-kcm
   - spectacle
   - systemd-oomd-defaults
-  - xdg-desktop-portal-gnome
   - xorg-x11-drv-libinput
 packages-x86_64:
   - kio-gdrive
