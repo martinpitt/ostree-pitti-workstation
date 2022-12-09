@@ -10,11 +10,9 @@ container-cmd:
 include: fedora-common-ostree-pkgs.yaml
 
 # See https://github.com/coreos/bootupd
-# TODO: Disabled until we use use unified-core or native container flow
-# for the main build
-# arch-include:
-#   x86_64: bootupd.yaml
-#   aarch64: bootupd.yaml
+arch-include:
+  x86_64: bootupd.yaml
+  aarch64: bootupd.yaml
 
 packages:
   # Do not include "full" Git as it brings in Perl
