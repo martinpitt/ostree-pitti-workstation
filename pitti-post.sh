@@ -19,61 +19,8 @@ EOF
 
 ln -sfn /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
 
-# set up PAM for systemd-homed (https://bugzilla.redhat.com/show_bug.cgi?id=1806949)
-authselect select minimal
-authselect opt-out
-patch /etc/pam.d/system-auth <<EOF
---- /etc/pam.d/system-auth.orig
-+++ /etc/pam.d/system-auth
-@@ -6,16 +6,20 @@
- auth        required                                     pam_env.so
- auth        required                                     pam_faildelay.so delay=2000000
- auth        sufficient                                   pam_unix.so nullok
-+-auth       sufficient                                   pam_systemd_home.so  # added
- auth        required                                     pam_deny.so
-
--account     required                                     pam_unix.so
-+account     sufficient                                   pam_unix.so
-+-account    sufficient                                   pam_systemd_home.so  # added
-
- password    requisite                                    pam_pwquality.so
- password    sufficient                                   pam_unix.so yescrypt shadow nullok use_authtok
-+-password   sufficient                                   pam_systemd_home.so  # added
- password    required                                     pam_deny.so
-
- session     optional                                     pam_keyinit.so revoke
- session     required                                     pam_limits.so
-+-session    optional                                     pam_systemd_home.so  # added
- -session    optional                                     pam_systemd.so
- session     [success=1 default=ignore]                   pam_succeed_if.so service in crond quiet use_uid
- session     required                                     pam_unix.so
-EOF
-patch /etc/pam.d/password-auth <<EOF
---- password-auth
-+++ password-auth
-@@ -6,16 +6,20 @@
- auth        required                                     pam_env.so
- auth        required                                     pam_faildelay.so delay=2000000
- auth        sufficient                                   pam_unix.so nullok
-+-auth       sufficient                                   pam_systemd_home.so  # added
- auth        required                                     pam_deny.so
-
--account     required                                     pam_unix.so
-+account     sufficient                                   pam_unix.so
-+-account    sufficient                                   pam_systemd_home.so  # added
-
- password    requisite                                    pam_pwquality.so
- password    sufficient                                   pam_unix.so yescrypt shadow nullok use_authtok
-+-password   sufficient                                   pam_systemd_home.so  # added
- password    required                                     pam_deny.so
-
- session     optional                                     pam_keyinit.so revoke
- session     required                                     pam_limits.so
-+-session    optional                                     pam_systemd_home.so  # added
- -session    optional                                     pam_systemd.so
- session     [success=1 default=ignore]                   pam_succeed_if.so service in crond quiet use_uid
- session     required                                     pam_unix.so
-EOF
+# set up PAM for systemd-homed
+authselect enable-feature with-systemd-homed
 
 # homed is missing a lot of SELinux policy (https://bugzilla.redhat.com/show_bug.cgi?id=1809878)
 # "disabled" breaks rpm-ostree (https://bugzilla.redhat.com/show_bug.cgi?id=1882933), so just use permissive
