@@ -21,6 +21,20 @@ sudo rpm-ostree upgrade
 
 If anything goes wrong, you can go back to the previous version with `sudo rpm-ostree rollback`.
 
+Login
+-----
+
+There is no graphical login manager. I log in on VT1, and my `.bashrc`
+automatically starts the GNOME SSH agent and sway:
+
+```sh
+if [ "$(tty)" = "/dev/tty1" ]; then
+    export `gnome-keyring-daemon --start --components=ssh`
+    export BROWSER=firefox-wayland
+    export XDG_CURRENT_DESKTOP=sway
+    exec sway > $XDG_RUNTIME_DIR/sway.log 2>&1
+fi
+```
 
 Original README for [workstation-ostree-config](https://pagure.io/workstation-ostree-config)
 =============================================
