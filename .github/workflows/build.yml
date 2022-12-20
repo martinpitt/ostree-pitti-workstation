@@ -9,7 +9,7 @@ jobs:
     permissions:
       contents: read
       packages: write
-    timeout-minutes: 30
+    timeout-minutes: 40
     container:
       image: docker.io/fedora:rawhide
       # Fix SELinux for the built OSTree: https://github.com/coreos/rpm-ostree/issues/1943

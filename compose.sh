@@ -12,4 +12,10 @@ if [ ! -d $REPO/objects ]; then
 fi
 
 rpm-ostree compose tree --unified-core --cachedir=$CACHE --repo=$REPO pitti-desktop.yaml
-rpm-ostree compose container-encapsulate --repo=$REPO pitti-desktop ${SKOPEO_TARGET}:ghcr.io/martinpitt/workstation-ostree-config:latest
+# HACK: networking in GitHub is a bit flaky, retry a few times
+for retry in $(seq 3); do
+    rpm-ostree compose container-encapsulate --repo=$REPO pitti-desktop ${SKOPEO_TARGET}:ghcr.io/martinpitt/workstation-ostree-config:latest && exit 0
+    [ "$SKOPEO_TARGET" = registry ] || break
+    sleep 30
+done
+exit 1
