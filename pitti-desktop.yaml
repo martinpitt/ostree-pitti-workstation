@@ -22,12 +22,9 @@ packages:
   - alsa-sof-firmware
   - NetworkManager-wifi
   - NetworkManager-openvpn-gnome
-  - sane-backends
-  - sane-backends-drivers-scanners
   - powertop
   - iwd
   - wpa_supplicant
-  - opensc
 # basic system
   - acl
   - attr
@@ -56,13 +53,8 @@ packages:
   - mtr
   - tree
   - bzip2
-  - zip
-  - unzip
   - vim-enhanced
   - bash-completion
-  - qemu-system-x86-core
-  - qemu-ui-sdl
-  - qemu-img
   - openvpn
   - mutt
   - nmap-ncat
@@ -101,7 +93,6 @@ packages:
 
   - pavucontrol
   - pcmanfm
-  - simple-scan
   - nm-connection-editor
   - eog
   - evince
