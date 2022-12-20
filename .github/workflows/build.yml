@@ -6,27 +6,23 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    timeout-minutes: 30
     container:
       image: docker.io/fedora:rawhide
       # Fix SELinux for the built OSTree: https://github.com/coreos/rpm-ostree/issues/1943
       options: --privileged --security-opt label:disable
     steps:
       - name: Install dependencies
-        run: dnf install -y rpm-ostree selinux-policy selinux-policy-targeted policycoreutils
+        run: dnf install -y rpm-ostree selinux-policy selinux-policy-targeted policycoreutils podman
 
       - name: Clone repository
         uses: actions/checkout@v2
 
-      - name: Build OSTree
-        run: ./compose.sh
+      - name: Log into container registry
+        run: podman login -u ${{ github.actor }} -p ${{ secrets.GITHUB_TOKEN }} ghcr.io
 
-      # upload-artifact@v2 has trouble with tens of thousands of files
-      - name: Create repo tarball
-        run: tar -czf /var/tmp/repo.tar.gz -C /var/tmp/repo .
-
-      - name: Create repository artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: repository
-          path: /var/tmp/repo.tar.gz
-          retention-days: 5
+      - name: Build OSTree and push it to registry
+        run: ./compose.sh registry

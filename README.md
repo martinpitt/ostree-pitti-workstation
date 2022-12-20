@@ -4,13 +4,12 @@ Martin Pitt's desktop
 This is an [rpm-ostree](https://coreos.github.io/rpm-ostree/) based minimal
 [Fedora](https://getfedora.org/) developer desktop with the [sway window manager](https://swaywm.org/) and [podman](https://podman.io/)/[toolbox](https://docs.fedoraproject.org/en-US/fedora-silverblue/toolbox/) for doing development and running less common graphical applications.
 
-It gets [automatically built](.github/workflows/build.yml) every week and [published to my server](https://piware.de/ostree/pitti-workstation/).
+It gets [automatically built](.github/workflows/build.yml) every week and [published as container image](https://github.com/martinpitt/ostree-pitti-workstation/pkgs/container/workstation-ostree-config), for using with [ostree native containers](https://coreos.github.io/rpm-ostree/container/).
 
-To use it from an existing OSTree based system like [Fedora CoreOS](https://getfedora.org/coreos) or [Fedora Silverblue](https://docs.fedoraproject.org/en-US/fedora-silverblue/), add my server URL as new remote and rebase your tree to it:
+To use it from an existing OSTree based system like [Fedora CoreOS](https://getfedora.org/coreos) or [Fedora Silverblue](https://docs.fedoraproject.org/en-US/fedora-silverblue/), rebase your tree to it:
 
 ```sh
-sudo ostree remote add --no-gpg-verify piware https://piware.de/ostree/pitti-workstation/
-sudo rpm-ostree rebase piware:pitti-desktop
+sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/martinpitt/workstation-ostree-config
 ```
 
 After that, you can install weekly updates with
