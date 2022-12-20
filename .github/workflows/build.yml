@@ -19,7 +19,7 @@ jobs:
         run: dnf install -y rpm-ostree selinux-policy selinux-policy-targeted policycoreutils podman
 
       - name: Clone repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Log into container registry
         run: podman login -u ${{ github.actor }} -p ${{ secrets.GITHUB_TOKEN }} ghcr.io
