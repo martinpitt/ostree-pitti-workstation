@@ -61,6 +61,7 @@ packages:
   - isync
   - weechat
   - duplicity
+  - restic
   - openssh-server
   - systemd-container
   - git
