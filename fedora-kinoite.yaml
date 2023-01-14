@@ -24,6 +24,9 @@ packages:
   # Install some minor optional tools for KInfoCenter
   - vulkan-tools
   - xdpyinfo
+  # Includes a KIO & KCM (can not be Flatpak'ed), used by Dolphin and Gwenview
+  # See https://pagure.io/fedora-kde/SIG/issue/291
+  - kamera
 
 # Make sure the following are not pulled in when Recommended by other packages
 exclude-packages:
