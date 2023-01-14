@@ -42,6 +42,9 @@ ln -sfn /dev/null /usr/lib/systemd/user/at-spi-dbus-bus.service
 cp -a --verbose /etc/systemd/system /etc/systemd/user /usr/lib/systemd/
 rm -r /etc/systemd/system /etc/systemd/user
 
+# scanner permissions without scanner packages
+echo 'ACTION=="add|change", ENV{DEVTYPE}=="usb_device", ENV{ID_MODEL}=="CanoScan", MODE="666"' > /usr/lib/udev/rules.d/canoscan.rules
+
 # update for Red Hat certificate
 ln -s /etc/pki/ca-trust/source/anchors/2015-RH-IT-Root-CA.pem /etc/pki/tls/certs/2015-RH-IT-Root-CA.pem
 update-ca-trust
