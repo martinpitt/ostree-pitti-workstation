@@ -1,3 +1,42 @@
 # DO NOT EDIT! This content is generated from comps-sync.py
 include: fedora-common-ostree.yaml
-packages: []
+packages:
+  - NetworkManager-l2tp-gnome
+  - NetworkManager-libreswan-gnome
+  - NetworkManager-openconnect-gnome
+  - NetworkManager-openvpn-gnome
+  - NetworkManager-pptp-gnome
+  - NetworkManager-sstp-gnome
+  - NetworkManager-vpnc-gnome
+  - Thunar
+  - blueman
+  - bolt
+  - dunst
+  - foot
+  - fprintd-pam
+  - gnome-keyring-pam
+  - grim
+  - imv
+  - kanshi
+  - lxqt-policykit
+  - network-manager-applet
+  - pavucontrol-qt
+  - pinentry-gnome3
+  - playerctl
+  - polkit
+  - pulseaudio-utils
+  - sddm
+  - sddm-x11
+  - slurp
+  - sway
+  - sway-config-fedora
+  - swaybg
+  - swayidle
+  - swaylock
+  - system-config-printer
+  - thunar-archive-plugin
+  - waybar
+  - wl-clipboard
+  - xdg-desktop-portal-gtk
+  - xdg-desktop-portal-wlr
+  - xorg-x11-server-Xwayland
