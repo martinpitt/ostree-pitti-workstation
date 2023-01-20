@@ -48,8 +48,6 @@ exclude_list:
     - fedora-release-workstation
     # Really not worth listing explicitly
     - filesystem
-    # Why?
-    - ncurses
     - mailcap
     # This seems like some weird legacy thing, it also
     # drags in usermode, which should also be deprecated
