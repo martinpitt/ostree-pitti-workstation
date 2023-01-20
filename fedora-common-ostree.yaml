@@ -19,6 +19,8 @@ packages:
   - git-core-doc
   - lvm2
   - rpm-ostree
+  # Required for compatibility with old bootloaders until we have bootupd
+  # See https://github.com/fedora-silverblue/issue-tracker/issues/120
   - ostree-grub2
   # Container management
   - buildah

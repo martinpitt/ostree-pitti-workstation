@@ -66,7 +66,7 @@ exclude_list:
     - abrt-java-connector
     # Requires libreoffice
     - unoconv
-    # Will change to git-core
+    # Will change to git-core as git pulls in Perl
     - git
     # Apps
     - rhythmbox
