@@ -43,8 +43,10 @@ packages:
   - exfatprogs
   - fedora-bookmarks
   - fedora-chromium-config
+  - fedora-flathub-remote
   - fedora-repos-modular
   - fedora-workstation-backgrounds
+  - fedora-workstation-repositories
   - file
   - filesystem
   - firefox
