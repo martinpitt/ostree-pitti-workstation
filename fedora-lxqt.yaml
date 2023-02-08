@@ -1,5 +1,5 @@
 include: lxqt-desktop-pkgs.yaml
-ref: fedora/rawhide/${basearch}/lxqt
+ref: fedora/38/${basearch}/lxqt
 rojig:
   name: fedora-lxqt
   summary: "Fedora LXQt base image"
@@ -13,6 +13,5 @@ packages:
   - xdg-desktop-portal-kde
 
 repos:
-  - fedora-rawhide
-  # - fedora-38
-  # - fedora-38-updates
+   - fedora-38
+   - fedora-38-updates

@@ -1,4 +1,4 @@
-ref: fedora/rawhide/${basearch}/ostree-base
+ref: fedora/38/${basearch}/ostree-base
 
 automatic_version_prefix: "38"
 mutate-os-release: "38"

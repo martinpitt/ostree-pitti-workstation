@@ -1,6 +1,6 @@
 include:
   - sway-desktop-pkgs.yaml
-ref: fedora/rawhide/${basearch}/sericea
+ref: fedora/38/${basearch}/sericea
 rojig:
   name: fedora-sericea
   summary: "Fedora Sericea (Sway) base image"
@@ -17,6 +17,5 @@ exclude-packages:
   - tracker
   - tracker-miners
 repos:
-  - fedora-rawhide
-  # - fedora-38
-  # - fedora-38-updates
+   - fedora-38
+   - fedora-38-updates

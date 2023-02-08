@@ -1,5 +1,5 @@
 include: kde-desktop-pkgs.yaml
-ref: fedora/rawhide/${basearch}/kinoite
+ref: fedora/38/${basearch}/kinoite
 rojig:
   name: fedora-kde
   summary: "Fedora Kinoite (KDE) base image"
@@ -44,6 +44,5 @@ exclude-packages:
   - tracker-miners
 
 repos:
-  - fedora-rawhide
-  # - fedora-38
-  # - fedora-38-updates
+   - fedora-38
+   - fedora-38-updates
