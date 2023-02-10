@@ -57,6 +57,8 @@ packages:
   - bash-completion
   - openvpn
   - mutt
+  # authenticate to gmail
+  - cyrus-sasl-plain
   - nmap-ncat
   - isync
   - weechat
