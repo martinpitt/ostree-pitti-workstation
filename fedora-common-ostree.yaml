@@ -103,4 +103,8 @@ postprocess:
             ln -srf /usr/bin/true ${x}
         fi
     done
+
+    # Remove loader directory causing issues in Anaconda in unified core mode
+    # Will be obsolete once we start using bootupd
+    rm -rf /usr/lib/ostree-boot/loader
 postprocess-script: "postprocess.sh"
