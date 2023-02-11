@@ -53,7 +53,7 @@ packages:
   - mtr
   - tree
   - bzip2
-  - vim-enhanced
+  - neovim
   - bash-completion
   - openvpn
   - mutt
