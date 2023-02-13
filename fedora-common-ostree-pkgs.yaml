@@ -32,6 +32,7 @@ packages:
   - cpio
   - cryptsetup
   - cups
+  - cups-browsed
   - cups-filters
   - curl
   - cyrus-sasl-plain
@@ -79,6 +80,7 @@ packages:
   - google-noto-sans-thai-vf-fonts
   - google-noto-sans-vf-fonts
   - google-noto-serif-vf-fonts
+  - gstreamer1-plugin-libav
   - gstreamer1-plugins-bad-free
   - gstreamer1-plugins-good
   - gstreamer1-plugins-ugly-free
