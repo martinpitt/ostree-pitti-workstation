@@ -2,5 +2,5 @@
    tasks:
      - name: Validate manifests and scripts syntax
        ansible.builtin.command:
-         chdir: "{{ ansible_user_dir }}/{{ zuul.project.src_dir }}"
+         chdir: "{{ zuul.project.src_dir }}"
          cmd: ci/validate

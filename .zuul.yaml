@@ -7,3 +7,7 @@
      name: validate
      description: Validate manifests and scripts syntax
      run: ci/validate.yaml
+     nodeset:
+       nodes:
+         - name: container
+           label: zuul-worker-f37
