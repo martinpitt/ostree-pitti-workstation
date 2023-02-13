@@ -46,7 +46,6 @@ packages:
   - gvfs-gphoto2
   - gvfs-mtp
   - gvfs-smb
-  - libcanberra-gtk3
   - libproxy-duktape
   - librsvg2
   - libsane-hpaio

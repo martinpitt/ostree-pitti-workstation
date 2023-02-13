@@ -7,6 +7,7 @@ packages:
   - dolphin
   - ffmpegthumbs
   - firewall-config
+  - flatpak-kcm
   - fprintd-pam
   - glibc-all-langpacks
   - gnome-keyring-pam
@@ -33,6 +34,7 @@ packages:
   - kscreenlocker
   - kwalletmanager5
   - kwin
+  - libappindicator-gtk3
   - pam-kwallet
   - phonon-qt5-backend-gstreamer
   - pinentry-qt
@@ -51,6 +53,7 @@ packages:
   - plasma-systemmonitor
   - plasma-thunderbolt
   - plasma-vault
+  - plasma-welcome
   - plasma-workspace
   - plasma-workspace-geolocation
   - plasma-workspace-wallpapers
@@ -64,6 +67,7 @@ packages:
   - sddm-kcm
   - spectacle
   - systemd-oomd-defaults
+  - udisks2
   - xorg-x11-drv-libinput
 packages-x86_64:
   - kio-gdrive
