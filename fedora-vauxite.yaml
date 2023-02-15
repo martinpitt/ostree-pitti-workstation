@@ -18,5 +18,5 @@ packages:
   - ristretto
   - xarchiver
 repos:
-   - fedora-38
-   - fedora-38-updates
+  - fedora-38
+  - fedora-38-updates

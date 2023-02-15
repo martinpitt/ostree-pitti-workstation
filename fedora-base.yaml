@@ -15,5 +15,5 @@ packages:
   - xdg-desktop-portal-gtk
 
 repos:
-   - fedora-38
-   - fedora-38-updates
+  - fedora-38
+  - fedora-38-updates
