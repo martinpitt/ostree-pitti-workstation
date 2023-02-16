@@ -32,7 +32,10 @@ for root, dirs, files, rootfd in os.fwalk('.'):
             print("Validating:", name)
             with open(os.open(name, dir_fd=rootfd, flags=os.O_RDONLY)) as f:
                 yaml.safe_load(f)
-                validated +=1
+            result = subprocess.run(['grep', '-RniEv', '^(  )*[a-z#/-]|^$|^#', name], encoding='UTF-8')
+            if result.returncode == 0:
+                raise Exception("Found likely invalid indentation in YAML file: {}".format(name))
+            validated +=1
             continue
         elif name.endswith('.sh'):
             print("Validating:", name)
