@@ -70,11 +70,13 @@ packages:
   - google-noto-sans-georgian-vf-fonts
   - google-noto-sans-gurmukhi-vf-fonts
   - google-noto-sans-hebrew-vf-fonts
+  - google-noto-sans-khmer-vf-fonts
   - google-noto-sans-lao-vf-fonts
   - google-noto-sans-math-fonts
   - google-noto-sans-mono-vf-fonts
   - google-noto-sans-sinhala-vf-fonts
   - google-noto-sans-thaana-vf-fonts
+  - google-noto-sans-thai-vf-fonts
   - google-noto-sans-vf-fonts
   - google-noto-serif-vf-fonts
   - gstreamer1-plugins-bad-free
@@ -119,7 +121,6 @@ packages:
   - kbd
   - kernel
   - kernel-modules-extra
-  - khmer-os-system-fonts
   - less
   - liberation-mono-fonts
   - liberation-sans-fonts
@@ -206,7 +207,6 @@ packages:
   - systemd-resolved
   - systemd-udev
   - tar
-  - thai-scalable-waree-fonts
   - time
   - toolbox
   - tree
