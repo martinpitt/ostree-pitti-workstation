@@ -1,0 +1,46 @@
+# DO NOT EDIT! This content is generated from comps-sync.py
+include: fedora-common-ostree.yaml
+packages:
+  - NetworkManager-adsl
+  - NetworkManager-bluetooth
+  - NetworkManager-openconnect-gnome
+  - NetworkManager-openvpn-gnome
+  - NetworkManager-ppp
+  - NetworkManager-pptp-gnome
+  - NetworkManager-vpnc-gnome
+  - NetworkManager-wifi
+  - NetworkManager-wwan
+  - blueman
+  - cinnamon
+  - cinnamon-control-center
+  - cinnamon-screensaver
+  - firefox
+  - firewall-config
+  - gnome-disk-utility
+  - gnome-screenshot
+  - gnome-system-monitor
+  - gnome-terminal
+  - gstreamer1-plugins-ugly-free
+  - gvfs-archive
+  - gvfs-gphoto2
+  - gvfs-mtp
+  - gvfs-smb
+  - imsettings-gsettings
+  - initial-setup-gui
+  - metacity
+  - nemo-fileroller
+  - nemo-image-converter
+  - nemo-preview
+  - nm-connection-editor
+  - pipewire-alsa
+  - pipewire-pulseaudio
+  - powerline
+  - qgnomeplatform-qt5
+  - redshift-gtk
+  - setroubleshoot
+  - slick-greeter
+  - slick-greeter-cinnamon
+  - system-config-printer
+  - wireplumber
+  - xawtv
+  - xdg-user-dirs-gtk

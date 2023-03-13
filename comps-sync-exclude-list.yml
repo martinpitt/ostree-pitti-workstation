@@ -246,3 +246,36 @@ desktop_exclude_list:
   swaywm-extended:
     # Non-critical apps -> Flatpak
     - mpv
+  cinnamon-desktop:
+    # Incompatible with ostree for various reasons
+    - abrt-desktop
+    - abrt-java-connector
+    - dnfdragora-updater
+    # Non-critical apps -> Flatpak & toolbox
+    - eom
+    - gnome-calculator
+    - gucharmap
+    - hexchat
+    - mpv
+    - pidgin
+    - sane-backends-drivers-scanners
+    - shotwell
+    - simple-scan
+    - thunderbird
+    - tmux
+    - tmux-powerline
+    - transmission
+    - vim-powerline
+    - xed
+    - xfburn
+    - xreader
+    # Not default to cinnamon
+    - paper-icon-theme
+    # Non critical NetworkManager plugins
+    - NetworkManager-iodine-gnome
+    - NetworkManager-l2tp-gnome
+    - NetworkManager-libreswan-gnome
+    - NetworkManager-ovs
+    - NetworkManager-sstp-gnome
+    - NetworkManager-strongswan-gnome
+    - NetworkManager-team

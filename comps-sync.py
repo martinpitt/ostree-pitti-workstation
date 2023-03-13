@@ -170,6 +170,7 @@ desktops_comps_groups = {
     "deepin": ["deepin-desktop"],
     "mate": ["mate-desktop"],
     "sway": ["swaywm", "swaywm-extended"],
+    "cinnamon": ["cinnamon-desktop"],
 }
 
 # Generate treefiles for all desktops

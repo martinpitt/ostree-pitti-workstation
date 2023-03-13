@@ -1,0 +1,17 @@
+include: cinnamon-desktop-pkgs.yaml
+ref: fedora/rawhide/${basearch}/cinnamon
+rojig:
+  name: fedora-cinnamon
+  summary: "Fedora Cinnamon base image"
+  license: MIT
+
+packages:
+  # Portals for Flatpak
+  - xdg-desktop-portal-gtk
+  # Include GUI to manage updates & Flatpaks
+  - gnome-software
+
+repos:
+  - fedora-rawhide
+  # - fedora-39
+  # - fedora-39-updates
