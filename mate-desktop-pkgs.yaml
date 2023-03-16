@@ -2,12 +2,14 @@
 include: fedora-common-ostree.yaml
 packages:
   - NetworkManager-adsl
+  - NetworkManager-bluetooth
   - NetworkManager-openconnect-gnome
   - NetworkManager-openvpn-gnome
   - NetworkManager-ppp
   - NetworkManager-pptp-gnome
   - NetworkManager-ssh-gnome
   - NetworkManager-vpnc-gnome
+  - NetworkManager-wifi
   - NetworkManager-wwan
   - atril
   - atril-caja
