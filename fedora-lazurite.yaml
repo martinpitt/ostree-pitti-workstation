@@ -1,14 +1,18 @@
 include: lxqt-desktop-pkgs.yaml
-ref: fedora/38/${basearch}/lxqt
+ref: fedora/38/${basearch}/lazurite
 rojig:
   name: fedora-lxqt
-  summary: "Fedora LXQt base image"
+  summary: "Fedora Lazurite (LXQt) base image"
   license: MIT
 packages:
   # Generic release package for desktop variants
   - fedora-release
   - fedora-release-ostree-desktop
   - libqtxdg
+  - kvantum
+  - kwin-x11
+  - kwin-wayland
+  - plasma-systemsettings
   # Portals for Flatpak
   - xdg-desktop-portal-kde
 
