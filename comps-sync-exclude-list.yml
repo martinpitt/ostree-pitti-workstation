@@ -94,7 +94,7 @@ exclude_list:
     - desktop-backgrounds-gnome
     - gnome-shell-extension-background-logo
     - pinentry-gnome3
-    - qgnomeplatform
+    - qgnomeplatform-qt5
   networkmanager-submodules:
     # Let's use the builtin one by default
     - dhcp-client
