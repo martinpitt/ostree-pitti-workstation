@@ -177,7 +177,6 @@ packages:
   - procps-ng
   - psmisc
   - qemu-guest-agent
-  - qgnomeplatform-qt5
   - qt5-qtbase
   - qt5-qtbase-gui
   - qt5-qtdeclarative

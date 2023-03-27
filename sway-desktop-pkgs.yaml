@@ -20,7 +20,7 @@ packages:
   - kanshi
   - lxqt-policykit
   - network-manager-applet
-  - pavucontrol-qt
+  - pavucontrol
   - pinentry-gnome3
   - playerctl
   - polkit
@@ -36,6 +36,7 @@ packages:
   - system-config-printer
   - thunar-archive-plugin
   - waybar
+  - wev
   - wl-clipboard
   - xdg-desktop-portal-gtk
   - xdg-desktop-portal-wlr
