@@ -157,7 +157,6 @@ desktop_exclude_list:
     - kamera
     - kcalc
     - kcolorchooser
-    - kdnssd
     - kf5-kipi-plugins
     - kget
     - kgpg
