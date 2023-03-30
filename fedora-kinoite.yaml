@@ -24,6 +24,8 @@ packages:
   - bcache-tools
   - dmraid
   - mobile-broadband-provider-info
+  # Make sure that modem support is installed
+  - NetworkManager-ppp
 
 # Make sure the following are not pulled in when Recommended by other packages
 exclude-packages:
