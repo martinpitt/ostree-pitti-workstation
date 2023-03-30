@@ -151,7 +151,6 @@ desktop_exclude_list:
     - kdnssd
     - ksshaskpass
     # Misc
-    - colord-kde
     - kwebkitpart
     - plasma-nm-l2tp
     - plasma-nm-openswan

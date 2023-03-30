@@ -6,6 +6,7 @@ packages:
   - ark
   - bluedevil
   - breeze-icon-theme
+  - colord-kde
   - dolphin
   - ffmpegthumbs
   - firewall-config
