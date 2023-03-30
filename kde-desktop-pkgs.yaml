@@ -5,6 +5,7 @@ packages:
   - adwaita-gtk2-theme
   - bluedevil
   - breeze-icon-theme
+  - colord-kde
   - dolphin
   - ffmpegthumbs
   - firewall-config

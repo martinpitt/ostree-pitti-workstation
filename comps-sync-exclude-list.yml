@@ -173,7 +173,6 @@ desktop_exclude_list:
     - libreoffice-kde
     - okular
     # Misc
-    - colord-kde
     - keditbookmarks
     - kwebkitpart
     - plasma-nm-l2tp
