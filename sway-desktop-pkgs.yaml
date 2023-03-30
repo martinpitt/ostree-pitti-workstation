@@ -23,6 +23,7 @@ packages:
   - pavucontrol
   - pinentry-gnome3
   - playerctl
+  - plymouth-system-theme
   - polkit
   - pulseaudio-utils
   - sddm

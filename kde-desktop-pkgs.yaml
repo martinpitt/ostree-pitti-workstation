@@ -9,6 +9,7 @@ packages:
   - colord-kde
   - dolphin
   - ffmpegthumbs
+  - filelight
   - firewall-config
   - flatpak-kcm
   - fprintd-pam
@@ -36,6 +37,7 @@ packages:
   - kmenuedit
   - kmousetool
   - konsole5
+  - krfb
   - kscreen
   - kscreenlocker
   - kwalletmanager5
