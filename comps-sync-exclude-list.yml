@@ -148,7 +148,6 @@ desktop_exclude_list:
     - cups-pk-helper
     - dnfdragora
     - plasma-pk-updates
-    - kdnssd
     - ksshaskpass
     # Misc
     - kwebkitpart

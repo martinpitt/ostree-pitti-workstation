@@ -23,6 +23,7 @@ packages:
   - kdegraphics-thumbnailers
   - kdeplasma-addons
   - kdialog
+  - kdnssd
   - kf5-akonadi-server
   - kf5-akonadi-server-mysql
   - kf5-baloo-file
