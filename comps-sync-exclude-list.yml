@@ -151,7 +151,6 @@ desktop_exclude_list:
     - kdnssd
     - ksshaskpass
     # Misc
-    - adwaita-gtk2-theme
     - colord-kde
     - kwebkitpart
     - plasma-nm-l2tp
