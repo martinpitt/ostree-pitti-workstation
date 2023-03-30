@@ -11,6 +11,7 @@ packages:
   - fprintd-pam
   - glibc-all-langpacks
   - gnome-keyring-pam
+  - kcharselect
   - kde-connect
   - kde-gtk-config
   - kde-partitionmanager
