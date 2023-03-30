@@ -2,6 +2,7 @@
 include: fedora-common-ostree.yaml
 packages:
   - NetworkManager-config-connectivity-fedora
+  - adwaita-gtk2-theme
   - bluedevil
   - breeze-icon-theme
   - dolphin

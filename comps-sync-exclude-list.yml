@@ -173,7 +173,6 @@ desktop_exclude_list:
     - libreoffice-kde
     - okular
     # Misc
-    - adwaita-gtk2-theme
     - colord-kde
     - keditbookmarks
     - kwebkitpart
