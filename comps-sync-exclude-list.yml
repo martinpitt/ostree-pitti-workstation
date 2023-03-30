@@ -148,9 +148,10 @@ desktop_exclude_list:
     - cups-pk-helper
     - dnfdragora
     - plasma-pk-updates
-    - ksshaskpass
     # Misc
+    - ksshaskpass
     - kwebkitpart
+    # Remove some NetworkManager plugins that pull-in lesser used VPN packages
     - plasma-nm-l2tp
     - plasma-nm-openswan
     - plasma-nm-pptp
