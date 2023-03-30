@@ -23,6 +23,7 @@ packages:
   - kf5-akonadi-server
   - kf5-akonadi-server-mysql
   - kf5-baloo-file
+  - kfind
   - khelpcenter
   - khotkeys
   - kinfocenter

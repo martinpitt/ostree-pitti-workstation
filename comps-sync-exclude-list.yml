@@ -159,7 +159,6 @@ desktop_exclude_list:
     - kcolorchooser
     - kdnssd
     - kf5-kipi-plugins
-    - kfind
     - kget
     - kgpg
     - kmail
