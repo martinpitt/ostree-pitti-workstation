@@ -2,6 +2,7 @@
 include: fedora-common-ostree.yaml
 packages:
   - NetworkManager-config-connectivity-fedora
+  - ark
   - bluedevil
   - breeze-icon-theme
   - dolphin
@@ -36,6 +37,7 @@ packages:
   - kscreenlocker
   - kwalletmanager5
   - kwin
+  - kwrite
   - libappindicator-gtk3
   - pam-kwallet
   - phonon-qt5-backend-gstreamer

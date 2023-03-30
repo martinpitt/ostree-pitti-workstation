@@ -169,7 +169,6 @@ desktop_exclude_list:
     - korganizer
     - kruler
     - ksshaskpass
-    - kwrite
     - libreoffice-kde
     - okular
     # Misc
