@@ -34,6 +34,8 @@ packages:
   - mobile-broadband-provider-info
   # Include krfb by default. See: https://pagure.io/fedora-kde/SIG/issue/13
   - krfb
+  # Include Filelight by defaulkt as it does not work well as Flatpak
+  - filelight
   # Make sure that modem support is installed
   - NetworkManager-ppp
 
