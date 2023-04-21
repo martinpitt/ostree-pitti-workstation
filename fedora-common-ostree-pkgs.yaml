@@ -11,7 +11,7 @@ packages:
   - alsa-ucm
   - alsa-utils
   - amd-gpu-firmware
-  - atmel-firmware
+  - atheros-firmware
   - attr
   - audit
   - b43-fwcutter
@@ -22,6 +22,7 @@ packages:
   - bc
   - bind-utils
   - bluez-cups
+  - brcmfmac-firmware
   - btrfs-progs
   - bzip2
   - chrony
@@ -145,6 +146,7 @@ packages:
   - man-db
   - man-pages
   - mdadm
+  - mediatek-firmware
   - mesa-dri-drivers
   - mesa-vulkan-drivers
   - mpage
@@ -184,6 +186,7 @@ packages:
   - qt5-qtxmlpatterns
   - quota
   - realmd
+  - realtek-firmware
   - rit-meera-new-fonts
   - rootfiles
   - rpm
@@ -236,7 +239,6 @@ packages:
   - xorg-x11-server-Xorg
   - xorg-x11-xauth
   - xorg-x11-xinit
-  - zd1211-firmware
   - zip
   - zram-generator-defaults
 packages-x86_64:
