@@ -146,10 +146,10 @@ packages:
   - man-db
   - man-pages
   - mdadm
-  - mediatek-firmware
   - mesa-dri-drivers
   - mesa-vulkan-drivers
   - mpage
+  - mt7xxx-firmware
   - mtr
   - nfs-utils
   - nss-altfiles
