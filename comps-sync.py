@@ -171,6 +171,7 @@ desktops_comps_groups = {
     "mate": ["mate-desktop"],
     "sway": ["swaywm", "swaywm-extended"],
     "cinnamon": ["cinnamon-desktop"],
+    "budgie": ["budgie-desktop", "budgie-desktop-apps"]
 }
 
 # Generate treefiles for all desktops

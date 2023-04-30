@@ -142,6 +142,26 @@ desktop_exclude_list:
     - totem
     - totem-nautilus
     - traceroute
+  budgie-desktop:
+    # Incompatible with ostree for various reasons
+    - abrt-desktop
+    - cups-pk-helper
+    - dnfdragora
+    # Remove uncommon NetworkManager plugins
+    - NetworkManager-fortisslvpn-gnome
+    - NetworkManager-iodine-gnome
+    - NetworkManager-l2tp-gnome
+    - NetworkManager-libreswan-gnome
+    - NetworkManager-sstp-gnome
+    - NetworkManager-strongswan-gnome
+  budgie-desktop-apps:
+    # Non-critical apps -> Flatpak
+    - atril
+    - eom
+    - gedit
+    - gnome-calculator
+    - parole
+    - rhythmbox
   kde-desktop:
     # Incompatible with ostree for various reasons
     - abrt-desktop

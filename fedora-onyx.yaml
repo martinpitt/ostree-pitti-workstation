@@ -1,0 +1,14 @@
+include: budgie-desktop-pkgs.yaml
+ref: fedora/rawhide/${basearch}/onyx
+rojig:
+  name: fedora-onyx
+  summary: "Fedora Onyx (Budgie) base image"
+  license: MIT
+packages:
+  - fedora-release-onyx
+exclude-packages:
+  # Not needed in Budgie Desktop
+  - tracker
+  - tracker-miners
+repos:
+  - fedora-rawhide
