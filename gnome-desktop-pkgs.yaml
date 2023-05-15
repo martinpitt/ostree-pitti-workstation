@@ -35,7 +35,6 @@ packages:
   - gnome-system-monitor
   - gnome-terminal
   - gnome-terminal-nautilus
-  - gnome-themes-extra
   - gnome-user-docs
   - gnome-user-share
   - gvfs-afc

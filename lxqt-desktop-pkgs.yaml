@@ -30,6 +30,7 @@ packages:
   - qterminal
   - sddm
   - sddm-themes
+  - sddm-x11
   - upower
   - xdg-user-dirs
 packages-x86_64:
