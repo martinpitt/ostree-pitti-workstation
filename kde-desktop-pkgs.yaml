@@ -78,6 +78,7 @@ packages:
   - systemd-oomd-defaults
   - udisks2
   - xorg-x11-drv-libinput
+  - xwaylandvideobridge
 packages-x86_64:
   - kio-gdrive
 packages-aarch64:
