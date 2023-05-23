@@ -45,7 +45,6 @@ packages:
   - gvfs-gphoto2
   - gvfs-mtp
   - gvfs-smb
-  - libproxy-duktape
   - librsvg2
   - libsane-hpaio
   - mesa-dri-drivers
