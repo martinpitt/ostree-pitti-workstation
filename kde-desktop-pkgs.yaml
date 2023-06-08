@@ -4,6 +4,7 @@ packages:
   - NetworkManager-config-connectivity-fedora
   - adwaita-gtk2-theme
   - ark
+  - audiocd-kio
   - bluedevil
   - breeze-icon-theme
   - colord-kde
@@ -18,6 +19,7 @@ packages:
   - kcharselect
   - kde-connect
   - kde-gtk-config
+  - kde-inotify-survey
   - kde-partitionmanager
   - kde-print-manager
   - kde-settings-pulseaudio
