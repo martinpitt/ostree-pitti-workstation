@@ -4,7 +4,6 @@ packages:
   - NetworkManager-config-connectivity-fedora
   - adwaita-gtk2-theme
   - ark
-  - audiocd-kio
   - bluedevil
   - breeze-icon-theme
   - colord-kde
