@@ -180,6 +180,8 @@ desktop_exclude_list:
     # Remove initial-setup from Kinoite
     # See: https://fedoraproject.org/wiki/Changes/KDERemoveInitialSetup
     - initial-setup-gui
+    # Temporarily excluded as it pull KDE 4 dependencies
+    - audiocd-kio
   xfce-desktop:
     # Incompatible with ostree for various reasons
     - abrt-desktop

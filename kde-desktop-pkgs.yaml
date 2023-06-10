@@ -3,7 +3,6 @@ include: fedora-common-ostree.yaml
 packages:
   - NetworkManager-config-connectivity-fedora
   - adwaita-gtk2-theme
-  - audiocd-kio
   - bluedevil
   - breeze-icon-theme
   - colord-kde
