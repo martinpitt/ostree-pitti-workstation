@@ -60,7 +60,7 @@ packages:
   - glibc-all-langpacks
   - glx-utils
   - gnupg2
-  - google-noto-emoji-color-fonts
+  - google-noto-color-emoji-fonts
   - google-noto-naskh-arabic-vf-fonts
   - google-noto-sans-arabic-vf-fonts
   - google-noto-sans-armenian-vf-fonts
