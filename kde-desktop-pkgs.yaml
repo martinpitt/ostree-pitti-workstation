@@ -28,6 +28,7 @@ packages:
   - kdnssd
   - kf5-akonadi-server
   - kf5-akonadi-server-mysql
+  - kf5-audiocd-kio
   - kf5-baloo-file
   - kfind
   - khelpcenter
