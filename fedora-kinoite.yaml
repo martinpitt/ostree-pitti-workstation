@@ -26,6 +26,9 @@ packages:
   - mobile-broadband-provider-info
   # Make sure that modem support is installed
   - NetworkManager-ppp
+  # Install gdb to make getting backtraces work with DrKonqi
+  # The dnf dependency is excluded in the common manifest
+  - gdb
 
 # Make sure the following are not pulled in when Recommended by other packages
 exclude-packages:
