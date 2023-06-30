@@ -118,4 +118,7 @@ postprocess:
     systemctl preset-all
     rm -rf /etc/systemd/user/*
     systemctl --user --global preset-all
+
+    # Workaround for https://bugzilla.redhat.com/show_bug.cgi?id=2218006
+    systemctl enable nfs-client.target
 postprocess-script: "postprocess.sh"
