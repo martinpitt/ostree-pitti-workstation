@@ -27,6 +27,8 @@ exclude_list:
     # We use rpm-ostree for the host
     - dnf
     - dnf-plugins-core
+    - dnf5
+    - dnf5-plugins
     - yum
     # Not sure why this is there at all
     - dracut-config-rescue
@@ -42,6 +44,8 @@ exclude_list:
     # We use rpm-ostree for the host
     - dnf
     - dnf-plugins-core
+    - dnf5
+    - dnf5-plugins
     - deltarpm
     - python3-dnf-plugin-system-upgrade
     # We use fedora-release-silverblue instead
