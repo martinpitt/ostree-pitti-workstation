@@ -163,15 +163,15 @@ if (n_manifest_new > 0 or n_comps_new > 0) and args.save:
 
 # List of comps groups used for each desktop
 desktops_comps_groups = {
-    "gnome": ["gnome-desktop"],
-    "kde": ["kde-desktop"],
-    "xfce": ["xfce-desktop"],
-    "lxqt": ["lxqt-desktop"],
-    "deepin": ["deepin-desktop"],
-    "mate": ["mate-desktop"],
+    "gnome": ["gnome-desktop", "base-x"],
+    "kde": ["kde-desktop", "base-x"],
+    "xfce": ["xfce-desktop", "base-x"],
+    "lxqt": ["lxqt-desktop", "base-x"],
+    "deepin": ["deepin-desktop", "base-x"],
+    "mate": ["mate-desktop", "base-x"],
     "sway": ["swaywm", "swaywm-extended"],
-    "cinnamon": ["cinnamon-desktop"],
-    "budgie": ["budgie-desktop", "budgie-desktop-apps"]
+    "cinnamon": ["cinnamon-desktop", "base-x"],
+    "budgie": ["budgie-desktop", "budgie-desktop-apps", "base-x"]
 }
 
 # Generate treefiles for all desktops

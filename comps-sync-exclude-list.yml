@@ -12,6 +12,7 @@ exclude_list_groups:
   - libreoffice
   - gnome-desktop
   - container-management
+  - base-x
 
 # PackageKit is spread across various groups
 # We can not include openh264. See https://fedoraproject.org/wiki/OpenH264
@@ -99,6 +100,8 @@ exclude_list:
     - gnome-shell-extension-background-logo
     - pinentry-gnome3
     - qgnomeplatform-qt5
+    # X11 specific
+    - xorg-x11-drv-libinput
   networkmanager-submodules:
     # Let's use the builtin one by default
     - dhcp-client
