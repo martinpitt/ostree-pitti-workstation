@@ -27,7 +27,7 @@ packages:
   - polkit
   - pulseaudio-utils
   - sddm
-  - sddm-x11
+  - sddm-wayland-sway
   - slurp
   - sway
   - sway-config-fedora

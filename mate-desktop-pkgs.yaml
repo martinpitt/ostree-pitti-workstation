@@ -32,6 +32,7 @@ packages:
   - fedora-release-matecompiz
   - firefox
   - firewall-config
+  - glx-utils
   - gnome-epub-thumbnailer
   - gnome-themes-extra
   - gstreamer1-plugins-ugly-free
@@ -79,6 +80,8 @@ packages:
   - mate-themes
   - mate-user-admin
   - mate-user-guide
+  - mesa-dri-drivers
+  - mesa-vulkan-drivers
   - mozo
   - network-manager-applet
   - nm-connection-editor
@@ -88,6 +91,7 @@ packages:
   - pipewire-alsa
   - pipewire-pulseaudio
   - pluma
+  - plymouth-system-theme
   - seahorse
   - seahorse-caja
   - setroubleshoot
@@ -98,4 +102,22 @@ packages:
   - usermode-gtk
   - xdg-user-dirs-gtk
   - xmodmap
+  - xorg-x11-drv-amdgpu
+  - xorg-x11-drv-ati
+  - xorg-x11-drv-evdev
+  - xorg-x11-drv-fbdev
+  - xorg-x11-drv-libinput
+  - xorg-x11-drv-nouveau
+  - xorg-x11-drv-qxl
+  - xorg-x11-drv-wacom
+  - xorg-x11-server-Xorg
+  - xorg-x11-xauth
+  - xorg-x11-xinit
   - xrdb
+packages-x86_64:
+  - xorg-x11-drv-intel
+  - xorg-x11-drv-openchrome
+  - xorg-x11-drv-vesa
+  - xorg-x11-drv-vmware
+packages-aarch64:
+  - xorg-x11-drv-armsoc

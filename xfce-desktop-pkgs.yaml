@@ -11,6 +11,7 @@ packages:
   - adwaita-icon-theme
   - blueman
   - desktop-backgrounds-compat
+  - glx-utils
   - gnome-keyring-pam
   - greybird-dark-theme
   - greybird-light-theme
@@ -22,9 +23,12 @@ packages:
   - gvfs-mtp
   - initial-setup-gui
   - lightdm-gtk
+  - mesa-dri-drivers
+  - mesa-vulkan-drivers
   - mint-y-theme
   - network-manager-applet
   - nm-connection-editor
+  - plymouth-system-theme
   - thunar-archive-plugin
   - thunar-media-tags-plugin
   - thunar-volman
@@ -47,3 +51,21 @@ packages:
   - xfdesktop
   - xfwm4
   - xfwm4-themes
+  - xorg-x11-drv-amdgpu
+  - xorg-x11-drv-ati
+  - xorg-x11-drv-evdev
+  - xorg-x11-drv-fbdev
+  - xorg-x11-drv-libinput
+  - xorg-x11-drv-nouveau
+  - xorg-x11-drv-qxl
+  - xorg-x11-drv-wacom
+  - xorg-x11-server-Xorg
+  - xorg-x11-xauth
+  - xorg-x11-xinit
+packages-x86_64:
+  - xorg-x11-drv-intel
+  - xorg-x11-drv-openchrome
+  - xorg-x11-drv-vesa
+  - xorg-x11-drv-vmware
+packages-aarch64:
+  - xorg-x11-drv-armsoc

@@ -16,6 +16,7 @@ packages:
   - cinnamon-screensaver
   - firefox
   - firewall-config
+  - glx-utils
   - gnome-disk-utility
   - gnome-screenshot
   - gnome-system-monitor
@@ -27,6 +28,8 @@ packages:
   - gvfs-smb
   - imsettings-gsettings
   - initial-setup-gui
+  - mesa-dri-drivers
+  - mesa-vulkan-drivers
   - metacity
   - nemo-fileroller
   - nemo-image-converter
@@ -34,6 +37,7 @@ packages:
   - nm-connection-editor
   - pipewire-alsa
   - pipewire-pulseaudio
+  - plymouth-system-theme
   - powerline
   - qgnomeplatform-qt5
   - redshift-gtk
@@ -44,3 +48,21 @@ packages:
   - wireplumber
   - xawtv
   - xdg-user-dirs-gtk
+  - xorg-x11-drv-amdgpu
+  - xorg-x11-drv-ati
+  - xorg-x11-drv-evdev
+  - xorg-x11-drv-fbdev
+  - xorg-x11-drv-libinput
+  - xorg-x11-drv-nouveau
+  - xorg-x11-drv-qxl
+  - xorg-x11-drv-wacom
+  - xorg-x11-server-Xorg
+  - xorg-x11-xauth
+  - xorg-x11-xinit
+packages-x86_64:
+  - xorg-x11-drv-intel
+  - xorg-x11-drv-openchrome
+  - xorg-x11-drv-vesa
+  - xorg-x11-drv-vmware
+packages-aarch64:
+  - xorg-x11-drv-armsoc

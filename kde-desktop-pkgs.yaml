@@ -14,6 +14,7 @@ packages:
   - flatpak-kcm
   - fprintd-pam
   - glibc-all-langpacks
+  - glx-utils
   - gnome-keyring-pam
   - kcharselect
   - kde-connect
@@ -46,6 +47,8 @@ packages:
   - kwin
   - kwrite
   - libappindicator-gtk3
+  - mesa-dri-drivers
+  - mesa-vulkan-drivers
   - pam-kwallet
   - phonon-qt5-backend-gstreamer
   - pinentry-qt
@@ -69,6 +72,7 @@ packages:
   - plasma-workspace-geolocation
   - plasma-workspace-wallpapers
   - plasma-workspace-x11
+  - plymouth-system-theme
   - polkit-kde
   - qt-at-spi
   - qt5-qtbase-gui
@@ -79,9 +83,24 @@ packages:
   - spectacle
   - systemd-oomd-defaults
   - udisks2
+  - xorg-x11-drv-amdgpu
+  - xorg-x11-drv-ati
+  - xorg-x11-drv-evdev
+  - xorg-x11-drv-fbdev
   - xorg-x11-drv-libinput
+  - xorg-x11-drv-nouveau
+  - xorg-x11-drv-qxl
+  - xorg-x11-drv-wacom
+  - xorg-x11-server-Xorg
+  - xorg-x11-xauth
+  - xorg-x11-xinit
   - xwaylandvideobridge
 packages-x86_64:
   - kio-gdrive
+  - xorg-x11-drv-intel
+  - xorg-x11-drv-openchrome
+  - xorg-x11-drv-vesa
+  - xorg-x11-drv-vmware
 packages-aarch64:
   - kio-gdrive
+  - xorg-x11-drv-armsoc

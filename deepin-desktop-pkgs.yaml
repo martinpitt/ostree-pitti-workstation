@@ -12,7 +12,27 @@ packages:
   - deepin-screenshot
   - deepin-system-monitor
   - firewall-config
+  - glx-utils
+  - mesa-dri-drivers
+  - mesa-vulkan-drivers
+  - plymouth-system-theme
+  - xorg-x11-drv-amdgpu
+  - xorg-x11-drv-ati
+  - xorg-x11-drv-evdev
+  - xorg-x11-drv-fbdev
+  - xorg-x11-drv-libinput
+  - xorg-x11-drv-nouveau
+  - xorg-x11-drv-qxl
+  - xorg-x11-drv-wacom
+  - xorg-x11-server-Xorg
+  - xorg-x11-xauth
+  - xorg-x11-xinit
 packages-x86_64:
   - chromium
+  - xorg-x11-drv-intel
+  - xorg-x11-drv-openchrome
+  - xorg-x11-drv-vesa
+  - xorg-x11-drv-vmware
 packages-aarch64:
   - chromium
+  - xorg-x11-drv-armsoc

@@ -18,6 +18,7 @@ packages:
   - fprintd-pam
   - gdm
   - glib-networking
+  - glx-utils
   - gnome-backgrounds
   - gnome-bluetooth
   - gnome-browser-connector
@@ -49,8 +50,10 @@ packages:
   - libsane-hpaio
   - mesa-dri-drivers
   - mesa-libEGL
+  - mesa-vulkan-drivers
   - nautilus
   - orca
+  - plymouth-system-theme
   - polkit
   - rygel
   - systemd-oomd-defaults
@@ -60,4 +63,22 @@ packages:
   - xdg-desktop-portal-gnome
   - xdg-desktop-portal-gtk
   - xdg-user-dirs-gtk
+  - xorg-x11-drv-amdgpu
+  - xorg-x11-drv-ati
+  - xorg-x11-drv-evdev
+  - xorg-x11-drv-fbdev
+  - xorg-x11-drv-libinput
+  - xorg-x11-drv-nouveau
+  - xorg-x11-drv-qxl
+  - xorg-x11-drv-wacom
+  - xorg-x11-server-Xorg
+  - xorg-x11-xauth
+  - xorg-x11-xinit
   - yelp
+packages-x86_64:
+  - xorg-x11-drv-intel
+  - xorg-x11-drv-openchrome
+  - xorg-x11-drv-vesa
+  - xorg-x11-drv-vmware
+packages-aarch64:
+  - xorg-x11-drv-armsoc

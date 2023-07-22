@@ -5,6 +5,7 @@ packages:
   - breeze-gtk
   - breeze-icon-theme
   - firewall-config
+  - glx-utils
   - initial-setup-gui
   - lxqt-about
   - lxqt-archiver
@@ -20,6 +21,8 @@ packages:
   - lxqt-session
   - lxqt-themes
   - lxqt-themes-fedora
+  - mesa-dri-drivers
+  - mesa-vulkan-drivers
   - network-manager-applet
   - nm-connection-editor
   - notification-daemon
@@ -27,13 +30,30 @@ packages:
   - openbox
   - pcmanfm-qt
   - perl-File-MimeInfo
+  - plymouth-system-theme
   - qterminal
   - sddm
   - sddm-themes
   - sddm-x11
   - upower
   - xdg-user-dirs
+  - xorg-x11-drv-amdgpu
+  - xorg-x11-drv-ati
+  - xorg-x11-drv-evdev
+  - xorg-x11-drv-fbdev
+  - xorg-x11-drv-libinput
+  - xorg-x11-drv-nouveau
+  - xorg-x11-drv-qxl
+  - xorg-x11-drv-wacom
+  - xorg-x11-server-Xorg
+  - xorg-x11-xauth
+  - xorg-x11-xinit
 packages-x86_64:
   - falkon
+  - xorg-x11-drv-intel
+  - xorg-x11-drv-openchrome
+  - xorg-x11-drv-vesa
+  - xorg-x11-drv-vmware
 packages-aarch64:
   - falkon
+  - xorg-x11-drv-armsoc
