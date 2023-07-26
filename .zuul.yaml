@@ -10,4 +10,4 @@
      nodeset:
        nodes:
          - name: container
-           label: zuul-worker-f37
+           label: zuul-worker-f38
