@@ -1,4 +1,4 @@
-ref: fedora/rawhide/${basearch}/ostree-base
+ref: fedora/39/${basearch}/ostree-base
 
 automatic_version_prefix: "39"
 mutate-os-release: "39"

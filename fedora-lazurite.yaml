@@ -1,5 +1,5 @@
 include: lxqt-desktop-pkgs.yaml
-ref: fedora/rawhide/${basearch}/lazurite
+ref: fedora/39/${basearch}/lazurite
 rojig:
   name: fedora-lxqt
   summary: "Fedora Lazurite (LXQt) base image"
@@ -17,6 +17,6 @@ packages:
   - xdg-desktop-portal-kde
 
 repos:
-  - fedora-rawhide
+  - fedora-39
   # - fedora-39
   # - fedora-39-updates

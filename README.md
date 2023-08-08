@@ -65,7 +65,7 @@ sudo ostree admin pin 0
 sudo ostree remote refs testremote
 
 # Switch to your variant
-sudo rpm-ostree rebase testremote:fedora/rawhide/x86_64/silverblue
+sudo rpm-ostree rebase testremote:fedora/39/x86_64/silverblue
 
 # Reboot and test!
 ```
