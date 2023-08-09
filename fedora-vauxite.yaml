@@ -19,5 +19,4 @@ packages:
   - xarchiver
 repos:
   - fedora-39
-  # - fedora-39
-  # - fedora-39-updates
+  - fedora-39-updates

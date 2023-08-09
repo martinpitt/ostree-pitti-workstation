@@ -15,5 +15,4 @@ exclude-packages:
 
 repos:
   - fedora-39
-  # - fedora-39
-  # - fedora-39-updates
+  - fedora-39-updates

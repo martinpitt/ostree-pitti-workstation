@@ -12,3 +12,4 @@ exclude-packages:
   - tracker-miners
 repos:
   - fedora-39
+  - fedora-39-updates
