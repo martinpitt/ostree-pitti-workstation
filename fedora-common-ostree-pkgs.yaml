@@ -5,7 +5,6 @@ packages:
   - NetworkManager-config-connectivity-fedora
   - NetworkManager-wifi
   - NetworkManager-wwan
-  - abattis-cantarell-vf-fonts
   - acl
   - adwaita-qt5
   - alsa-ucm
@@ -38,6 +37,17 @@ packages:
   - curl
   - cyrus-sasl-plain
   - default-editor
+  - default-fonts-cjk-mono
+  - default-fonts-cjk-sans
+  - default-fonts-cjk-serif
+  - default-fonts-core-emoji
+  - default-fonts-core-math
+  - default-fonts-core-mono
+  - default-fonts-core-sans
+  - default-fonts-core-serif
+  - default-fonts-other-mono
+  - default-fonts-other-sans
+  - default-fonts-other-serif
   - dhcp-client
   - dnsmasq
   - e2fsprogs
@@ -59,26 +69,6 @@ packages:
   - glibc
   - glibc-all-langpacks
   - gnupg2
-  - google-noto-color-emoji-fonts
-  - google-noto-naskh-arabic-vf-fonts
-  - google-noto-sans-arabic-vf-fonts
-  - google-noto-sans-armenian-vf-fonts
-  - google-noto-sans-canadian-aboriginal-vf-fonts
-  - google-noto-sans-cherokee-vf-fonts
-  - google-noto-sans-cjk-vf-fonts
-  - google-noto-sans-ethiopic-vf-fonts
-  - google-noto-sans-georgian-vf-fonts
-  - google-noto-sans-gurmukhi-vf-fonts
-  - google-noto-sans-hebrew-vf-fonts
-  - google-noto-sans-khmer-vf-fonts
-  - google-noto-sans-lao-vf-fonts
-  - google-noto-sans-math-fonts
-  - google-noto-sans-mono-vf-fonts
-  - google-noto-sans-sinhala-vf-fonts
-  - google-noto-sans-thaana-vf-fonts
-  - google-noto-sans-thai-vf-fonts
-  - google-noto-sans-vf-fonts
-  - google-noto-serif-vf-fonts
   - gstreamer1-plugin-libav
   - gstreamer1-plugins-bad-free
   - gstreamer1-plugins-good
@@ -104,27 +94,14 @@ packages:
   - iwlegacy-firmware
   - iwlwifi-dvm-firmware
   - iwlwifi-mvm-firmware
-  - jomolhari-fonts
   - kbd
   - kernel
   - kernel-modules-extra
   - less
-  - liberation-mono-fonts
-  - liberation-sans-fonts
-  - liberation-serif-fonts
-  - libertas-usb8388-firmware
+  - libertas-firmware
   - libglvnd-gles
   - linux-firmware
   - logrotate
-  - lohit-assamese-fonts
-  - lohit-bengali-fonts
-  - lohit-devanagari-fonts
-  - lohit-gujarati-fonts
-  - lohit-kannada-fonts
-  - lohit-marathi-fonts
-  - lohit-odia-fonts
-  - lohit-tamil-fonts
-  - lohit-telugu-fonts
   - lrzsz
   - lsof
   - man-db
@@ -142,7 +119,6 @@ packages:
   - opensc
   - openssh-clients
   - openssh-server
-  - paktype-naskh-basic-fonts
   - pam_afs_session
   - paps
   - passwd
@@ -168,7 +144,6 @@ packages:
   - quota
   - realmd
   - realtek-firmware
-  - rit-meera-new-fonts
   - rootfiles
   - rpm
   - rsync
@@ -176,16 +151,12 @@ packages:
   - selinux-policy-targeted
   - setup
   - shadow-utils
-  - sil-mingzat-fonts
-  - sil-nuosu-fonts
-  - sil-padauk-fonts
   - sos
   - spice-vdagent
   - spice-webdavd
   - sssd
   - sssd-common
   - sssd-kcm
-  - stix-fonts
   - sudo
   - system-config-printer-udev
   - systemd
@@ -201,7 +172,6 @@ packages:
   - usb_modeswitch
   - usbutils
   - util-linux
-  - vazirmatn-vf-fonts
   - vim-minimal
   - wget
   - which
@@ -222,6 +192,7 @@ packages-x86_64:
 packages-aarch64:
   - hyperv-daemons
   - open-vm-tools-desktop
+  - qcom-firmware
 packages-ppc64le:
   - lsvpd
   - powerpc-utils
