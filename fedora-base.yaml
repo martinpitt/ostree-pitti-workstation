@@ -4,6 +4,7 @@ rojig:
   name: fedora-base
   summary: "Fedora base image for alternative DE"
   license: MIT
+
 packages:
   # Generic release package for desktop variants
   - fedora-release

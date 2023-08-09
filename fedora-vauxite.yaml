@@ -4,6 +4,7 @@ rojig:
   name: fedora-vauxite
   summary: "Fedora Vauxite (XFCE) base image"
   license: MIT
+
 packages:
   - fedora-release-xfce
   # Generic release sub package for desktop variants
@@ -17,6 +18,7 @@ packages:
   - mousepad
   - ristretto
   - xarchiver
+
 repos:
   - fedora-39
   - fedora-39-updates

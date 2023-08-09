@@ -5,10 +5,12 @@ rojig:
   name: fedora-sericea
   summary: "Fedora Sericea (Sway) base image"
   license: MIT
+
 packages:
   - fedora-release-sericea
   # explicitly list some defaults
   - firefox
+
 exclude-packages:
   # already excluded in comps-sync-exclude-list
   - PackageKit-glib
@@ -16,6 +18,7 @@ exclude-packages:
   # nothing in the tree would use these
   - tracker
   - tracker-miners
+
 repos:
   - fedora-39
   - fedora-39-updates

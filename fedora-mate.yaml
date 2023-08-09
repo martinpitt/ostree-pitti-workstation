@@ -4,6 +4,7 @@ rojig:
   name: fedora-mate
   summary: "Fedora Mate base image"
   license: MIT
+
 packages:
   # Generic release sub package for desktop variants
   - fedora-release-ostree-desktop

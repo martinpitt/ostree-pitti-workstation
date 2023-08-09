@@ -4,6 +4,7 @@ rojig:
   name: fedora-silverblue
   summary: "Fedora Silverblue base image"
   license: MIT
+
 packages:
   - fedora-release-silverblue
   - desktop-backgrounds-gnome

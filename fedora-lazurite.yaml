@@ -4,6 +4,7 @@ rojig:
   name: fedora-lxqt
   summary: "Fedora Lazurite (LXQt) base image"
   license: MIT
+
 packages:
   # Generic release package for desktop variants
   - fedora-release

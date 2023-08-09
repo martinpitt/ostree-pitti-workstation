@@ -4,6 +4,7 @@ rojig:
   name: fedora-deepin
   summary: "Fedora Deepin base image"
   license: MIT
+
 packages:
   # Generic release package for desktop variants
   - fedora-release
