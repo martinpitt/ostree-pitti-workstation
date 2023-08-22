@@ -74,25 +74,25 @@ exclude_list:
     # Will change to git-core as git pulls in Perl
     - git
     # Apps
-    - rhythmbox
     - evolution
     - evolution-ews
     - evolution-help
     - mediawriter
+    - rhythmbox
     # This is ancient now, and IMO has been superceded by cgroups
     # Also it breaks with --unified-core.
     - psacct
     # Random tools: container
-    - rdist
     - jwhois
+    - net-tools
+    - nmap-ncat
+    - rdist
     - tcpdump
     - telnet
     - traceroute
-    - net-tools
-    - nmap-ncat
     # filesystem tools, again priv container
-    - symlinks
     - dosfstools
+    - symlinks
     # Misc
     - dos2unix
     # Gnome specific
@@ -141,9 +141,9 @@ desktop_exclude_list:
     - loupe
     - rdist
     - sane-backends-drivers-scanners
-    - symlinks
     - simple-scan
     - sushi
+    - symlinks
     - tcpdump
     - telnet
     - totem
