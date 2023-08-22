@@ -117,7 +117,6 @@ desktop_exclude_list:
     # Non-critical apps -> Flatpak
     - baobab
     - cheese
-    - eog
     - evince
     - evince-djvu
     - evince-nautilus
@@ -139,6 +138,7 @@ desktop_exclude_list:
     - gnome-text-editor
     - gnome-weather
     - jwhois
+    - loupe
     - rdist
     - sane-backends-drivers-scanners
     - symlinks
