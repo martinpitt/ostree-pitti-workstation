@@ -6,7 +6,6 @@ packages:
   - NetworkManager-wifi
   - NetworkManager-wwan
   - acl
-  - adwaita-qt5
   - alsa-ucm
   - alsa-utils
   - amd-gpu-firmware
@@ -17,6 +16,7 @@ packages:
   - b43-openfwwf
   - basesystem
   - bash
+  - bash-color-prompt
   - bash-completion
   - bc
   - bind-utils
@@ -136,6 +136,7 @@ packages:
   - policycoreutils-python-utils
   - procps-ng
   - psmisc
+  - qadwaitadecorations-qt5
   - qemu-guest-agent
   - qt5-qtbase
   - qt5-qtbase-gui
