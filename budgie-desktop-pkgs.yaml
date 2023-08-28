@@ -21,6 +21,7 @@ packages:
   - dconf
   - firefox
   - fprintd-pam
+  - gedit
   - glib-networking
   - glx-utils
   - gnome-bluetooth
@@ -43,6 +44,8 @@ packages:
   - mesa-dri-drivers
   - mesa-vulkan-drivers
   - nemo
+  - nemo-fileroller
+  - nemo-seahorse
   - network-manager-applet
   - plymouth-system-theme
   - polkit

@@ -165,7 +165,6 @@ desktop_exclude_list:
     # Non-critical apps -> Flatpak
     - atril
     - eom
-    - gedit
     - gnome-calculator
     - parole
     - rhythmbox
