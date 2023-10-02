@@ -40,15 +40,6 @@ exclude-packages:
   - tracker
   - tracker-miners
 
-# Kinoite specific workarounds and configuration
-postprocess:
-  - |
-    #!/bin/bash
-    set -xeuo pipefail
-
-    # Enable auto updates in Discover
-    echo -e "[Global]\nUseUnattendedUpdates=true\n" > /etc/xdg/PlasmaDiscoverUpdates
-
 repos:
   - fedora-39
   - fedora-39-updates
