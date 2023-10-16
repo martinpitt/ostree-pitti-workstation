@@ -89,7 +89,6 @@ exclude-packages:
   - openh264
   # Always exclude dnf when pulled in as a dependency
   - dnf
-  - dnf-data
   - dnf-plugins-core
   - dnf5
   - dnf5-plugins
