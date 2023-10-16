@@ -45,6 +45,7 @@ packages:
   - slick-greeter
   - slick-greeter-cinnamon
   - system-config-printer
+  - totem-video-thumbnailer
   - wireplumber
   - xawtv
   - xdg-user-dirs-gtk

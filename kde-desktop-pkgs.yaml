@@ -49,6 +49,7 @@ packages:
   - libappindicator-gtk3
   - mesa-dri-drivers
   - mesa-vulkan-drivers
+  - orca
   - pam-kwallet
   - phonon-qt5-backend-gstreamer
   - pinentry-qt
