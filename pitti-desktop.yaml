@@ -127,8 +127,6 @@ exclude-packages:
   # recommended by gtk3
   - tracker
   - tracker-miners
-  # does not work
-  - xdg-desktop-portal-wlr
   # recommended by containers-common-extra
   - qemu-user-static
 
