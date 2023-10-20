@@ -136,7 +136,6 @@ packages:
   - policycoreutils-python-utils
   - procps-ng
   - psmisc
-  - qadwaitadecorations-qt5
   - qemu-guest-agent
   - qt5-qtbase
   - qt5-qtbase-gui
