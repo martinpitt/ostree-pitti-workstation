@@ -99,7 +99,8 @@ exclude_list:
     - desktop-backgrounds-gnome
     - gnome-shell-extension-background-logo
     - pinentry-gnome3
-    - qgnomeplatform-qt5
+    # Excluded here for all desktops and manually re-added in Silverblue manifest
+    - qadwaitadecorations-qt5
     # X11 specific
     - xorg-x11-drv-libinput
   networkmanager-submodules:

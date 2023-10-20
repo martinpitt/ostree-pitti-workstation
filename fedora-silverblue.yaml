@@ -10,9 +10,9 @@ packages:
   - desktop-backgrounds-gnome
   - gnome-shell-extension-background-logo
   - pinentry-gnome3
-  # Does it really still make sense to ship Qt by default if we
-  # expect people to run apps in containers?
-  - qgnomeplatform-qt5
+  # Included for now to have layered Qt5 applications use a constistent style
+  # Manually included here as it is excluded from the workstation-product group
+  - qadwaitadecorations-qt5
   # Include evince-thumbnailer otherwise PDF thumbnails won't work in Nautilus
   # https://github.com/fedora-silverblue/issue-tracker/issues/98
   - evince-thumbnailer
