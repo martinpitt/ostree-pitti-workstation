@@ -45,6 +45,9 @@ rm -r /etc/systemd/system /etc/systemd/user
 # scanner permissions without scanner packages
 echo 'ACTION=="add|change", ENV{DEVTYPE}=="usb_device", ENV{ID_MODEL}=="CanoScan", MODE="666"' > /usr/lib/udev/rules.d/canoscan.rules
 
+# battery health
+echo 'ACTION=="add|change", ATTR{type}=="Battery", ATTR{charge_stop_threshold}="80"' > /usr/lib/udev/rules.d/80-battery-health.rules
+
 # update for Red Hat certificate
 ln -s /etc/pki/ca-trust/source/anchors/2015-RH-IT-Root-CA.pem /etc/pki/tls/certs/2015-RH-IT-Root-CA.pem
 ln -s /etc/pki/ca-trust/source/anchors/2022-RH-IT-Root-CA.pem /etc/pki/tls/certs/2022-RH-IT-Root-CA.pem
