@@ -36,7 +36,6 @@ packages:
   - khotkeys
   - kinfocenter
   - kio-admin
-  - kmag
   - kmenuedit
   - kmousetool
   - konsole5
