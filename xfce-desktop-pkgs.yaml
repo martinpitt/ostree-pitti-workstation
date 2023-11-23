@@ -9,10 +9,14 @@ packages:
   - Thunar
   - adwaita-gtk2-theme
   - adwaita-icon-theme
+  - atril
   - blueman
   - desktop-backgrounds-compat
+  - firefox
+  - galculator
   - glx-utils
   - gnome-keyring-pam
+  - gparted
   - greybird-dark-theme
   - greybird-light-theme
   - greybird-xfce4-notifyd-theme
@@ -26,16 +30,21 @@ packages:
   - mesa-dri-drivers
   - mesa-vulkan-drivers
   - mint-y-theme
+  - mousepad
   - network-manager-applet
   - nm-connection-editor
   - plymouth-system-theme
+  - ristretto
   - thunar-archive-plugin
   - thunar-media-tags-plugin
   - thunar-volman
+  - xarchiver
   - xdg-user-dirs-gtk
   - xfce4-about
   - xfce4-appfinder
+  - xfce4-clipman-plugin
   - xfce4-datetime-plugin
+  - xfce4-dict-plugin
   - xfce4-panel
   - xfce4-panel-profiles
   - xfce4-places-plugin

@@ -204,6 +204,27 @@ desktop_exclude_list:
     - NetworkManager-libreswan-gnome
     - NetworkManager-sstp-gnome
     - NetworkManager-strongswan-gnome
+  xfce-apps:
+    # Non-critical apps -> Flatpak
+    - claws-mail
+    - catfish
+    - claws-mail-plugins-archive
+    - claws-mail-plugins-att-remover
+    - claws-mail-plugins-attachwarner
+    - claws-mail-plugins-fetchinfo
+    - claws-mail-plugins-mailmbox
+    - claws-mail-plugins-newmail
+    - claws-mail-plugins-notification
+    - claws-mail-plugins-pgp
+    - claws-mail-plugins-rssyl
+    - claws-mail-plugins-smime
+    - claws-mail-plugins-spam-report
+    - claws-mail-plugins-tnef
+    - claws-mail-plugins-vcalendar
+    - geany
+    - pidgin
+    - seahorse
+    - transmission
   lxqt-desktop:
     # Incompatible with ostree for various reasons
     - dnfdragora-updater

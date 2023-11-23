@@ -11,13 +11,6 @@ packages:
   - fedora-release-ostree-desktop
   # Portals for Flatpak
   - xdg-desktop-portal-gtk
-  # Essential packages from @xfce-apps
-  - atril
-  - firefox
-  - galculator
-  - mousepad
-  - ristretto
-  - xarchiver
 
 repos:
   - fedora-39
