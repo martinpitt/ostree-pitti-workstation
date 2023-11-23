@@ -42,9 +42,18 @@ packages:
   - xdg-user-dirs-gtk
   - xfce4-about
   - xfce4-appfinder
+  - xfce4-battery-plugin
   - xfce4-clipman-plugin
+  - xfce4-cpugraph-plugin
   - xfce4-datetime-plugin
   - xfce4-dict-plugin
+  - xfce4-diskperf-plugin
+  - xfce4-eyes-plugin
+  - xfce4-fsguard-plugin
+  - xfce4-genmon-plugin
+  - xfce4-mailwatch-plugin
+  - xfce4-mount-plugin
+  - xfce4-netload-plugin
   - xfce4-panel
   - xfce4-panel-profiles
   - xfce4-places-plugin
@@ -52,11 +61,20 @@ packages:
   - xfce4-pulseaudio-plugin
   - xfce4-screensaver
   - xfce4-screenshooter-plugin
+  - xfce4-sensors-plugin
   - xfce4-session
   - xfce4-settings
+  - xfce4-systemload-plugin
   - xfce4-taskmanager
   - xfce4-terminal
+  - xfce4-time-out-plugin
+  - xfce4-verve-plugin
+  - xfce4-weather-plugin
+  - xfce4-whiskermenu-plugin
+  - xfce4-xkb-plugin
   - xfconf
+  - xfdashboard
+  - xfdashboard-themes
   - xfdesktop
   - xfwm4
   - xfwm4-themes
