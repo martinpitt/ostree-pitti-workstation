@@ -92,6 +92,8 @@ exclude-packages:
   - dnf-plugins-core
   - dnf5
   - dnf5-plugins
+  # https://github.com/fedora-silverblue/issue-tracker/issues/517
+  - sdubby
 
 postprocess:
   - |
