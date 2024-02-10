@@ -52,11 +52,3 @@ echo 'ACTION=="add|change", ATTR{type}=="Battery", ATTR{charge_stop_threshold}="
 ln -s /etc/pki/ca-trust/source/anchors/2015-RH-IT-Root-CA.pem /etc/pki/tls/certs/2015-RH-IT-Root-CA.pem
 ln -s /etc/pki/ca-trust/source/anchors/2022-RH-IT-Root-CA.pem /etc/pki/tls/certs/2022-RH-IT-Root-CA.pem
 update-ca-trust
-
-# Firefox upstream (for video calls)
-curl -L 'https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64&lang=en-US' | tar -tj -C /usr/lib
-cat <<EOF > /usr/bin/firefox-upstream
-export MOZ_ENABLE_WAYLAND=1
-exec /usr/lib/firefox/firefox "\$@"
-EOF
-chmod 755 /usr/bin/firefox-upstream
