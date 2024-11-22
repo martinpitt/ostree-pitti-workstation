@@ -13,8 +13,6 @@ container-cmd:
   - /usr/bin/bash
 
 include:
-  # Packages common to all variants
-  - common-packages.yaml
   # See: https://gitlab.com/fedora/ostree/sig/-/issues/1
   - bootupd.yaml
   # Dracut configuration for the initramfs
@@ -110,9 +108,9 @@ packages-x86_64:
 exclude-packages:
   - PackageKit
   # We can not include openh264. See https://fedoraproject.org/wiki/OpenH264
-  - gstreamer1-plugin-openh264
-  - mozilla-openh264
-  - openh264
+  # - gstreamer1-plugin-openh264
+  # - mozilla-openh264
+  # - openh264
   # Do not include dnf4. Classic ostree also exclude dnf5 in another manifest
   - dnf
   - dnf-plugins-core

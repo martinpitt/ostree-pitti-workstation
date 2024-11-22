@@ -1,0 +1,154 @@
+variables:
+  bootable_container: false
+  # for mutt
+  exclude_perl: false
+
+include: common.yaml
+
+ref: pitti-desktop
+rojig:
+  name: pitti-desktop
+  summary: "Pitti Desktop"
+  license: MIT
+
+repos:
+  - fedora-42
+  - fedora-42-updates
+  - fedora-cisco-openh264
+  - rpmfusion-free
+  - rpmfusion-free-updates
+
+packages:
+# hardware/drivers
+  - kernel
+  - kernel-modules-extra
+  - iwlwifi-mvm-firmware
+  - alsa-sof-firmware
+  - NetworkManager-wifi
+  - NetworkManager-openvpn-gnome
+  - powertop
+  - wpa_supplicant
+  - bluez
+  - bluez-tools
+# basic system
+  - acl
+  - attr
+  - basesystem
+  - cryptsetup
+  - dnsmasq
+  - fedora-workstation-backgrounds
+  - filesystem
+  - glibc-langpack-de
+  - glibc-langpack-en
+  - hostname
+  - iproute
+  - kbd
+  - nss-altfiles
+  - pciutils
+  - rpm-ostree
+  # don't care, but rpm-ostree build fails otherwise
+  - selinux-policy-targeted
+  - sudo
+  - usbutils
+# shell tools and development
+  - bash-completion
+  - bc
+  - bzip2
+  # authenticate to gmail
+  - cyrus-sasl-plain
+  - fpaste
+  - git
+  - gnupg2
+  - isync
+  - krb5-workstation
+  - lsof
+  - man-db
+  - mtr
+  - mutt
+  - neovim
+  - nmap-ncat
+  - openssh-server
+  - openvpn
+  - podman
+  - restic
+  - rsync
+  - strace
+  - syncthing
+  - systemd-container
+  - toolbox
+  - tree
+  - w3m
+  - wget
+
+# desktop plumbing/apps
+  - dejavu-sans-fonts
+  - dejavu-serif-fonts
+  - dejavu-sans-mono-fonts
+  - fontawesome-fonts
+  - google-noto-emoji-color-fonts
+
+  - gvfs-mtp
+  - pulseaudio-utils
+  - alsa-plugins-pulseaudio
+  - gstreamer1-plugins-good
+  - gstreamer1-plugins-bad-free
+  - gstreamer1-plugin-openh264
+  - gstreamer1-libav
+  # for wf-recorder
+  - libavdevice
+  - xdg-desktop-portal-gtk
+
+  - pavucontrol
+  - pcmanfm
+  - nm-connection-editor
+  - blueman
+  - eog
+  - evince
+  - rhythmbox
+  - gnome-keyring
+  - pinentry-gnome3
+  - mate-polkit
+  - lxterminal
+  - gnome-disk-utility
+  - rofimoji
+
+# sway/wayland desktop
+  - sway
+  - swayidle
+  - swaylock
+  - kanshi
+  - mako
+  - waybar
+  - slurp
+  - grim
+  - xorg-x11-server-Xwayland
+  - firefox
+  - wofi
+  - brightnessctl
+  - wl-clipboard
+
+exclude-packages:
+  # recommended by sway
+  - alacritty
+  - brltty
+  - glibc-all-langpacks
+  # recommended by gtk3
+  - tracker
+  - tracker-miners
+  # recommended by toolbox
+  - subscription-manager
+  # recommended by udisks
+  - exfatprogs
+  - f2fs-tools
+  - btrfs-progs
+  - nilfs-utils
+  - udftools
+  # does not work
+  - xdg-desktop-portal-wlr
+  # recommended by containers-common-extra
+  - qemu-user-static
+
+#add-files:
+#  - ["2022-RH-IT-Root-CA.pem", "/etc/pki/ca-trust/source/anchors/2022-RH-IT-Root-CA.pem"]
+
+postprocess-script: pitti-post.sh

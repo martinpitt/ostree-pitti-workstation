@@ -4,3 +4,10 @@ mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=updates-released-f42&
 enabled=1
 gpgcheck=1
 metadata_expire=1d
+
+[fedora-41-updates-testing]
+name=Fedora 41 $basearch Updates
+mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=updates-testing-f41&arch=$basearch
+enabled=1
+gpgcheck=1
+metadata_expire=1d
